@@ -25,7 +25,7 @@ fn main() {
         )
     };
 
-    let shifts = (0..20).map(f64::from).map(|i| 1.5 * (i*3.).exp2()).collect::<Vec<f64>>();
+    let shifts = (0..64).map(f64::from).map(|i| 1.5 * i.exp2()).collect::<Vec<f64>>();
     let output = compute_output(&polygon, &shifts);
     print_output(&output);
 }
