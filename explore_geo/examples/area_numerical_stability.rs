@@ -8,14 +8,15 @@ fn main() {
     let polygon = {
         const NUM_VERTICES: usize = 10;
         const ANGLE_INC: f64 = 2. * PI / NUM_VERTICES as f64;
+        const RADIUS: f64 = 10.;
 
         Polygon::new(
             (0..NUM_VERTICES)
                 .map(|i| {
                     let angle = i as f64 * ANGLE_INC;
                     Coordinate {
-                        x: angle.cos(),
-                        y: angle.sin(),
+                        x: RADIUS * angle.cos(),
+                        y: RADIUS * angle.sin(),
                     }
                 })
                 .collect::<Vec<_>>()
@@ -24,49 +25,51 @@ fn main() {
         )
     };
 
-    println!("Effect of shift");
-    let pre_shift_area = polygon.signed_area();
-    for exp in 0..20 {
-        let shift = 1.5 * f64::from(exp*3).exp2();
-        let shifted_polygon = polygon.map_coords(|&(x, y)| (x + shift, y + shift));
-
-        let area = shifted_polygon.signed_area();
-        let no_shift_area = get_linestring_area(shifted_polygon.exterior());
-        println!(
-            "{:.4e}, {:.4e}, {:.4e}, {:.4e}, {:.4e}",
-            shift,
-            pre_shift_area,
-            area,
-            (pre_shift_area - area).abs()*100./area,
-            (area - no_shift_area).abs()*100./area
-        );
-    }
-
-    println!("Effect of expansion");
-    let shift = 1.5e15;
-    for exp in 0..20 {
-        let expansion = 1.5 * f64::from(exp*3).exp2();
-        let expanded_polygon = polygon.map_coords(|&(x, y)| (x*expansion, y*expansion));
-        let expanded_area = polygon.signed_area();
-        let shifted_polygon = expanded_polygon.map_coords(|&(x, y)| (x + shift, y + shift));
-
-        let area = shifted_polygon.signed_area();
-        let no_shift_area = get_linestring_area(shifted_polygon.exterior());
-        println!(
-            "{:.4e}, {:.4e}, {:.4e}, {:.4e}, {:.4e}",
-            expansion,
-            expanded_area,
-            area,
-            (expanded_area - area).abs()*100./area,
-            (area - no_shift_area).abs()*100./area
-        );
-    }
-
-    // TODO: How does the error vary when the size of the polygon is changed?
+    let shifts = (0..20).map(f64::from).map(|i| 1.5 * (i*3.).exp2()).collect::<Vec<f64>>();
+    let output = compute_output(&polygon, &shifts);
+    print_output(&output);
 }
 
-// Calculation of simple (no interior holes) Polygon area
-pub(crate) fn get_linestring_area<T>(linestring: &LineString<T>) -> T
+struct OutputRow {
+    pub shift: f64,
+    pub original_area: f64,
+    pub shifted_area: f64,
+    pub shift_relative_error: f64,
+    pub naive_area_computation_error: f64
+}
+
+fn compute_output(polygon: &Polygon<f64>, shifts: &[f64]) -> Vec<OutputRow> {
+    let original_area = polygon.signed_area();
+    let mut output: Vec<OutputRow> = Vec::with_capacity(shifts.len());
+    for shift in shifts {
+        let shifted_polygon = polygon.map_coords(|&(x, y)| (x + shift, y + shift));
+        let shifted_area = shifted_polygon.signed_area();
+        let naive_area = get_linestring_area(shifted_polygon.exterior());
+        output.push(OutputRow{
+            shift: *shift,
+            original_area: original_area,
+            shifted_area: shifted_polygon.signed_area(),
+            shift_relative_error: (original_area - shifted_area).abs()/original_area,
+            naive_area_computation_error: (shifted_area - naive_area).abs()/shifted_area
+        });
+    }
+    output
+}
+
+fn print_output(output: &[OutputRow]) {
+    for row in output {
+        println!(
+            "{:.4e}, {:.4e}, {:.4e}, {:.4e}, {:.4e}",
+            row.shift,
+            row.original_area,
+            row.shifted_area,
+           row.shift_relative_error,
+           row.naive_area_computation_error
+        );
+    }
+}
+
+fn get_linestring_area<T>(linestring: &LineString<T>) -> T
 where
     T: CoordFloat,
 {
