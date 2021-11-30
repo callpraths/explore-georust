@@ -31,7 +31,7 @@ fn main() {
         .map(f64::from)
         .map(|i| 1.5 * i.exp2())
         .collect::<Vec<f64>>();
-    let shift_angles = [0., PI / 4., PI / 2., PI * 3. / 4., PI];
+    let shift_angles = [0., PI / 8., PI / 4., PI * 3. / 8., PI / 2.];
     let series = compute_series(&polygon, &shifts, &shift_angles);
     println!("{}", serde_json::to_string_pretty(&series).unwrap());
 }
