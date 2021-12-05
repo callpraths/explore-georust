@@ -48,6 +48,7 @@ struct Datum {
     pub geo: ComputedArea,
     pub geos: ComputedArea,
     pub naive: ComputedArea,
+    pub geo_shift_relative_error: f64,
     pub naive_geo_relative_error: ComputedArea,
     pub geos_geo_relative_error: ComputedArea,
     pub geo_geos_relative_error: ComputedArea,
@@ -94,6 +95,8 @@ fn compute_datum(polygon: &Polygon<f64>, angle: f64, shift: f64) -> Datum {
             original: naive_area(polygon),
             shifted: naive_area(&shifted_polygon),
         },
+        geo_shift_relative_error: (geo_area(&shifted_polygon) - geo_area(polygon)).abs()
+            / geo_area(polygon),
         naive_geo_relative_error: ComputedArea {
             original: (geo_area(polygon) - naive_area(polygon)).abs() / geo_area(polygon),
             shifted: (geo_area(&shifted_polygon) - naive_area(&shifted_polygon)).abs()
