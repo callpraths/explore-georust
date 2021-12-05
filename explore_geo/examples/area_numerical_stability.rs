@@ -2,9 +2,9 @@ use geo::{
     algorithm::area::Area, map_coords::MapCoords, CoordFloat, CoordNum, Coordinate, LineString,
     Polygon,
 };
-use std::f64::consts::PI;
+use geos::{Geom, Geometry};
 use serde::Serialize;
-
+use std::f64::consts::PI;
 
 fn main() {
     let polygon = {
@@ -45,10 +45,18 @@ struct Series {
 #[derive(Serialize)]
 struct Datum {
     pub shift: f64,
-    pub original_area: f64,
-    pub shifted_area: f64,
-    pub shift_relative_error: f64,
-    pub naive_area_computation_error: f64,
+    pub geo: ComputedArea,
+    pub geos: ComputedArea,
+    pub naive: ComputedArea,
+    pub naive_geo_relative_error: ComputedArea,
+    pub geos_geo_relative_error: ComputedArea,
+    pub geo_geos_relative_error: ComputedArea,
+}
+
+#[derive(Serialize)]
+struct ComputedArea {
+    pub original: f64,
+    pub shifted: f64,
 }
 
 fn compute_series(polygon: &Polygon<f64>, shifts: &[f64], angles: &[f64]) -> Vec<Series> {
@@ -68,24 +76,56 @@ fn compute_series(polygon: &Polygon<f64>, shifts: &[f64], angles: &[f64]) -> Vec
 }
 
 fn compute_datum(polygon: &Polygon<f64>, angle: f64, shift: f64) -> Datum {
-    let original_area = polygon.signed_area();
-
     let xshift = shift * angle.cos();
     let yshift = shift * angle.sin();
     let shifted_polygon = polygon.map_coords(|&(x, y)| (x + xshift, y + yshift));
-    let shifted_area = shifted_polygon.signed_area();
-    let naive_area = get_linestring_area(shifted_polygon.exterior());
+
     Datum {
         shift,
-        original_area,
-        shifted_area: shifted_polygon.signed_area(),
-        shift_relative_error: (original_area - shifted_area).abs() / original_area,
-        naive_area_computation_error: (shifted_area - naive_area).abs() / shifted_area,
+        geo: ComputedArea {
+            original: geo_area(polygon),
+            shifted: geo_area(&shifted_polygon),
+        },
+        geos: ComputedArea {
+            original: geos_area(polygon),
+            shifted: geos_area(&shifted_polygon),
+        },
+        naive: ComputedArea {
+            original: naive_area(polygon),
+            shifted: naive_area(&shifted_polygon),
+        },
+        naive_geo_relative_error: ComputedArea {
+            original: (geo_area(polygon) - naive_area(polygon)).abs() / geo_area(polygon),
+            shifted: (geo_area(&shifted_polygon) - naive_area(&shifted_polygon)).abs()
+                / geo_area(&shifted_polygon),
+        },
+        geos_geo_relative_error: ComputedArea {
+            original: (geo_area(polygon) - geos_area(polygon)).abs() / geo_area(polygon),
+            shifted: (geo_area(&shifted_polygon) - geos_area(&shifted_polygon)).abs()
+                / geos_area(&shifted_polygon),
+        },
+        geo_geos_relative_error: ComputedArea {
+            original: (geo_area(polygon) - geos_area(polygon)).abs() / geos_area(polygon),
+            shifted: (geo_area(&shifted_polygon) - geos_area(&shifted_polygon)).abs()
+                / geos_area(&shifted_polygon),
+        },
     }
 }
 
+fn geo_area(polygon: &Polygon<f64>) -> f64 {
+    polygon.signed_area()
+}
 
-fn get_linestring_area<T>(linestring: &LineString<T>) -> T
+fn geos_area(polygon: &Polygon<f64>) -> f64 {
+    let g: Geometry = polygon.try_into().unwrap();
+    g.area().unwrap()
+}
+
+fn naive_area(polygon: &Polygon<f64>) -> f64 {
+    get_linestring_area_naive(polygon.exterior())
+}
+
+fn get_linestring_area_naive<T>(linestring: &LineString<T>) -> T
 where
     T: CoordFloat,
 {

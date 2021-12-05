@@ -7,5 +7,6 @@ edition = "2021"
 
 [dependencies]
 geo = "0.18.0"
+geos = { version = "8.0.3", features = ["geo", "v3_8_0"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
