@@ -54,16 +54,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fea41bba32d969b513997752735605054bc0dfa92b4c56bf1189f2e174be7a10"
 
 [[package]]
-name = "explore_geo"
-version = "0.1.0"
-dependencies = [
- "geo",
- "geos",
- "serde",
- "serde_json",
-]
-
-[[package]]
 name = "generic-array"
 version = "0.12.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -148,6 +138,16 @@ checksum = "f322aa1a1d8283b54817c4ed4aab271b7b6e9bcf7c8f01baf24c4a0698d25cf0"
 dependencies = [
  "libc",
  "pkg-config",
+]
+
+[[package]]
+name = "harness"
+version = "0.1.0"
+dependencies = [
+ "geo",
+ "geos",
+ "serde",
+ "serde_json",
 ]
 
 [[package]]
