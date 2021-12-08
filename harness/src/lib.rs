@@ -48,31 +48,4 @@ pub mod notsofine {
         }
     }
 
-    #[cfg(test)]
-    mod test {
-        use super::*;
-
-        #[derive(Clone, Copy)]
-        pub struct SingleTrickPony;
-
-        impl Program for SingleTrickPony {
-            type P = SingleTrickPony;
-            fn prepare(&self) -> Self::P {
-                return *self;
-            }
-        }
-
-        impl PreparedProgram for SingleTrickPony {
-            fn benchmark_this(self) {}
-        }
-
-        #[test]
-        fn do_nothing() {
-            let p = SingleTrickPony {};
-            println!(
-                "{:#?}",
-                benchmark_run(Args::<SingleTrickPony> { p, iterations: 100 })
-            );
-        }
-    }
 }
