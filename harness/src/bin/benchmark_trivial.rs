@@ -6,6 +6,9 @@ pub struct SingleTrickPony;
 
 impl Program for SingleTrickPony {
     type P = SingleTrickPony;
+    fn name() -> String {
+        "Looper".to_owned()
+    }
     fn prepare(&self) -> Self::P {
         return *self;
     }
@@ -13,7 +16,7 @@ impl Program for SingleTrickPony {
 
 impl PreparedProgram for SingleTrickPony {
     fn benchmark_this(self) {
-        for i in 1..40000 {
+        for _ in 1..40000 {
         }
     }
 }
@@ -22,6 +25,6 @@ fn main() {
     let p = SingleTrickPony {};
     println!(
         "{:#?}",
-        benchmark_run(Args::<SingleTrickPony> { p, iterations: 100 })
+        benchmark_run(Args::<SingleTrickPony> { programs: vec![p], iterations: 2 })
     );
 }

@@ -3,6 +3,7 @@ pub mod notsofine {
 
     pub trait Program {
         type P: PreparedProgram;
+        fn name() -> String;
         fn prepare(&self) -> Self::P;
     }
 
@@ -11,12 +12,13 @@ pub mod notsofine {
     }
 
     pub struct Args<P: Program> {
-        pub p: P,
+        pub programs: Vec<P>,
         pub iterations: usize,
     }
 
     #[derive(Clone, Debug)]
     pub struct Iteration {
+        pub program: String,
         pub started_at: SystemTime,
         pub duration: Duration,
     }
@@ -28,10 +30,16 @@ pub mod notsofine {
 
     pub fn benchmark_run<P: Program>(args: Args<P>) -> BenchmarkResult {
         let mut result: BenchmarkResult = BenchmarkResult {
-            runs: Vec::with_capacity(args.iterations),
+            runs: Vec::with_capacity(args.iterations * args.programs.len()),
         };
+
+        let radix = args.programs.len();
+        let mut head: usize = 0;
         for _ in 0..args.iterations {
-            result.runs.push(run_once(&args.p));
+            for i in 0..radix {
+                result.runs.push(run_once(&args.programs[(head+i)%radix]));
+            }
+            head = (head + 1) % radix;
         }
         result
     }
@@ -43,6 +51,7 @@ pub mod notsofine {
         prepared.benchmark_this();
         let end = Instant::now();
         Iteration {
+            program: P::name(),
             started_at: wall_clock_start,
             duration: end - start,
         }
