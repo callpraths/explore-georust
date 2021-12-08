@@ -15,17 +15,14 @@ impl Program for Looper {
 
 impl PreparedProgram for Looper {
     fn benchmark_this(&self) {
-        for _ in 1..40000 {
-        }
+        for _ in 1..40000 {}
     }
 }
-
 
 #[derive(Clone, Copy)]
 pub struct Sleeper;
 
 impl Program for Sleeper {
-
     fn name(&self) -> String {
         "Sleeper".to_owned()
     }
@@ -40,10 +37,10 @@ impl PreparedProgram for Sleeper {
     }
 }
 
-
 fn main() {
-    println!(
-        "{:#?}",
-        benchmark_run(Args{ programs: vec![Box::new(Looper {}), Box::new(Sleeper {})], iterations: 2 })
-    );
+    let result = benchmark_run(Args {
+        programs: vec![Box::new(Looper {}), Box::new(Sleeper {})],
+        iterations: 2,
+    });
+    println!("{}", serde_json::to_string_pretty(&result).unwrap());
 }

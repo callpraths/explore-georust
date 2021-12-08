@@ -1,4 +1,5 @@
 pub mod notsofine {
+    use serde::Serialize;
     use std::time::{Duration, Instant, SystemTime};
 
     pub trait Program {
@@ -15,14 +16,14 @@ pub mod notsofine {
         pub iterations: usize,
     }
 
-    #[derive(Clone, Debug)]
+    #[derive(Clone, Debug, Serialize)]
     pub struct Iteration {
         pub program: String,
         pub started_at: SystemTime,
         pub duration: Duration,
     }
 
-    #[derive(Clone, Debug)]
+    #[derive(Clone, Debug, Serialize)]
     pub struct BenchmarkResult {
         pub runs: Vec<Iteration>,
     }
