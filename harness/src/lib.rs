@@ -2,17 +2,16 @@ pub mod notsofine {
     use std::time::{Duration, Instant, SystemTime};
 
     pub trait Program {
-        type P: PreparedProgram;
-        fn name() -> String;
-        fn prepare(&self) -> Self::P;
+        fn name(&self) -> String;
+        fn prepare(&self) -> Box<dyn PreparedProgram>;
     }
 
     pub trait PreparedProgram {
-        fn benchmark_this(self);
+        fn benchmark_this(&self);
     }
 
-    pub struct Args<P: Program> {
-        pub programs: Vec<P>,
+    pub struct Args {
+        pub programs: Vec<Box<dyn Program>>,
         pub iterations: usize,
     }
 
@@ -28,7 +27,7 @@ pub mod notsofine {
         pub runs: Vec<Iteration>,
     }
 
-    pub fn benchmark_run<P: Program>(args: Args<P>) -> BenchmarkResult {
+    pub fn benchmark_run(args: Args) -> BenchmarkResult {
         let mut result: BenchmarkResult = BenchmarkResult {
             runs: Vec::with_capacity(args.iterations * args.programs.len()),
         };
@@ -44,14 +43,14 @@ pub mod notsofine {
         result
     }
 
-    fn run_once<P: Program>(program: &P) -> Iteration {
+    fn run_once(program: &Box<dyn Program>) -> Iteration {
         let prepared = program.prepare();
         let wall_clock_start = SystemTime::now();
         let start = Instant::now();
         prepared.benchmark_this();
         let end = Instant::now();
         Iteration {
-            program: P::name(),
+            program: program.name(),
             started_at: wall_clock_start,
             duration: end - start,
         }

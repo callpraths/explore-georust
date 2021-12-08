@@ -5,17 +5,16 @@ use std::{thread, time::Duration};
 pub struct Looper;
 
 impl Program for Looper {
-    type P = Looper;
-    fn name() -> String {
+    fn name(&self) -> String {
         "Looper".to_owned()
     }
-    fn prepare(&self) -> Self::P {
-        return *self;
+    fn prepare(&self) -> Box<dyn PreparedProgram> {
+        return Box::new(self.clone());
     }
 }
 
 impl PreparedProgram for Looper {
-    fn benchmark_this(self) {
+    fn benchmark_this(&self) {
         for _ in 1..40000 {
         }
     }
@@ -26,17 +25,17 @@ impl PreparedProgram for Looper {
 pub struct Sleeper;
 
 impl Program for Sleeper {
-    type P = Sleeper;
-    fn name() -> String {
+
+    fn name(&self) -> String {
         "Sleeper".to_owned()
     }
-    fn prepare(&self) -> Self::P {
-        return *self;
+    fn prepare(&self) -> Box<dyn PreparedProgram> {
+        return Box::new(self.clone());
     }
 }
 
 impl PreparedProgram for Sleeper {
-    fn benchmark_this(self) {
+    fn benchmark_this(&self) {
         thread::sleep(Duration::from_secs(1));
     }
 }
@@ -45,6 +44,6 @@ impl PreparedProgram for Sleeper {
 fn main() {
     println!(
         "{:#?}",
-        benchmark_run(Args::<Looper> { programs: vec![Looper {}, Sleeper {}], iterations: 2 })
+        benchmark_run(Args{ programs: vec![Box::new(Looper {}), Box::new(Sleeper {})], iterations: 2 })
     );
 }
