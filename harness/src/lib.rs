@@ -35,9 +35,12 @@ pub mod notsofine {
 
         let radix = args.programs.len();
         let mut head: usize = 0;
-        for _ in 0..args.iterations {
+        for i in 0..args.iterations {
+            println!("Iteration {} of {}", i, args.iterations);
             for i in 0..radix {
-                result.runs.push(run_once(&args.programs[(head+i)%radix]));
+                result
+                    .runs
+                    .push(run_once(&args.programs[(head + i) % radix]));
             }
             head = (head + 1) % radix;
         }
@@ -56,5 +59,4 @@ pub mod notsofine {
             duration: end - start,
         }
     }
-
 }
