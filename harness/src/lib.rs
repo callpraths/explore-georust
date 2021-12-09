@@ -47,7 +47,7 @@ pub mod notsofine {
                 started_at: SystemTime::now(),
                 runs: Vec::with_capacity(args.programs.len()),
             };
-            println!("Iteration {} of {}", i, args.iterations);
+            println!("Iteration {} of {}", i + 1, args.iterations);
             for p in 0..radix {
                 iteration
                     .runs
