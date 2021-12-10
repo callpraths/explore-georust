@@ -70,4 +70,36 @@ pub mod notsofine {
             duration: end - start,
         }
     }
+
+    pub mod simple {
+        use super::{PreparedProgram, Program};
+
+        pub fn program_for_fn(name: &str, f: fn()) -> Box<dyn Program> {
+            Box::new(FnProgram {
+                name: name.to_owned(),
+                f,
+            })
+        }
+
+        #[derive(Clone, Debug)]
+        struct FnProgram {
+            name: String,
+            f: fn(),
+        }
+
+        impl Program for FnProgram {
+            fn name(&self) -> String {
+                self.name.clone()
+            }
+            fn prepare(&self) -> Box<dyn PreparedProgram> {
+                return Box::new(self.clone());
+            }
+        }
+
+        impl PreparedProgram for FnProgram {
+            fn benchmark_this(&self) {
+                (self.f)()
+            }
+        }
+    }
 }
