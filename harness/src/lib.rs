@@ -8,7 +8,7 @@ pub mod notsofine {
     }
 
     pub trait PreparedProgram {
-        fn benchmark_this(&self);
+        fn benchmark_this(&mut self);
     }
 
     pub struct Args {
@@ -60,7 +60,7 @@ pub mod notsofine {
     }
 
     fn run_once(program: &Box<dyn Program>) -> Run {
-        let prepared = program.prepare();
+        let mut prepared = program.prepare();
 
         let start = Instant::now();
         prepared.benchmark_this();
@@ -97,7 +97,7 @@ pub mod notsofine {
         }
 
         impl PreparedProgram for FnProgram {
-            fn benchmark_this(&self) {
+            fn benchmark_this(&mut self) {
                 (self.f)()
             }
         }
@@ -110,7 +110,7 @@ pub mod notsofine {
             Box::new(FnWithArgProgram {
                 name: name.to_owned(),
                 f,
-                arg,
+                arg: Some(arg),
             })
         }
 
@@ -118,7 +118,7 @@ pub mod notsofine {
         struct FnWithArgProgram<T: Clone> {
             name: String,
             f: fn(T),
-            arg: T,
+            arg: Option<T>,
         }
 
         impl<T: Clone + 'static> Program for FnWithArgProgram<T> {
@@ -131,8 +131,8 @@ pub mod notsofine {
         }
 
         impl<T: Clone> PreparedProgram for FnWithArgProgram<T> {
-            fn benchmark_this(&self) {
-                (self.f)(self.arg.clone())
+            fn benchmark_this(&mut self) {
+                (self.f)(self.arg.take().unwrap())
             }
         }
     }
