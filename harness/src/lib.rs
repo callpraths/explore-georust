@@ -101,5 +101,39 @@ pub mod notsofine {
                 (self.f)()
             }
         }
+
+        pub fn program_for_fn_with_arg<T: Clone + 'static>(
+            name: &str,
+            f: fn(T),
+            arg: T,
+        ) -> Box<dyn Program> {
+            Box::new(FnWithArgProgram {
+                name: name.to_owned(),
+                f,
+                arg,
+            })
+        }
+
+        #[derive(Clone, Debug)]
+        struct FnWithArgProgram<T: Clone> {
+            name: String,
+            f: fn(T),
+            arg: T,
+        }
+
+        impl<T: Clone + 'static> Program for FnWithArgProgram<T> {
+            fn name(&self) -> String {
+                self.name.clone()
+            }
+            fn prepare(&self) -> Box<dyn PreparedProgram> {
+                return Box::new(self.clone());
+            }
+        }
+
+        impl<T: Clone> PreparedProgram for FnWithArgProgram<T> {
+            fn benchmark_this(&self) {
+                (self.f)(self.arg.clone())
+            }
+        }
     }
 }
