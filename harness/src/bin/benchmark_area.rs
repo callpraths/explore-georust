@@ -16,7 +16,7 @@ struct CLIArgs {
     iterations: usize,
 }
 
-const NUM_COMPUTATIONS: usize = 4_000_000;
+const NUM_COMPUTATIONS: usize = 100_000;
 
 fn geo_area(mut polygon: Polygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
