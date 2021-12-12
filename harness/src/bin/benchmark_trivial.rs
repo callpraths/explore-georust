@@ -15,15 +15,14 @@ struct CLIArgs {
 }
 
 fn sleep_some() {
-    thread::sleep(Duration::from_millis(10));
+    thread::sleep(Duration::from_millis(1));
 }
 
+const NUM_COMPUTATIONS: usize = 4_000_000;
 fn loop_some() {
     let mut i = 10;
-    for _ in 1..40000 {
-        for _ in 1..1000 {
-            criterion::black_box(&mut i);
-        }
+    for _ in 1..NUM_COMPUTATIONS {
+        criterion::black_box(&mut i);
     }
 }
 
