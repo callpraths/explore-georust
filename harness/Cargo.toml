@@ -10,5 +10,6 @@ clap = { version = "3.0.0-rc.0", features = ["derive"] }
 criterion = "0.3.5"
 geo = "0.18.0"
 geos = { version = "8.0.3", features = ["geo", "v3_8_0"] }
+geozero = { version = "0.8.0", features = ["with-geo", "with-geojson"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
