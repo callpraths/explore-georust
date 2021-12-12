@@ -1,9 +1,12 @@
 use clap::Parser;
 use criterion;
-use geo::{algorithm::area::Area, Geometry, MultiPolygon};
+use geo::{algorithm::area::Area, Geometry};
 use geos::{self, Geom};
-use geozero::{geo_types::GeoWriter, geojson::GeoJsonReader, GeozeroDatasource};
-use harness::notsofine::*;
+use harness::{
+    data::{self, MultiPolygonPack},
+    notsofine::*,
+};
+
 use std::{fs::File, io::Write};
 
 #[derive(Parser, Debug)]
@@ -33,33 +36,21 @@ fn geos_area(mut g: geos::Geometry) {
 
 fn main() {
     let args = CLIArgs::parse();
-    let polygons = load(&args.geojson_file).unwrap();
+    let MultiPolygonPack {
+        geo: geo_mp,
+        geos: geos_mp,
+    } = data::load_multipolygon_pack(&args.geojson_file);
 
     let result = benchmark_run(Args {
         programs: vec![
-            simple::program_for_fn_with_arg(
-                "geo",
-                geo_area,
-                Geometry::MultiPolygon(polygons.clone()),
-            ),
-            simple::program_for_fn_with_arg("geos", geos_area, polygons.try_into().unwrap()),
+            simple::program_for_fn_with_arg("geo", geo_area, geo_mp),
+            simple::program_for_fn_with_arg("geos", geos_area, geos_mp),
         ],
         iterations: args.iterations,
     });
 
-    let mut ofile = File::create(args.out_file).unwrap();
-    ofile
+    File::create(args.out_file)
+        .unwrap()
         .write_all(serde_json::to_string_pretty(&result).unwrap().as_bytes())
         .unwrap();
-}
-
-fn load(path: &str) -> Result<MultiPolygon<f64>, String> {
-    let mut writer = GeoWriter::new();
-    let mut f = File::open(path).unwrap();
-    GeoJsonReader(&mut f).process(&mut writer).unwrap();
-    let geometry = writer.geometry();
-    if let Geometry::MultiPolygon(p) = geometry {
-        return Ok(p.clone());
-    }
-    Err("Loaded geometry is not a MultiPolygon".to_owned())
 }
