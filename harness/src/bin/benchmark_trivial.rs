@@ -1,4 +1,5 @@
 use clap::Parser;
+use criterion;
 use harness::notsofine::*;
 use std::{fs::File, io::Write, thread, time::Duration};
 
@@ -14,12 +15,15 @@ struct CLIArgs {
 }
 
 fn sleep_some() {
-    thread::sleep(Duration::from_millis(100));
+    thread::sleep(Duration::from_millis(10));
 }
 
 fn loop_some() {
+    let mut i = 10;
     for _ in 1..40000 {
-        for _ in 1..100 {}
+        for _ in 1..1000 {
+            criterion::black_box(&mut i);
+        }
     }
 }
 
