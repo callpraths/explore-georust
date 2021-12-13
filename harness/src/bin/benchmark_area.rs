@@ -7,7 +7,7 @@ use harness::{
     notsofine::*,
 };
 
-use std::{fs::File, io::Write};
+use std::{fs::File, io::Write, time::Duration};
 
 #[derive(Parser, Debug)]
 #[clap(about, version, author)]
@@ -16,8 +16,6 @@ struct CLIArgs {
     geojson_file: String,
     #[clap(short, long)]
     out_file: String,
-    #[clap(short, long)]
-    iterations: usize,
 }
 
 const NUM_COMPUTATIONS: usize = 100_000;
@@ -46,7 +44,9 @@ fn main() {
             simple::program_for_fn_with_arg("geo", geo_area, geo_mp),
             simple::program_for_fn_with_arg("geos", geos_area, geos_mp),
         ],
-        iterations: args.iterations,
+        iterations: 210,
+        discard_leading: Some(10),
+        pause: Some(Duration::new(1, 0)),
     });
 
     File::create(args.out_file)

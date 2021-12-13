@@ -1,5 +1,8 @@
 use serde::Serialize;
-use std::time::{Duration, Instant, SystemTime};
+use std::{
+    thread,
+    time::{Duration, Instant, SystemTime},
+};
 
 pub mod simple;
 
@@ -15,6 +18,8 @@ pub trait PreparedProgram {
 pub struct Args {
     pub programs: Vec<Box<dyn Program>>,
     pub iterations: usize,
+    pub discard_leading: Option<usize>,
+    pub pause: Option<Duration>,
 }
 
 #[derive(Clone, Debug, Serialize)]
@@ -48,16 +53,36 @@ pub fn benchmark_run(args: Args) -> BenchmarkResult {
             started_at: SystemTime::now(),
             runs: Vec::with_capacity(args.programs.len()),
         };
-        println!("Iteration {} of {}", i + 1, args.iterations);
+
         for p in 0..radix {
             iteration
                 .runs
                 .push(run_once(&args.programs[(head + p) % radix]));
         }
         head = (head + 1) % radix;
-        result.iterations.push(iteration);
+
+        if should_report_iteration(i, &args) {
+            result.iterations.push(iteration);
+            println!("REPPORTED  Iteration {} of {}", i + 1, args.iterations);
+        } else {
+            println!("SKIPPED    Iteration {} of {}", i + 1, args.iterations);
+        }
+
+        if let Some(pause) = args.pause {
+            println!("");
+            println!("Pausing for {:#?} ...", pause);
+            thread::sleep(pause);
+            println!("");
+        }
     }
     result
+}
+
+fn should_report_iteration(iteration: usize, args: &Args) -> bool {
+    match args.discard_leading {
+        Some(value) => iteration >= value,
+        None => true,
+    }
 }
 
 fn run_once(program: &Box<dyn Program>) -> Run {
