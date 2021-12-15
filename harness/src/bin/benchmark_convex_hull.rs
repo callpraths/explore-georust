@@ -1,6 +1,6 @@
 use clap::Parser;
 use criterion;
-use geo::{algorithm::area::Area, MultiPolygon};
+use geo::{algorithm::convex_hull::ConvexHull, MultiPolygon};
 use geos::{self, Geom};
 use harness::{
     data::{self, MultiPolygonPack},
@@ -18,17 +18,17 @@ struct CLIArgs {
     out_file: String,
 }
 
-const NUM_COMPUTATIONS: usize = 100_000;
+const NUM_COMPUTATIONS: usize = 1_000;
 
-fn geo_area(mut polygon: MultiPolygon<f64>) {
+fn geo_convex_hull(mut polygon: MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut polygon).signed_area());
+        criterion::black_box(criterion::black_box(&mut polygon).convex_hull());
     }
 }
 
-fn geos_area(mut g: geos::Geometry) {
+fn geos_convex_hull(mut g: geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).area().unwrap());
+        criterion::black_box(criterion::black_box(&mut g).convex_hull().unwrap());
     }
 }
 
@@ -39,14 +39,20 @@ fn main() {
         geos: geos_mp,
     } = data::load_multipolygon_pack(&args.geojson_file);
 
+    println!("geo convex hull: {:#?}", geo_mp.convex_hull());
+    println!(
+        "geos convex hull: {:#?}",
+        geos_mp.convex_hull().unwrap().to_wkt().unwrap()
+    );
+
     let result = benchmark_run(Args {
         programs: vec![
-            simple::program_for_fn_with_arg("geo", geo_area, geo_mp),
-            simple::program_for_fn_with_arg("geos", geos_area, geos_mp),
+            simple::program_for_fn_with_arg("geo", geo_convex_hull, geo_mp),
+            simple::program_for_fn_with_arg("geos", geos_convex_hull, geos_mp),
         ],
         iterations: 210,
         discard_leading: Some(10),
-        pause: Some(Duration::new(1, 0)),
+        pause: Some(Duration::new(2, 0)),
     });
 
     File::create(args.out_file)

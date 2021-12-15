@@ -1,6 +1,6 @@
 use clap::Parser;
 use criterion;
-use geo::{algorithm::bounding_rect::BoundingRect, Geometry};
+use geo::{algorithm::bounding_rect::BoundingRect, MultiPolygon};
 use geos::{self, Geom};
 use harness::{
     data::{self, MultiPolygonPack},
@@ -20,7 +20,7 @@ struct CLIArgs {
 
 const NUM_COMPUTATIONS: usize = 100_000;
 
-fn geo_mbr(mut polygon: Geometry<f64>) {
+fn geo_mbr(mut polygon: MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
         criterion::black_box(criterion::black_box(&mut polygon).bounding_rect());
     }

@@ -4,14 +4,14 @@ use geozero::{geo_types::GeoWriter, geojson::GeoJsonReader, GeozeroDatasource};
 use std::fs::File;
 
 pub struct MultiPolygonPack<'a> {
-    pub geo: Geometry<f64>,
+    pub geo: MultiPolygon<f64>,
     pub geos: GeosGeometry<'a>,
 }
 
 pub fn load_multipolygon_pack(path: &str) -> MultiPolygonPack<'static> {
     let p = load_multipolygon(path);
     MultiPolygonPack {
-        geo: Geometry::MultiPolygon(p.clone()),
+        geo: p.clone(),
         geos: p.try_into().unwrap(),
     }
 }
