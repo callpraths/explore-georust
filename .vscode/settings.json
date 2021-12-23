@@ -1,3 +1,4 @@
 {
-    "rust-client.engine": "rust-analyzer"
+    "rust-client.engine": "rust-analyzer",
+    "svg.preview.background": "editor"
 }
