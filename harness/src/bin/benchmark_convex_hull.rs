@@ -16,6 +16,12 @@ struct CLIArgs {
     geojson_file: String,
     #[clap(short, long)]
     out_file: String,
+    #[clap(short, long, default_value_t = 210)]
+    iterations: usize,
+    #[clap(short, long, default_value_t = 10)]
+    discard_leading: usize,
+    #[clap(short, long, default_value_t = 2)]
+    pause_seconds: u64,
 }
 
 const NUM_COMPUTATIONS: usize = 1_000;
@@ -50,9 +56,9 @@ fn main() {
             simple::program_for_fn_with_arg("geo", geo_convex_hull, geo_mp),
             simple::program_for_fn_with_arg("geos", geos_convex_hull, geos_mp),
         ],
-        iterations: 210,
-        discard_leading: Some(10),
-        pause: Some(Duration::new(2, 0)),
+        iterations: args.iterations,
+        discard_leading: Some(args.discard_leading),
+        pause: Some(Duration::new(args.pause_seconds, 0)),
     });
 
     File::create(args.out_file)
