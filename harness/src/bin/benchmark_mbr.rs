@@ -38,8 +38,16 @@ fn geos_mbr(mut g: geos::Geometry) {
 
 // A sanity test that preprocessing is not the reason for fast Envelope computation.
 // This should be nearly half the qps as `mbr_twice`.
+fn geos_mbr_twice_cloned(mut g: (geos::Geometry, geos::Geometry)) {
+    for _ in 0..NUM_COMPUTATIONS {
+        criterion::black_box(criterion::black_box(&mut g.0).envelope().unwrap());
+        criterion::black_box(criterion::black_box(&mut g.1).envelope().unwrap());
+    }
+}
+
 fn geos_mbr_twice(mut g: geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
+        criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
         criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
     }
 }
@@ -61,7 +69,12 @@ fn main() {
         programs: vec![
             simple::program_for_fn_with_arg("geo", geo_mbr, geo_mp),
             simple::program_for_fn_with_arg("geos", geos_mbr, Geom::clone(&geos_mp)),
-            simple::program_for_fn_with_arg("geos_twice", geos_mbr_twice, geos_mp),
+            simple::program_for_fn_with_arg("geos_twice", geos_mbr_twice, Geom::clone(&geos_mp)),
+            simple::program_for_fn_with_arg(
+                "geos_twice_cloned",
+                geos_mbr_twice_cloned,
+                (Geom::clone(&geos_mp), geos_mp),
+            ),
         ],
         iterations: args.iterations,
         discard_leading: if args.headlong { Some(100) } else { Some(10) },
