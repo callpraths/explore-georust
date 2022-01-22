@@ -36,6 +36,14 @@ fn geos_mbr(mut g: geos::Geometry) {
     }
 }
 
+// A sanity test that preprocessing is not the reason for fast Envelope computation.
+// This should be nearly half the qps as `mbr_twice`.
+fn geos_mbr_twice(mut g: geos::Geometry) {
+    for _ in 0..NUM_COMPUTATIONS {
+        criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
+    }
+}
+
 fn main() {
     let args = CLIArgs::parse();
     let MultiPolygonPack {
@@ -52,10 +60,11 @@ fn main() {
     let result = benchmark_run(Args {
         programs: vec![
             simple::program_for_fn_with_arg("geo", geo_mbr, geo_mp),
-            simple::program_for_fn_with_arg("geos", geos_mbr, geos_mp),
+            simple::program_for_fn_with_arg("geos", geos_mbr, Geom::clone(&geos_mp)),
+            simple::program_for_fn_with_arg("geos_twice", geos_mbr_twice, geos_mp),
         ],
         iterations: args.iterations,
-        discard_leading: if args.headlong { None } else { Some(10) },
+        discard_leading: if args.headlong { Some(100) } else { Some(10) },
         pause: if args.headlong {
             None
         } else {
