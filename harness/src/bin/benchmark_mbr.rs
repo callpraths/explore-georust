@@ -59,6 +59,17 @@ fn main() {
         geos: geos_mp,
     } = data::load_multipolygon_pack(&args.geojson_file);
 
+    // Clone values **before** getting MBR because GEOS caches the value.
+    let programs = vec![
+        simple::program_for_fn_with_arg("geo", geo_mbr, geo_mp.clone()),
+        simple::program_for_fn_with_arg("geos", geos_mbr, Geom::clone(&geos_mp)),
+        simple::program_for_fn_with_arg("geos_twice", geos_mbr_twice, Geom::clone(&geos_mp)),
+        simple::program_for_fn_with_arg(
+            "geos_twice_cloned",
+            geos_mbr_twice_cloned,
+            (Geom::clone(&geos_mp), Geom::clone(&geos_mp)),
+        ),
+    ];
     println!("geo MBR: {:#?}", geo_mp.bounding_rect());
     println!(
         "geos MBR: {:#?}",
@@ -66,16 +77,7 @@ fn main() {
     );
 
     let result = benchmark_run(Args {
-        programs: vec![
-            simple::program_for_fn_with_arg("geo", geo_mbr, geo_mp),
-            simple::program_for_fn_with_arg("geos", geos_mbr, Geom::clone(&geos_mp)),
-            simple::program_for_fn_with_arg("geos_twice", geos_mbr_twice, Geom::clone(&geos_mp)),
-            simple::program_for_fn_with_arg(
-                "geos_twice_cloned",
-                geos_mbr_twice_cloned,
-                (Geom::clone(&geos_mp), geos_mp),
-            ),
-        ],
+        programs,
         iterations: args.iterations,
         discard_leading: Some(20),
         pause: if args.headlong {
