@@ -12,7 +12,10 @@ pub trait Program {
 }
 
 pub trait PreparedProgram {
+    // Measure function
     fn benchmark_this(&mut self);
+    // Post-measurement cleanup
+    fn cleanup(&mut self);
 }
 
 pub struct Args {

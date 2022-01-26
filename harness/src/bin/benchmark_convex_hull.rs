@@ -24,15 +24,15 @@ struct CLIArgs {
 
 const NUM_COMPUTATIONS: usize = 1_000;
 
-fn geo_convex_hull(mut polygon: MultiPolygon<f64>) {
+fn geo_convex_hull(polygon: &mut MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut polygon).convex_hull());
+        criterion::black_box(criterion::black_box(&mut *polygon).convex_hull());
     }
 }
 
-fn geos_convex_hull(mut g: geos::Geometry) {
+fn geos_convex_hull(g: &mut geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).convex_hull().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).convex_hull().unwrap());
     }
 }
 

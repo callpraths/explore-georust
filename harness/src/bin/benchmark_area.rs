@@ -24,15 +24,15 @@ struct CLIArgs {
 
 const NUM_COMPUTATIONS: usize = 100_000;
 
-fn geo_area(mut polygon: MultiPolygon<f64>) {
+fn geo_area(polygon: &mut MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut polygon).signed_area());
+        criterion::black_box(criterion::black_box(&mut *polygon).signed_area());
     }
 }
 
-fn geos_area(mut g: geos::Geometry) {
+fn geos_area(g: &mut geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).area().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).area().unwrap());
     }
 }
 

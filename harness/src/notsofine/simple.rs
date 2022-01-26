@@ -26,11 +26,12 @@ impl PreparedProgram for FnProgram {
     fn benchmark_this(&mut self) {
         (self.f)()
     }
+    fn cleanup(&mut self) {}
 }
 
 pub fn program_for_fn_with_arg<T: Clone + 'static>(
     name: &str,
-    f: fn(T),
+    f: fn(&mut T),
     arg: T,
 ) -> Box<dyn Program> {
     Box::new(FnWithArgProgram {
@@ -40,10 +41,10 @@ pub fn program_for_fn_with_arg<T: Clone + 'static>(
     })
 }
 
-#[derive(Clone, Debug)]
+#[derive(Clone)]
 struct FnWithArgProgram<T: Clone> {
     name: String,
-    f: fn(T),
+    f: fn(&mut T),
     arg: Option<T>,
 }
 
@@ -58,6 +59,12 @@ impl<T: Clone + 'static> Program for FnWithArgProgram<T> {
 
 impl<T: Clone> PreparedProgram for FnWithArgProgram<T> {
     fn benchmark_this(&mut self) {
-        (self.f)(self.arg.take().unwrap())
+        let mut arg = self.arg.take().unwrap();
+        (self.f)(&mut arg);
+        self.arg = Some(arg);
+    }
+    fn cleanup(&mut self) {
+        // Ensures that `self.arg` is dropped _after_ measurement is done.
+        criterion::black_box(self.arg.take().unwrap());
     }
 }

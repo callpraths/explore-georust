@@ -24,15 +24,15 @@ struct CLIArgs {
 
 const NUM_COMPUTATIONS: usize = 100_000;
 
-fn geo_centroid(mut polygon: MultiPolygon<f64>) {
+fn geo_centroid(polygon: &mut MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut polygon).centroid());
+        criterion::black_box(criterion::black_box(&mut *polygon).centroid());
     }
 }
 
-fn geos_centroid(mut g: geos::Geometry) {
+fn geos_centroid(g: &mut geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).get_centroid().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).get_centroid().unwrap());
     }
 }
 

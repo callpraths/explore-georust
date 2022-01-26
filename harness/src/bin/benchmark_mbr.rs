@@ -24,31 +24,31 @@ struct CLIArgs {
 
 const NUM_COMPUTATIONS: usize = 100_000;
 
-fn geo_mbr(mut polygon: MultiPolygon<f64>) {
+fn geo_mbr(polygon: &mut MultiPolygon<f64>) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut polygon).bounding_rect());
+        criterion::black_box(criterion::black_box(&mut *polygon).bounding_rect());
     }
 }
 
-fn geos_mbr(mut g: geos::Geometry) {
+fn geos_mbr(g: &mut geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).envelope().unwrap());
     }
 }
 
 // A sanity test that preprocessing is not the reason for fast Envelope computation.
 // This should be nearly half the qps as `mbr_twice`.
-fn geos_mbr_twice_cloned(mut g: (geos::Geometry, geos::Geometry)) {
+fn geos_mbr_twice_cloned(g: &mut (geos::Geometry, geos::Geometry)) {
     for _ in 0..NUM_COMPUTATIONS {
         criterion::black_box(criterion::black_box(&mut g.0).envelope().unwrap());
         criterion::black_box(criterion::black_box(&mut g.1).envelope().unwrap());
     }
 }
 
-fn geos_mbr_twice(mut g: geos::Geometry) {
+fn geos_mbr_twice(g: &mut geos::Geometry) {
     for _ in 0..NUM_COMPUTATIONS {
-        criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
-        criterion::black_box(criterion::black_box(&mut g).envelope().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).envelope().unwrap());
+        criterion::black_box(criterion::black_box(&mut *g).envelope().unwrap());
     }
 }
 
@@ -77,7 +77,7 @@ fn main() {
             ),
         ],
         iterations: args.iterations,
-        discard_leading: if args.headlong { Some(100) } else { Some(10) },
+        discard_leading: Some(20),
         pause: if args.headlong {
             None
         } else {
