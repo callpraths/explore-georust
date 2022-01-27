@@ -49,7 +49,7 @@ fn main() {
             simple::program_for_fn_with_arg("geos", geos_area, geos_mp),
         ],
         iterations: args.iterations,
-        discard_leading: if args.headlong { None } else { Some(10) },
+        discard_leading: Some(10),
         pause: if args.headlong {
             None
         } else {
