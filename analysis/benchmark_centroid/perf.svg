@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="374" onload="init(evt)" viewBox="0 0 1200 374" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="1200" height="1542" onload="init(evt)" viewBox="0 0 1200 1542" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -412,545 +412,1941 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="374.0" fill="url(#background)"  />
+<rect x="0.0" y="0" width="1200.0" height="1542.0" fill="url(#background)"  />
 <text id="title" x="600.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="357" > </text>
+<text id="details" x="10.00" y="1525" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
 <text id="search" x="1090.00" y="24" >Search</text>
 <text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="357" > </text>
+<text id="matched" x="1090.00" y="1525" > </text>
 <g id="frames">
 <g >
-<title>handle_mm_fault (7 samples, 0.01%)</title><rect x="1189.9" y="245" width="0.1" height="15.0" fill="rgb(234,152,52)" rx="2" ry="2" />
-<text  x="1192.86" y="255.5" ></text>
+<title>geos::geom::CoordinateArraySequence::empty (1 samples, 0.09%)</title><rect x="1097.1" y="933" width="1.0" height="15.0" fill="rgb(242,77,8)" rx="2" ry="2" />
+<text  x="1100.09" y="943.5" ></text>
 </g>
 <g >
-<title>geo::algorithm::centroid::CentroidOperation&lt;T&gt;::add_multi_polygon (12 samples, 0.02%)</title><rect x="152.5" y="277" width="0.2" height="15.0" fill="rgb(254,22,18)" rx="2" ry="2" />
-<text  x="155.50" y="287.5" ></text>
+<title>radix_tree_lookup_slot (1 samples, 0.09%)</title><rect x="43.0" y="837" width="1.1" height="15.0" fill="rgb(240,24,17)" rx="2" ry="2" />
+<text  x="46.04" y="847.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addTriangle (6,004 samples, 10.19%)</title><rect x="608.8" y="277" width="120.2" height="15.0" fill="rgb(212,68,52)" rx="2" ry="2" />
-<text  x="611.76" y="287.5" >geos::algorith..</text>
+<title>geos::geom::Polygon::isEmpty (1 samples, 0.09%)</title><rect x="1157.0" y="1461" width="1.0" height="15.0" fill="rgb(245,170,10)" rx="2" ry="2" />
+<text  x="1159.96" y="1471.5" ></text>
 </g>
 <g >
-<title>geos::geom::CoordinateArraySequence::getAt (928 samples, 1.57%)</title><rect x="131.0" y="261" width="18.5" height="15.0" fill="rgb(205,180,41)" rx="2" ry="2" />
-<text  x="133.96" y="271.5" ></text>
+<title>std::panicking::try::do_call (1,061 samples, 92.83%)</title><rect x="15.2" y="1365" width="1095.3" height="15.0" fill="rgb(239,88,26)" rx="2" ry="2" />
+<text  x="18.16" y="1375.5" >std::panicking::try::do_call</text>
 </g>
 <g >
-<title>__do_page_fault (19 samples, 0.03%)</title><rect x="12.8" y="245" width="0.4" height="15.0" fill="rgb(216,162,36)" rx="2" ry="2" />
-<text  x="15.80" y="255.5" ></text>
+<title>core::ptr::drop_in_place&lt;geos::geometry::Geometry&gt; (2 samples, 0.17%)</title><rect x="1108.4" y="1141" width="2.1" height="15.0" fill="rgb(249,210,40)" rx="2" ry="2" />
+<text  x="1111.44" y="1151.5" ></text>
 </g>
 <g >
-<title>vfs_read (15 samples, 0.03%)</title><rect x="1095.7" y="229" width="0.3" height="15.0" fill="rgb(233,122,54)" rx="2" ry="2" />
-<text  x="1098.65" y="239.5" ></text>
+<title>std::__get_helper&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (3 samples, 0.26%)</title><rect x="1170.4" y="1445" width="3.1" height="15.0" fill="rgb(237,179,21)" rx="2" ry="2" />
+<text  x="1173.38" y="1455.5" ></text>
 </g>
 <g >
-<title>do_group_exit (5 samples, 0.01%)</title><rect x="1097.4" y="245" width="0.1" height="15.0" fill="rgb(215,18,50)" rx="2" ry="2" />
-<text  x="1100.35" y="255.5" ></text>
+<title>vfs_read (2 samples, 0.17%)</title><rect x="42.0" y="917" width="2.1" height="15.0" fill="rgb(247,172,4)" rx="2" ry="2" />
+<text  x="45.00" y="927.5" ></text>
 </g>
 <g >
-<title>unmap_vmas (5 samples, 0.01%)</title><rect x="1097.4" y="181" width="0.1" height="15.0" fill="rgb(236,38,17)" rx="2" ry="2" />
-<text  x="1100.35" y="191.5" ></text>
+<title>_GLOBAL__sub_I_LineIntersector.cpp (1 samples, 0.09%)</title><rect x="14.1" y="1397" width="1.1" height="15.0" fill="rgb(225,111,14)" rx="2" ry="2" />
+<text  x="17.13" y="1407.5" ></text>
 </g>
 <g >
-<title>do_syscall_64 (5 samples, 0.01%)</title><rect x="1097.4" y="277" width="0.1" height="15.0" fill="rgb(247,185,18)" rx="2" ry="2" />
-<text  x="1100.35" y="287.5" ></text>
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (24 samples, 2.10%)</title><rect x="17.2" y="933" width="24.8" height="15.0" fill="rgb(248,7,33)" rx="2" ry="2" />
+<text  x="20.23" y="943.5" >&lt;..</text>
 </g>
 <g >
-<title>geos::geom::CoordinateArraySequence::isEmpty (6 samples, 0.01%)</title><rect x="1039.2" y="277" width="0.1" height="15.0" fill="rgb(250,178,13)" rx="2" ry="2" />
-<text  x="1042.23" y="287.5" ></text>
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_map (24 samples, 2.10%)</title><rect x="17.2" y="821" width="24.8" height="15.0" fill="rgb(210,185,46)" rx="2" ry="2" />
+<text  x="20.23" y="831.5" >&lt;..</text>
 </g>
 <g >
-<title>[unknown] (6 samples, 0.01%)</title><rect x="13.2" y="245" width="0.1" height="15.0" fill="rgb(245,165,18)" rx="2" ry="2" />
-<text  x="16.18" y="255.5" ></text>
+<title>serde::de::SeqAccess::next_element (11 samples, 0.96%)</title><rect x="28.6" y="389" width="11.3" height="15.0" fill="rgb(247,188,29)" rx="2" ry="2" />
+<text  x="31.58" y="399.5" ></text>
 </g>
 <g >
-<title>do_syscall_64 (15 samples, 0.03%)</title><rect x="1095.7" y="261" width="0.3" height="15.0" fill="rgb(254,4,4)" rx="2" ry="2" />
-<text  x="1098.65" y="271.5" ></text>
+<title>call_init (1 samples, 0.09%)</title><rect x="14.1" y="1429" width="1.1" height="15.0" fill="rgb(244,154,3)" rx="2" ry="2" />
+<text  x="17.13" y="1439.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::area2 (2,778 samples, 4.71%)</title><rect x="729.0" y="277" width="55.6" height="15.0" fill="rgb(211,82,14)" rx="2" ry="2" />
-<text  x="731.98" y="287.5" >geos:..</text>
+<title>std::unique_ptr&lt;geos::geom::Envelope, std::default_delete&lt;geos::geom::Envelope&gt; &gt;::unique_ptr&lt;std::default_delete&lt;geos::geom::Envelope&gt;, void&gt; (1 samples, 0.09%)</title><rect x="1105.3" y="1013" width="1.1" height="15.0" fill="rgb(232,142,30)" rx="2" ry="2" />
+<text  x="1108.35" y="1023.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addLineSegments (22,721 samples, 38.55%)</title><rect x="153.7" y="277" width="454.9" height="15.0" fill="rgb(232,173,17)" rx="2" ry="2" />
-<text  x="156.70" y="287.5" >geos::algorithm::Centroid::addLineSegments</text>
+<title>_int_malloc (4 samples, 0.35%)</title><rect x="28.6" y="181" width="4.1" height="15.0" fill="rgb(213,191,50)" rx="2" ry="2" />
+<text  x="31.58" y="191.5" ></text>
 </g>
 <g >
-<title>[unknown] (9 samples, 0.02%)</title><rect x="13.2" y="261" width="0.2" height="15.0" fill="rgb(253,95,3)" rx="2" ry="2" />
-<text  x="16.18" y="271.5" ></text>
+<title>GEOSGetCentroid_r::{lambda (1,008 samples, 88.19%)</title><rect x="67.8" y="1093" width="1040.6" height="15.0" fill="rgb(235,100,6)" rx="2" ry="2" />
+<text  x="70.81" y="1103.5" >GEOSGetCentroid_r::{lambda</text>
 </g>
 <g >
-<title>clear_page_erms (10 samples, 0.02%)</title><rect x="12.2" y="165" width="0.2" height="15.0" fill="rgb(206,93,53)" rx="2" ry="2" />
-<text  x="15.18" y="175.5" ></text>
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;f64&gt;&gt;&gt;&gt; (2 samples, 0.17%)</title><rect x="15.2" y="949" width="2.0" height="15.0" fill="rgb(237,199,30)" rx="2" ry="2" />
+<text  x="18.16" y="959.5" ></text>
 </g>
 <g >
-<title>smp_apic_timer_interrupt (17 samples, 0.03%)</title><rect x="608.2" y="245" width="0.4" height="15.0" fill="rgb(244,54,52)" rx="2" ry="2" />
-<text  x="611.22" y="255.5" ></text>
+<title>core::ops::function::FnOnce::call_once (1 samples, 0.09%)</title><rect x="41.0" y="725" width="1.0" height="15.0" fill="rgb(224,187,26)" rx="2" ry="2" />
+<text  x="43.97" y="735.5" ></text>
 </g>
 <g >
-<title>geos::geom::Geometry::~Geometry (10 samples, 0.02%)</title><rect x="1186.7" y="293" width="0.2" height="15.0" fill="rgb(244,84,6)" rx="2" ry="2" />
-<text  x="1189.68" y="303.5" ></text>
+<title>&lt;core::slice::iter::Windows&lt;T&gt; as core::iter::traits::iterator::Iterator&gt;::next (5 samples, 0.44%)</title><rect x="44.1" y="1045" width="5.1" height="15.0" fill="rgb(210,172,43)" rx="2" ry="2" />
+<text  x="47.07" y="1055.5" ></text>
 </g>
 <g >
-<title>__libc_read (15 samples, 0.03%)</title><rect x="1095.7" y="293" width="0.3" height="15.0" fill="rgb(244,223,9)" rx="2" ry="2" />
-<text  x="1098.65" y="303.5" ></text>
+<title>geos::geom::Coordinate::distance@plt (1 samples, 0.09%)</title><rect x="395.1" y="933" width="1.0" height="15.0" fill="rgb(216,56,11)" rx="2" ry="2" />
+<text  x="398.07" y="943.5" ></text>
 </g>
 <g >
-<title>ksys_read (15 samples, 0.03%)</title><rect x="1095.7" y="245" width="0.3" height="15.0" fill="rgb(207,146,39)" rx="2" ry="2" />
-<text  x="1098.65" y="255.5" ></text>
+<title>geos::geom::Point::Point (1 samples, 0.09%)</title><rect x="1105.3" y="1045" width="1.1" height="15.0" fill="rgb(205,228,15)" rx="2" ry="2" />
+<text  x="1108.35" y="1055.5" ></text>
 </g>
 <g >
-<title>clear_page_erms (10 samples, 0.02%)</title><rect x="13.0" y="149" width="0.2" height="15.0" fill="rgb(206,153,13)" rx="2" ry="2" />
-<text  x="15.98" y="159.5" ></text>
+<title>geojson::util::expect_array (1 samples, 0.09%)</title><rect x="13.1" y="1093" width="1.0" height="15.0" fill="rgb(232,115,25)" rx="2" ry="2" />
+<text  x="16.10" y="1103.5" ></text>
 </g>
 <g >
-<title>geos::geom::Geometry::getCentroid (17 samples, 0.03%)</title><rect x="149.6" y="261" width="0.3" height="15.0" fill="rgb(218,148,33)" rx="2" ry="2" />
-<text  x="152.56" y="271.5" ></text>
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::grow_amortized (9 samples, 0.79%)</title><rect x="17.2" y="325" width="9.3" height="15.0" fill="rgb(228,36,27)" rx="2" ry="2" />
+<text  x="20.23" y="335.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addShell (6 samples, 0.01%)</title><rect x="608.6" y="277" width="0.2" height="15.0" fill="rgb(218,54,39)" rx="2" ry="2" />
-<text  x="611.64" y="287.5" ></text>
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (24 samples, 2.10%)</title><rect x="17.2" y="965" width="24.8" height="15.0" fill="rgb(244,174,40)" rx="2" ry="2" />
+<text  x="20.23" y="975.5" >&lt;..</text>
 </g>
 <g >
-<title>malloc (33 samples, 0.06%)</title><rect x="1187.2" y="293" width="0.6" height="15.0" fill="rgb(236,123,11)" rx="2" ry="2" />
-<text  x="1190.16" y="303.5" ></text>
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="24.5" y="165" width="1.0" height="15.0" fill="rgb(234,163,1)" rx="2" ry="2" />
+<text  x="27.45" y="175.5" ></text>
 </g>
 <g >
-<title>geos::geom::MultiPolygon::~MultiPolygon (357 samples, 0.61%)</title><rect x="1083.5" y="277" width="7.1" height="15.0" fill="rgb(243,108,18)" rx="2" ry="2" />
-<text  x="1086.50" y="287.5" ></text>
+<title>&lt;core::result::Result&lt;T,E&gt; as core::ops::try_trait::Try&gt;::branch (1 samples, 0.09%)</title><rect x="12.1" y="1109" width="1.0" height="15.0" fill="rgb(230,168,45)" rx="2" ry="2" />
+<text  x="15.06" y="1119.5" ></text>
 </g>
 <g >
-<title>rcu_process_callbacks (5 samples, 0.01%)</title><rect x="608.3" y="197" width="0.1" height="15.0" fill="rgb(229,163,13)" rx="2" ry="2" />
-<text  x="611.34" y="207.5" ></text>
+<title>geos::algorithm::Centroid::addLineSegments (10 samples, 0.87%)</title><rect x="1110.5" y="1461" width="10.3" height="15.0" fill="rgb(248,158,31)" rx="2" ry="2" />
+<text  x="1113.51" y="1471.5" ></text>
 </g>
 <g >
-<title>page_fault (19 samples, 0.03%)</title><rect x="12.8" y="261" width="0.4" height="15.0" fill="rgb(228,176,39)" rx="2" ry="2" />
-<text  x="15.80" y="271.5" ></text>
+<title>geos::algorithm::CGAlgorithmsDD::orientationIndex (2 samples, 0.17%)</title><rect x="860.7" y="917" width="2.0" height="15.0" fill="rgb(252,190,18)" rx="2" ry="2" />
+<text  x="863.67" y="927.5" ></text>
 </g>
 <g >
-<title>generic_file_read_iter (15 samples, 0.03%)</title><rect x="1095.7" y="197" width="0.3" height="15.0" fill="rgb(247,31,12)" rx="2" ry="2" />
-<text  x="1098.65" y="207.5" ></text>
+<title>std::unique_ptr&lt;geos::geom::CoordinateSequence, std::default_delete&lt;geos::geom::CoordinateSequence&gt; &gt;::get (1 samples, 0.09%)</title><rect x="1096.1" y="949" width="1.0" height="15.0" fill="rgb(212,6,10)" rx="2" ry="2" />
+<text  x="1099.05" y="959.5" ></text>
 </g>
 <g >
-<title>__alloc_pages_nodemask (10 samples, 0.02%)</title><rect x="12.2" y="197" width="0.2" height="15.0" fill="rgb(209,224,27)" rx="2" ry="2" />
-<text  x="15.18" y="207.5" ></text>
+<title>geos::geom::CoordinateArraySequence::getAt (11 samples, 0.96%)</title><rect x="863.8" y="933" width="11.3" height="15.0" fill="rgb(211,206,4)" rx="2" ry="2" />
+<text  x="866.77" y="943.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::add (5 samples, 0.01%)</title><rect x="1092.5" y="245" width="0.1" height="15.0" fill="rgb(245,199,42)" rx="2" ry="2" />
-<text  x="1095.53" y="255.5" ></text>
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="41.0" y="517" width="1.0" height="15.0" fill="rgb(250,21,41)" rx="2" ry="2" />
+<text  x="43.97" y="527.5" ></text>
 </g>
 <g >
-<title>__alloc_pages_nodemask (5 samples, 0.01%)</title><rect x="1095.8" y="53" width="0.1" height="15.0" fill="rgb(229,187,23)" rx="2" ry="2" />
-<text  x="1098.83" y="63.5" ></text>
+<title>geojson::util::get_value (4 samples, 0.35%)</title><rect x="10.0" y="1189" width="4.1" height="15.0" fill="rgb(216,141,30)" rx="2" ry="2" />
+<text  x="13.00" y="1199.5" ></text>
 </g>
 <g >
-<title>__do_page_fault (7 samples, 0.01%)</title><rect x="1095.8" y="117" width="0.1" height="15.0" fill="rgb(254,174,54)" rx="2" ry="2" />
-<text  x="1098.79" y="127.5" ></text>
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="41.0" y="485" width="1.0" height="15.0" fill="rgb(211,201,50)" rx="2" ry="2" />
+<text  x="43.97" y="495.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::CGAlgorithmsDD::orientationIndex (22 samples, 0.04%)</title><rect x="152.7" y="277" width="0.5" height="15.0" fill="rgb(216,119,2)" rx="2" ry="2" />
-<text  x="155.74" y="287.5" ></text>
+<title>alloc::alloc::realloc (9 samples, 0.79%)</title><rect x="17.2" y="261" width="9.3" height="15.0" fill="rgb(220,161,16)" rx="2" ry="2" />
+<text  x="20.23" y="271.5" ></text>
 </g>
 <g >
-<title>benchmark_centroid::geo_centroid (14 samples, 0.02%)</title><rect x="1096.1" y="293" width="0.2" height="15.0" fill="rgb(211,57,18)" rx="2" ry="2" />
-<text  x="1099.05" y="303.5" ></text>
+<title>alloc_pages_vma (1 samples, 0.09%)</title><rect x="31.7" y="85" width="1.0" height="15.0" fill="rgb(253,23,38)" rx="2" ry="2" />
+<text  x="34.68" y="95.5" ></text>
 </g>
 <g >
-<title>geos::geom::GeometryCollection::isEmpty (6 samples, 0.01%)</title><rect x="1082.5" y="277" width="0.1" height="15.0" fill="rgb(211,7,5)" rx="2" ry="2" />
-<text  x="1085.46" y="287.5" ></text>
+<title>std::__get_helper&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (3 samples, 0.26%)</title><rect x="1158.0" y="1461" width="3.1" height="15.0" fill="rgb(251,77,9)" rx="2" ry="2" />
+<text  x="1161.00" y="1471.5" ></text>
 </g>
 <g >
-<title>handle_mm_fault (12 samples, 0.02%)</title><rect x="12.9" y="229" width="0.3" height="15.0" fill="rgb(215,204,34)" rx="2" ry="2" />
-<text  x="15.94" y="239.5" ></text>
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::reserve::do_reserve_and_handle (4 samples, 0.35%)</title><rect x="28.6" y="245" width="4.1" height="15.0" fill="rgb(216,6,22)" rx="2" ry="2" />
+<text  x="31.58" y="255.5" ></text>
 </g>
 <g >
-<title>__cxxabiv1::__si_class_type_info::__do_dyncast (80 samples, 0.14%)</title><rect x="1089.0" y="245" width="1.6" height="15.0" fill="rgb(232,215,33)" rx="2" ry="2" />
-<text  x="1091.99" y="255.5" ></text>
+<title>load_balance (1 samples, 0.09%)</title><rect x="255.7" y="853" width="1.0" height="15.0" fill="rgb(236,172,12)" rx="2" ry="2" />
+<text  x="258.70" y="863.5" ></text>
 </g>
 <g >
-<title>apic_timer_interrupt (7 samples, 0.01%)</title><rect x="728.8" y="261" width="0.2" height="15.0" fill="rgb(243,122,31)" rx="2" ry="2" />
-<text  x="731.84" y="271.5" ></text>
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_seq (22 samples, 1.92%)</title><rect x="17.2" y="597" width="22.7" height="15.0" fill="rgb(251,21,30)" rx="2" ry="2" />
+<text  x="20.23" y="607.5" >&lt;..</text>
 </g>
 <g >
-<title>apic_timer_interrupt (6 samples, 0.01%)</title><rect x="101.0" y="245" width="0.2" height="15.0" fill="rgb(232,140,5)" rx="2" ry="2" />
-<text  x="104.04" y="255.5" ></text>
+<title>std::io::read_to_end_with_reservation (2 samples, 0.17%)</title><rect x="42.0" y="1045" width="2.1" height="15.0" fill="rgb(250,83,25)" rx="2" ry="2" />
+<text  x="45.00" y="1055.5" ></text>
 </g>
 <g >
-<title>geos::geom::Geometry::Geometry (9 samples, 0.02%)</title><rect x="1082.2" y="277" width="0.2" height="15.0" fill="rgb(240,55,8)" rx="2" ry="2" />
-<text  x="1085.18" y="287.5" ></text>
+<title>apic_timer_interrupt (1 samples, 0.09%)</title><rect x="394.0" y="917" width="1.1" height="15.0" fill="rgb(207,213,15)" rx="2" ry="2" />
+<text  x="397.04" y="927.5" ></text>
 </g>
 <g >
-<title>new_sync_read (15 samples, 0.03%)</title><rect x="1095.7" y="213" width="0.3" height="15.0" fill="rgb(233,129,17)" rx="2" ry="2" />
-<text  x="1098.65" y="223.5" ></text>
+<title>__bitmap_and (1 samples, 0.09%)</title><rect x="255.7" y="837" width="1.0" height="15.0" fill="rgb(248,117,21)" rx="2" ry="2" />
+<text  x="258.70" y="847.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::getCentroid (45 samples, 0.08%)</title><rect x="826.7" y="277" width="0.9" height="15.0" fill="rgb(254,79,7)" rx="2" ry="2" />
-<text  x="829.67" y="287.5" ></text>
+<title>&lt;serde_json::de::MapAccess&lt;R&gt; as serde::de::MapAccess&gt;::next_value_seed (22 samples, 1.92%)</title><rect x="17.2" y="661" width="22.7" height="15.0" fill="rgb(244,186,24)" rx="2" ry="2" />
+<text  x="20.23" y="671.5" >&lt;..</text>
 </g>
 <g >
-<title>irq_exit (17 samples, 0.03%)</title><rect x="608.2" y="229" width="0.4" height="15.0" fill="rgb(215,161,32)" rx="2" ry="2" />
-<text  x="611.22" y="239.5" ></text>
+<title>__GI___sbrk (1 samples, 0.09%)</title><rect x="25.5" y="149" width="1.0" height="15.0" fill="rgb(251,55,48)" rx="2" ry="2" />
+<text  x="28.49" y="159.5" ></text>
 </g>
 <g >
-<title>[unknown] (118 samples, 0.20%)</title><rect x="1091.2" y="261" width="2.3" height="15.0" fill="rgb(219,220,42)" rx="2" ry="2" />
-<text  x="1094.17" y="271.5" ></text>
+<title>alloc::boxed::Box&lt;T&gt;::new_uninit (1 samples, 0.09%)</title><rect x="41.0" y="661" width="1.0" height="15.0" fill="rgb(224,84,5)" rx="2" ry="2" />
+<text  x="43.97" y="671.5" ></text>
 </g>
 <g >
-<title>__handle_mm_fault (12 samples, 0.02%)</title><rect x="12.9" y="213" width="0.3" height="15.0" fill="rgb(251,208,1)" rx="2" ry="2" />
-<text  x="15.94" y="223.5" ></text>
+<title>geos::geom::CoordinateSequence::operator[] (179 samples, 15.66%)</title><rect x="396.1" y="933" width="184.8" height="15.0" fill="rgb(247,48,0)" rx="2" ry="2" />
+<text  x="399.11" y="943.5" >geos::geom::CoordinateSe..</text>
 </g>
 <g >
-<title>geos::geom::Polygon::getNumInteriorRing (6 samples, 0.01%)</title><rect x="1093.3" y="245" width="0.2" height="15.0" fill="rgb(253,67,54)" rx="2" ry="2" />
-<text  x="1096.33" y="255.5" ></text>
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::reserve::do_reserve_and_handle (9 samples, 0.79%)</title><rect x="17.2" y="341" width="9.3" height="15.0" fill="rgb(239,124,17)" rx="2" ry="2" />
+<text  x="20.23" y="351.5" ></text>
 </g>
 <g >
-<title>[libc-2.28.so] (89 samples, 0.15%)</title><rect x="10.7" y="293" width="1.8" height="15.0" fill="rgb(232,175,33)" rx="2" ry="2" />
-<text  x="13.70" y="303.5" ></text>
+<title>core::iter::traits::iterator::Iterator::fold (12 samples, 1.05%)</title><rect x="44.1" y="1061" width="12.4" height="15.0" fill="rgb(213,35,1)" rx="2" ry="2" />
+<text  x="47.07" y="1071.5" ></text>
 </g>
 <g >
-<title>mmput (5 samples, 0.01%)</title><rect x="1097.4" y="213" width="0.1" height="15.0" fill="rgb(207,93,28)" rx="2" ry="2" />
-<text  x="1100.35" y="223.5" ></text>
+<title>page_fault (1 samples, 0.09%)</title><rect x="14.1" y="1381" width="1.1" height="15.0" fill="rgb(232,123,33)" rx="2" ry="2" />
+<text  x="17.13" y="1391.5" ></text>
 </g>
 <g >
-<title>cfree (24 samples, 0.04%)</title><rect x="151.9" y="277" width="0.5" height="15.0" fill="rgb(231,129,37)" rx="2" ry="2" />
-<text  x="154.94" y="287.5" ></text>
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="15.2" y="933" width="2.0" height="15.0" fill="rgb(250,103,11)" rx="2" ry="2" />
+<text  x="18.16" y="943.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::centroid3 (1,652 samples, 2.80%)</title><rect x="793.3" y="277" width="33.1" height="15.0" fill="rgb(252,83,14)" rx="2" ry="2" />
-<text  x="796.29" y="287.5" >ge..</text>
+<title>__GI___libc_malloc (1 samples, 0.09%)</title><rect x="41.0" y="565" width="1.0" height="15.0" fill="rgb(223,35,16)" rx="2" ry="2" />
+<text  x="43.97" y="575.5" ></text>
 </g>
 <g >
-<title>page_fault (23 samples, 0.04%)</title><rect x="12.0" y="277" width="0.5" height="15.0" fill="rgb(231,102,31)" rx="2" ry="2" />
-<text  x="15.02" y="287.5" ></text>
+<title>core::ptr::drop_in_place&lt;geojson::geometry::Value&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1013" width="2.0" height="15.0" fill="rgb(251,49,37)" rx="2" ry="2" />
+<text  x="18.16" y="1023.5" ></text>
 </g>
 <g >
-<title>__softirqentry_text_start (7 samples, 0.01%)</title><rect x="728.8" y="213" width="0.2" height="15.0" fill="rgb(239,56,54)" rx="2" ry="2" />
-<text  x="731.84" y="223.5" ></text>
+<title>&lt;geo_types::line::Line&lt;T&gt; as geo::algorithm::map_coords::MapCoords&lt;T,NT&gt;&gt;::map_coords (1 samples, 0.09%)</title><rect x="53.4" y="1013" width="1.0" height="15.0" fill="rgb(216,51,5)" rx="2" ry="2" />
+<text  x="56.36" y="1023.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addTriangle@plt (462 samples, 0.78%)</title><rect x="121.4" y="261" width="9.3" height="15.0" fill="rgb(208,206,25)" rx="2" ry="2" />
-<text  x="124.41" y="271.5" ></text>
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (1 samples, 0.09%)</title><rect x="39.9" y="757" width="1.1" height="15.0" fill="rgb(208,108,43)" rx="2" ry="2" />
+<text  x="42.94" y="767.5" ></text>
 </g>
 <g >
-<title>entry_SYSCALL_64_after_hwframe (5 samples, 0.01%)</title><rect x="1097.4" y="293" width="0.1" height="15.0" fill="rgb(211,61,19)" rx="2" ry="2" />
-<text  x="1100.35" y="303.5" ></text>
+<title>generic_file_read_iter (2 samples, 0.17%)</title><rect x="42.0" y="885" width="2.1" height="15.0" fill="rgb(233,22,36)" rx="2" ry="2" />
+<text  x="45.00" y="895.5" ></text>
 </g>
 <g >
-<title>&lt;geos::geometry::Geometry as geos::geometry::Geom&gt;::get_centroid (26 samples, 0.04%)</title><rect x="10.1" y="293" width="0.5" height="15.0" fill="rgb(224,124,11)" rx="2" ry="2" />
-<text  x="13.10" y="303.5" ></text>
+<title>std::panicking::try::do_call (1,061 samples, 92.83%)</title><rect x="15.2" y="1301" width="1095.3" height="15.0" fill="rgb(215,225,28)" rx="2" ry="2" />
+<text  x="18.16" y="1311.5" >std::panicking::try::do_call</text>
 </g>
 <g >
-<title>__cxxabiv1::__class_type_info::__do_dyncast (8 samples, 0.01%)</title><rect x="1094.1" y="293" width="0.1" height="15.0" fill="rgb(236,62,34)" rx="2" ry="2" />
-<text  x="1097.07" y="303.5" ></text>
+<title>serde_json::de::Deserializer&lt;R&gt;::eat_char (2 samples, 0.17%)</title><rect x="36.8" y="149" width="2.1" height="15.0" fill="rgb(238,161,43)" rx="2" ry="2" />
+<text  x="39.84" y="159.5" ></text>
 </g>
 <g >
-<title>apic_timer_interrupt (17 samples, 0.03%)</title><rect x="608.2" y="261" width="0.4" height="15.0" fill="rgb(212,108,33)" rx="2" ry="2" />
-<text  x="611.22" y="271.5" ></text>
+<title>&lt;serde_json::de::SeqAccess&lt;R&gt; as serde::de::SeqAccess&gt;::next_element_seed (22 samples, 1.92%)</title><rect x="17.2" y="565" width="22.7" height="15.0" fill="rgb(230,69,9)" rx="2" ry="2" />
+<text  x="20.23" y="575.5" >&lt;..</text>
 </g>
 <g >
-<title>geos::geom::Polygon::isEmpty (5 samples, 0.01%)</title><rect x="1091.1" y="277" width="0.1" height="15.0" fill="rgb(223,57,25)" rx="2" ry="2" />
-<text  x="1094.07" y="287.5" ></text>
+<title>clear_page_erms (1 samples, 0.09%)</title><rect x="24.5" y="85" width="1.0" height="15.0" fill="rgb(228,86,35)" rx="2" ry="2" />
+<text  x="27.45" y="95.5" ></text>
 </g>
 <g >
-<title>[unknown] (54,018 samples, 91.66%)</title><rect x="12.5" y="293" width="1081.6" height="15.0" fill="rgb(211,154,54)" rx="2" ry="2" />
-<text  x="15.48" y="303.5" >[unknown]</text>
+<title>&lt;geojson::geojson::GeoJson as core::str::traits::FromStr&gt;::from_str (24 samples, 2.10%)</title><rect x="17.2" y="1125" width="24.8" height="15.0" fill="rgb(208,133,7)" rx="2" ry="2" />
+<text  x="20.23" y="1135.5" >&lt;..</text>
 </g>
 <g >
-<title>geo::algorithm::area::get_linestring_area (1,887 samples, 3.20%)</title><rect x="1097.5" y="293" width="37.8" height="15.0" fill="rgb(211,98,27)" rx="2" ry="2" />
-<text  x="1100.47" y="303.5" >geo..</text>
+<title>serde_json::de::from_trait (24 samples, 2.10%)</title><rect x="17.2" y="1077" width="24.8" height="15.0" fill="rgb(233,173,12)" rx="2" ry="2" />
+<text  x="20.23" y="1087.5" >s..</text>
 </g>
 <g >
-<title>geos::geom::CoordinateSequence::getOrdinate (2,139 samples, 3.63%)</title><rect x="1039.3" y="277" width="42.9" height="15.0" fill="rgb(223,138,46)" rx="2" ry="2" />
-<text  x="1042.35" y="287.5" >geos..</text>
+<title>&lt;alloc::alloc::Global as core::alloc::Allocator&gt;::deallocate (1 samples, 0.09%)</title><rect x="15.2" y="805" width="1.0" height="15.0" fill="rgb(210,109,32)" rx="2" ry="2" />
+<text  x="18.16" y="815.5" ></text>
 </g>
 <g >
-<title>__handle_mm_fault (7 samples, 0.01%)</title><rect x="1189.9" y="229" width="0.1" height="15.0" fill="rgb(222,88,27)" rx="2" ry="2" />
-<text  x="1192.86" y="239.5" ></text>
+<title>geos::geom::CoordinateSequence::operator[] (10 samples, 0.87%)</title><rect x="1110.5" y="1445" width="10.3" height="15.0" fill="rgb(209,59,44)" rx="2" ry="2" />
+<text  x="1113.51" y="1455.5" ></text>
 </g>
 <g >
-<title>copy_page_to_iter (14 samples, 0.02%)</title><rect x="1095.7" y="181" width="0.2" height="15.0" fill="rgb(248,69,47)" rx="2" ry="2" />
-<text  x="1098.65" y="191.5" ></text>
+<title>geos::geom::GeometryFactory::createPoint (1 samples, 0.09%)</title><rect x="1105.3" y="1061" width="1.1" height="15.0" fill="rgb(220,226,30)" rx="2" ry="2" />
+<text  x="1108.35" y="1071.5" ></text>
 </g>
 <g >
-<title>__handle_mm_fault (16 samples, 0.03%)</title><rect x="12.1" y="229" width="0.4" height="15.0" fill="rgb(217,221,28)" rx="2" ry="2" />
-<text  x="15.14" y="239.5" ></text>
+<title>geos::geom::CoordinateSequence::getOrdinate (1 samples, 0.09%)</title><rect x="1133.2" y="1461" width="1.1" height="15.0" fill="rgb(232,208,50)" rx="2" ry="2" />
+<text  x="1136.22" y="1471.5" ></text>
 </g>
 <g >
-<title>geos::geom::GeometryCollection::getNumGeometries (10 samples, 0.02%)</title><rect x="150.0" y="261" width="0.2" height="15.0" fill="rgb(238,89,6)" rx="2" ry="2" />
-<text  x="153.00" y="271.5" ></text>
+<title>std::get&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (42 samples, 3.67%)</title><rect x="1042.4" y="901" width="43.3" height="15.0" fill="rgb(236,12,23)" rx="2" ry="2" />
+<text  x="1045.37" y="911.5" >std:..</text>
 </g>
 <g >
-<title>alloc_pages_vma (10 samples, 0.02%)</title><rect x="12.2" y="213" width="0.2" height="15.0" fill="rgb(212,106,29)" rx="2" ry="2" />
-<text  x="15.18" y="223.5" ></text>
+<title>do_syscall_64 (2 samples, 0.17%)</title><rect x="42.0" y="949" width="2.1" height="15.0" fill="rgb(226,32,45)" rx="2" ry="2" />
+<text  x="45.00" y="959.5" ></text>
 </g>
 <g >
-<title>copyout (14 samples, 0.02%)</title><rect x="1095.7" y="165" width="0.2" height="15.0" fill="rgb(232,82,29)" rx="2" ry="2" />
-<text  x="1098.65" y="175.5" ></text>
+<title>geo_types::line::Line&lt;T&gt;::determinant (1 samples, 0.09%)</title><rect x="65.7" y="1045" width="1.1" height="15.0" fill="rgb(246,85,13)" rx="2" ry="2" />
+<text  x="68.75" y="1055.5" ></text>
 </g>
 <g >
-<title>get_page_from_freelist (11 samples, 0.02%)</title><rect x="13.0" y="165" width="0.2" height="15.0" fill="rgb(241,77,39)" rx="2" ry="2" />
-<text  x="15.96" y="175.5" ></text>
+<title>core::ptr::drop_in_place&lt;[serde_json::value::Value]&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1109" width="2.1" height="15.0" fill="rgb(231,114,33)" rx="2" ry="2" />
+<text  x="13.00" y="1119.5" ></text>
 </g>
 <g >
-<title>GEOSGetCentroid_r (17 samples, 0.03%)</title><rect x="1082.8" y="229" width="0.3" height="15.0" fill="rgb(223,92,44)" rx="2" ry="2" />
-<text  x="1085.76" y="239.5" ></text>
+<title>alloc::collections::btree::map::BTreeMap&lt;K,V&gt;::entry (1 samples, 0.09%)</title><rect x="41.0" y="773" width="1.0" height="15.0" fill="rgb(217,75,36)" rx="2" ry="2" />
+<text  x="43.97" y="783.5" ></text>
 </g>
 <g >
-<title>geo::algorithm::centroid::CentroidOperation&lt;T&gt;::add_ring (2,557 samples, 4.34%)</title><rect x="1135.3" y="293" width="51.2" height="15.0" fill="rgb(249,139,5)" rx="2" ry="2" />
-<text  x="1138.34" y="303.5" >geo::..</text>
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="741" width="22.7" height="15.0" fill="rgb(207,119,54)" rx="2" ry="2" />
+<text  x="20.23" y="751.5" >s..</text>
 </g>
 <g >
-<title>geos::geom::GeometryFactory::addRef (9 samples, 0.02%)</title><rect x="1082.6" y="277" width="0.2" height="15.0" fill="rgb(245,172,8)" rx="2" ry="2" />
-<text  x="1085.58" y="287.5" ></text>
+<title>geos::algorithm::CGAlgorithmsDD::orientation (1 samples, 0.09%)</title><rect x="861.7" y="869" width="1.0" height="15.0" fill="rgb(231,188,1)" rx="2" ry="2" />
+<text  x="864.71" y="879.5" ></text>
 </g>
 <g >
-<title>geos::geom::LineString::isEmpty (13 samples, 0.02%)</title><rect x="1083.2" y="277" width="0.3" height="15.0" fill="rgb(218,185,1)" rx="2" ry="2" />
-<text  x="1086.22" y="287.5" ></text>
+<title>&lt;geo_types::coordinate::Coordinate&lt;T&gt; as core::ops::arith::Mul&lt;T&gt;&gt;::mul (2 samples, 0.17%)</title><rect x="51.3" y="1013" width="2.1" height="15.0" fill="rgb(206,137,11)" rx="2" ry="2" />
+<text  x="54.29" y="1023.5" ></text>
 </g>
 <g >
-<title>geos::geom::Geometry::getCentroid (6 samples, 0.01%)</title><rect x="1083.1" y="229" width="0.1" height="15.0" fill="rgb(225,55,26)" rx="2" ry="2" />
-<text  x="1086.10" y="239.5" ></text>
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="10.0" y="997" width="2.1" height="15.0" fill="rgb(221,197,53)" rx="2" ry="2" />
+<text  x="13.00" y="1007.5" ></text>
 </g>
 <g >
-<title>__dynamic_cast (37 samples, 0.06%)</title><rect x="1094.9" y="293" width="0.8" height="15.0" fill="rgb(216,174,35)" rx="2" ry="2" />
-<text  x="1097.91" y="303.5" ></text>
+<title>__dynamic_cast (1 samples, 0.09%)</title><rect x="68.8" y="981" width="1.1" height="15.0" fill="rgb(222,139,21)" rx="2" ry="2" />
+<text  x="71.85" y="991.5" ></text>
 </g>
 <g >
-<title>malloc (11 samples, 0.02%)</title><rect x="150.3" y="261" width="0.3" height="15.0" fill="rgb(230,46,13)" rx="2" ry="2" />
-<text  x="153.34" y="271.5" ></text>
+<title>alloc::alloc::Global::grow_impl (9 samples, 0.79%)</title><rect x="17.2" y="277" width="9.3" height="15.0" fill="rgb(252,106,14)" rx="2" ry="2" />
+<text  x="20.23" y="287.5" ></text>
 </g>
 <g >
-<title>__cxxabiv1::__si_class_type_info::__do_dyncast (34 samples, 0.06%)</title><rect x="1094.2" y="293" width="0.7" height="15.0" fill="rgb(233,94,19)" rx="2" ry="2" />
-<text  x="1097.23" y="303.5" ></text>
+<title>apic_timer_interrupt (1 samples, 0.09%)</title><rect x="255.7" y="933" width="1.0" height="15.0" fill="rgb(238,130,15)" rx="2" ry="2" />
+<text  x="258.70" y="943.5" ></text>
 </g>
 <g >
-<title>smp_apic_timer_interrupt (6 samples, 0.01%)</title><rect x="101.0" y="229" width="0.2" height="15.0" fill="rgb(213,41,53)" rx="2" ry="2" />
-<text  x="104.04" y="239.5" ></text>
+<title>new_sync_read (2 samples, 0.17%)</title><rect x="42.0" y="901" width="2.1" height="15.0" fill="rgb(205,62,39)" rx="2" ry="2" />
+<text  x="45.00" y="911.5" ></text>
 </g>
 <g >
-<title>[libc-2.28.so] (33 samples, 0.06%)</title><rect x="12.5" y="277" width="0.7" height="15.0" fill="rgb(246,80,35)" rx="2" ry="2" />
-<text  x="15.52" y="287.5" ></text>
+<title>do_syscall_64 (1 samples, 0.09%)</title><rect x="25.5" y="101" width="1.0" height="15.0" fill="rgb(208,113,9)" rx="2" ry="2" />
+<text  x="28.49" y="111.5" ></text>
 </g>
 <g >
-<title>[libc-2.28.so] (274 samples, 0.46%)</title><rect x="1083.5" y="245" width="5.5" height="15.0" fill="rgb(213,9,42)" rx="2" ry="2" />
-<text  x="1086.50" y="255.5" ></text>
+<title>geos::geom::CoordinateArraySequence::getAt (34 samples, 2.97%)</title><rect x="966.0" y="933" width="35.1" height="15.0" fill="rgb(220,141,28)" rx="2" ry="2" />
+<text  x="968.98" y="943.5" >ge..</text>
 </g>
 <g >
-<title>irq_exit (7 samples, 0.01%)</title><rect x="728.8" y="229" width="0.2" height="15.0" fill="rgb(233,79,48)" rx="2" ry="2" />
-<text  x="731.84" y="239.5" ></text>
+<title>core::ptr::drop_in_place&lt;[alloc::vec::Vec&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;f64&gt;&gt;&gt;]&gt; (2 samples, 0.17%)</title><rect x="15.2" y="965" width="2.0" height="15.0" fill="rgb(227,71,33)" rx="2" ry="2" />
+<text  x="18.16" y="975.5" ></text>
 </g>
 <g >
-<title>__softirqentry_text_start (6 samples, 0.01%)</title><rect x="101.0" y="197" width="0.2" height="15.0" fill="rgb(226,131,33)" rx="2" ry="2" />
-<text  x="104.04" y="207.5" ></text>
+<title>alloc::collections::btree::node::NodeRef&lt;alloc::collections::btree::node::marker::Owned,K,V,alloc::collections::btree::node::marker::LeafOrInternal&gt;::new (1 samples, 0.09%)</title><rect x="41.0" y="709" width="1.0" height="15.0" fill="rgb(233,199,19)" rx="2" ry="2" />
+<text  x="43.97" y="719.5" ></text>
 </g>
 <g >
-<title>handle_mm_fault (7 samples, 0.01%)</title><rect x="1095.8" y="101" width="0.1" height="15.0" fill="rgb(231,156,16)" rx="2" ry="2" />
-<text  x="1098.79" y="111.5" ></text>
+<title>core::option::Option&lt;T&gt;::get_or_insert_with (1 samples, 0.09%)</title><rect x="41.0" y="741" width="1.0" height="15.0" fill="rgb(225,4,38)" rx="2" ry="2" />
+<text  x="43.97" y="751.5" ></text>
 </g>
 <g >
-<title>cfree (10 samples, 0.02%)</title><rect x="1097.1" y="293" width="0.2" height="15.0" fill="rgb(214,200,26)" rx="2" ry="2" />
-<text  x="1100.05" y="303.5" ></text>
+<title>&lt;serde_json::de::SeqAccess&lt;R&gt; as serde::de::SeqAccess&gt;::next_element_seed (11 samples, 0.96%)</title><rect x="28.6" y="373" width="11.3" height="15.0" fill="rgb(223,130,1)" rx="2" ry="2" />
+<text  x="31.58" y="383.5" ></text>
 </g>
 <g >
-<title>geos::geom::CoordinateArraySequence::getAt (4,626 samples, 7.85%)</title><rect x="946.6" y="277" width="92.6" height="15.0" fill="rgb(236,177,20)" rx="2" ry="2" />
-<text  x="949.58" y="287.5" >geos::geom:..</text>
+<title>__libc_read (2 samples, 0.17%)</title><rect x="42.0" y="981" width="2.1" height="15.0" fill="rgb(221,59,30)" rx="2" ry="2" />
+<text  x="45.00" y="991.5" ></text>
 </g>
 <g >
-<title>page_fault (8 samples, 0.01%)</title><rect x="1189.8" y="277" width="0.2" height="15.0" fill="rgb(222,129,27)" rx="2" ry="2" />
-<text  x="1192.84" y="287.5" ></text>
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_seq (22 samples, 1.92%)</title><rect x="17.2" y="501" width="22.7" height="15.0" fill="rgb(249,196,52)" rx="2" ry="2" />
+<text  x="20.23" y="511.5" >&lt;..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::getCentroid@plt (10 samples, 0.02%)</title><rect x="827.6" y="277" width="0.2" height="15.0" fill="rgb(235,78,18)" rx="2" ry="2" />
-<text  x="830.57" y="287.5" ></text>
+<title>geos::geom::CoordinateArraySequence::getAt (20 samples, 1.75%)</title><rect x="1136.3" y="1445" width="20.7" height="15.0" fill="rgb(253,43,32)" rx="2" ry="2" />
+<text  x="1139.32" y="1455.5" ></text>
 </g>
 <g >
-<title>handle_mm_fault (16 samples, 0.03%)</title><rect x="12.1" y="245" width="0.4" height="15.0" fill="rgb(210,92,28)" rx="2" ry="2" />
-<text  x="15.14" y="255.5" ></text>
+<title>std::unique_ptr&lt;geos::geom::Point, std::default_delete&lt;geos::geom::Point&gt; &gt;::unique_ptr&lt;std::default_delete&lt;geos::geom::Point&gt;, void&gt; (1 samples, 0.09%)</title><rect x="1106.4" y="1061" width="1.0" height="15.0" fill="rgb(233,42,39)" rx="2" ry="2" />
+<text  x="1109.38" y="1071.5" ></text>
 </g>
 <g >
-<title>__cxxabiv1::__class_type_info::__do_dyncast (12 samples, 0.02%)</title><rect x="150.7" y="277" width="0.2" height="15.0" fill="rgb(214,158,45)" rx="2" ry="2" />
-<text  x="153.66" y="287.5" ></text>
+<title>__GI___libc_malloc (1 samples, 0.09%)</title><rect x="39.9" y="725" width="1.1" height="15.0" fill="rgb(212,213,13)" rx="2" ry="2" />
+<text  x="42.94" y="735.5" ></text>
 </g>
 <g >
-<title>[libc-2.28.so] (41 samples, 0.07%)</title><rect x="1091.2" y="245" width="0.8" height="15.0" fill="rgb(221,162,36)" rx="2" ry="2" />
-<text  x="1094.17" y="255.5" ></text>
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="453" width="22.7" height="15.0" fill="rgb(245,40,18)" rx="2" ry="2" />
+<text  x="20.23" y="463.5" >&lt;..</text>
 </g>
 <g >
-<title>__softirqentry_text_start (17 samples, 0.03%)</title><rect x="608.2" y="213" width="0.4" height="15.0" fill="rgb(232,118,52)" rx="2" ry="2" />
-<text  x="611.22" y="223.5" ></text>
+<title>&lt;f64 as core::ops::arith::Sub&gt;::sub (1 samples, 0.09%)</title><rect x="53.4" y="965" width="1.0" height="15.0" fill="rgb(238,111,2)" rx="2" ry="2" />
+<text  x="56.36" y="975.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addLineSegments (23 samples, 0.04%)</title><rect x="1092.6" y="245" width="0.5" height="15.0" fill="rgb(250,0,44)" rx="2" ry="2" />
-<text  x="1095.63" y="255.5" ></text>
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (24 samples, 2.10%)</title><rect x="17.2" y="869" width="24.8" height="15.0" fill="rgb(237,153,37)" rx="2" ry="2" />
+<text  x="20.23" y="879.5" >&lt;..</text>
 </g>
 <g >
-<title>all (58,933 samples, 100%)</title><rect x="10.0" y="325" width="1180.0" height="15.0" fill="rgb(212,37,54)" rx="2" ry="2" />
-<text  x="13.00" y="335.5" ></text>
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (4 samples, 0.35%)</title><rect x="34.8" y="261" width="4.1" height="15.0" fill="rgb(249,50,6)" rx="2" ry="2" />
+<text  x="37.78" y="271.5" ></text>
 </g>
 <g >
-<title>[unknown] (23 samples, 0.04%)</title><rect x="1082.8" y="245" width="0.4" height="15.0" fill="rgb(224,135,41)" rx="2" ry="2" />
-<text  x="1085.76" y="255.5" ></text>
+<title>all (1,143 samples, 100%)</title><rect x="10.0" y="1493" width="1180.0" height="15.0" fill="rgb(240,57,19)" rx="2" ry="2" />
+<text  x="13.00" y="1503.5" ></text>
 </g>
 <g >
-<title>geos::geom::Polygon::~Polygon (118 samples, 0.20%)</title><rect x="1091.2" y="277" width="2.3" height="15.0" fill="rgb(252,65,44)" rx="2" ry="2" />
-<text  x="1094.17" y="287.5" ></text>
+<title>irq_exit (1 samples, 0.09%)</title><rect x="394.0" y="885" width="1.1" height="15.0" fill="rgb(214,208,33)" rx="2" ry="2" />
+<text  x="397.04" y="895.5" ></text>
 </g>
 <g >
-<title>__cxxabiv1::__si_class_type_info::__do_dyncast (27 samples, 0.05%)</title><rect x="1092.0" y="245" width="0.5" height="15.0" fill="rgb(248,146,47)" rx="2" ry="2" />
-<text  x="1094.99" y="255.5" ></text>
+<title>__alloc_pages_nodemask (1 samples, 0.09%)</title><rect x="30.6" y="85" width="1.1" height="15.0" fill="rgb(239,205,25)" rx="2" ry="2" />
+<text  x="33.65" y="95.5" ></text>
 </g>
 <g >
-<title>copy_user_enhanced_fast_string (14 samples, 0.02%)</title><rect x="1095.7" y="149" width="0.2" height="15.0" fill="rgb(251,51,51)" rx="2" ry="2" />
-<text  x="1098.65" y="159.5" ></text>
+<title>serde::de::SeqAccess::next_element (22 samples, 1.92%)</title><rect x="17.2" y="581" width="22.7" height="15.0" fill="rgb(223,2,31)" rx="2" ry="2" />
+<text  x="20.23" y="591.5" >s..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addShell (4,380 samples, 7.43%)</title><rect x="13.5" y="261" width="87.7" height="15.0" fill="rgb(251,1,12)" rx="2" ry="2" />
-<text  x="16.50" y="271.5" >geos::algo..</text>
+<title>geos::geom::CoordinateSequence::operator[] (1 samples, 0.09%)</title><rect x="1121.9" y="1445" width="1.0" height="15.0" fill="rgb(222,142,35)" rx="2" ry="2" />
+<text  x="1124.86" y="1455.5" ></text>
 </g>
 <g >
-<title>geos::geom::Point::Point (15 samples, 0.03%)</title><rect x="1090.6" y="277" width="0.3" height="15.0" fill="rgb(252,219,25)" rx="2" ry="2" />
-<text  x="1093.65" y="287.5" ></text>
+<title>&lt;geos::geometry::Geometry as core::ops::drop::Drop&gt;::drop (1 samples, 0.09%)</title><rect x="1108.4" y="1125" width="1.1" height="15.0" fill="rgb(223,40,6)" rx="2" ry="2" />
+<text  x="1111.44" y="1135.5" ></text>
 </g>
 <g >
-<title>unmap_page_range (5 samples, 0.01%)</title><rect x="1097.4" y="165" width="0.1" height="15.0" fill="rgb(227,167,2)" rx="2" ry="2" />
-<text  x="1100.35" y="175.5" ></text>
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_map (24 samples, 2.10%)</title><rect x="17.2" y="1029" width="24.8" height="15.0" fill="rgb(218,185,29)" rx="2" ry="2" />
+<text  x="20.23" y="1039.5" >&lt;..</text>
 </g>
 <g >
-<title>exit_mmap (5 samples, 0.01%)</title><rect x="1097.4" y="197" width="0.1" height="15.0" fill="rgb(236,110,25)" rx="2" ry="2" />
-<text  x="1100.35" y="207.5" ></text>
+<title>alloc_pages_vma (5 samples, 0.44%)</title><rect x="17.2" y="133" width="5.2" height="15.0" fill="rgb(245,1,33)" rx="2" ry="2" />
+<text  x="20.23" y="143.5" ></text>
 </g>
 <g >
-<title>benchmark_centr (58,933 samples, 100.00%)</title><rect x="10.0" y="309" width="1180.0" height="15.0" fill="rgb(230,3,2)" rx="2" ry="2" />
-<text  x="13.00" y="319.5" >benchmark_centr</text>
+<title>&lt;core::slice::iter::Windows&lt;T&gt; as core::iter::traits::iterator::Iterator&gt;::next (3 samples, 0.26%)</title><rect x="56.5" y="1029" width="3.1" height="15.0" fill="rgb(243,227,15)" rx="2" ry="2" />
+<text  x="59.46" y="1039.5" ></text>
 </g>
 <g >
-<title>[unknown] (6,866 samples, 11.65%)</title><rect x="13.2" y="277" width="137.5" height="15.0" fill="rgb(217,200,17)" rx="2" ry="2" />
-<text  x="16.18" y="287.5" >[unknown]</text>
+<title>core::ptr::drop_in_place&lt;geojson::geojson::GeoJson&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1141" width="2.0" height="15.0" fill="rgb(226,42,4)" rx="2" ry="2" />
+<text  x="18.16" y="1151.5" ></text>
 </g>
 <g >
-<title>serde_json::de::Deserializer&lt;R&gt;::parse_decimal (39 samples, 0.07%)</title><rect x="1188.0" y="293" width="0.8" height="15.0" fill="rgb(249,228,47)" rx="2" ry="2" />
-<text  x="1191.00" y="303.5" ></text>
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::get (65 samples, 5.69%)</title><rect x="1019.7" y="933" width="67.1" height="15.0" fill="rgb(208,141,33)" rx="2" ry="2" />
+<text  x="1022.66" y="943.5" >std::un..</text>
 </g>
 <g >
-<title>geos::algorithm::Orientation::isCCW (5,927 samples, 10.06%)</title><rect x="827.9" y="277" width="118.7" height="15.0" fill="rgb(227,94,2)" rx="2" ry="2" />
-<text  x="830.91" y="287.5" >geos::algorith..</text>
+<title>geos::geom::Polygon::isEmpty (1 samples, 0.09%)</title><rect x="1097.1" y="981" width="1.0" height="15.0" fill="rgb(236,224,32)" rx="2" ry="2" />
+<text  x="1100.09" y="991.5" ></text>
 </g>
 <g >
-<title>irq_exit (6 samples, 0.01%)</title><rect x="101.0" y="213" width="0.2" height="15.0" fill="rgb(229,9,31)" rx="2" ry="2" />
-<text  x="104.04" y="223.5" ></text>
+<title>core::str::&lt;impl str&gt;::parse (24 samples, 2.10%)</title><rect x="17.2" y="1141" width="24.8" height="15.0" fill="rgb(246,58,53)" rx="2" ry="2" />
+<text  x="20.23" y="1151.5" >c..</text>
 </g>
 <g >
-<title>get_page_from_freelist (10 samples, 0.02%)</title><rect x="12.2" y="181" width="0.2" height="15.0" fill="rgb(244,171,22)" rx="2" ry="2" />
-<text  x="15.18" y="191.5" ></text>
+<title>core::option::Option&lt;T&gt;::map (4 samples, 0.35%)</title><rect x="59.6" y="1029" width="4.1" height="15.0" fill="rgb(250,75,21)" rx="2" ry="2" />
+<text  x="62.55" y="1039.5" ></text>
 </g>
 <g >
-<title>page_fault (7 samples, 0.01%)</title><rect x="1095.8" y="133" width="0.1" height="15.0" fill="rgb(249,88,27)" rx="2" ry="2" />
-<text  x="1098.79" y="143.5" ></text>
+<title>geojson::geojson::get_object (24 samples, 2.10%)</title><rect x="17.2" y="1109" width="24.8" height="15.0" fill="rgb(249,177,35)" rx="2" ry="2" />
+<text  x="20.23" y="1119.5" >g..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::area2@plt (434 samples, 0.74%)</title><rect x="784.6" y="277" width="8.7" height="15.0" fill="rgb(235,22,1)" rx="2" ry="2" />
-<text  x="787.60" y="287.5" ></text>
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="533" width="22.7" height="15.0" fill="rgb(242,35,10)" rx="2" ry="2" />
+<text  x="20.23" y="543.5" >s..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::add (7 samples, 0.01%)</title><rect x="13.4" y="261" width="0.1" height="15.0" fill="rgb(234,78,11)" rx="2" ry="2" />
-<text  x="16.36" y="271.5" ></text>
+<title>std::panic::catch_unwind (1,061 samples, 92.83%)</title><rect x="15.2" y="1397" width="1095.3" height="15.0" fill="rgb(208,29,14)" rx="2" ry="2" />
+<text  x="18.16" y="1407.5" >std::panic::catch_unwind</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::centroid3@plt (15 samples, 0.03%)</title><rect x="826.4" y="277" width="0.3" height="15.0" fill="rgb(216,210,38)" rx="2" ry="2" />
-<text  x="829.37" y="287.5" ></text>
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (22 samples, 1.92%)</title><rect x="17.2" y="421" width="22.7" height="15.0" fill="rgb(220,139,2)" rx="2" ry="2" />
+<text  x="20.23" y="431.5" >&lt;..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::add (22 samples, 0.04%)</title><rect x="153.2" y="277" width="0.4" height="15.0" fill="rgb(251,105,0)" rx="2" ry="2" />
-<text  x="156.20" y="287.5" ></text>
+<title>smp_apic_timer_interrupt (1 samples, 0.09%)</title><rect x="394.0" y="901" width="1.1" height="15.0" fill="rgb(248,206,41)" rx="2" ry="2" />
+<text  x="397.04" y="911.5" ></text>
 </g>
 <g >
-<title>geos::geom::GeometryFactory::~GeometryFactory (23 samples, 0.04%)</title><rect x="1082.8" y="277" width="0.4" height="15.0" fill="rgb(216,163,42)" rx="2" ry="2" />
-<text  x="1085.76" y="287.5" ></text>
+<title>std::sys::unix::fd::FileDesc::read (2 samples, 0.17%)</title><rect x="42.0" y="997" width="2.1" height="15.0" fill="rgb(235,38,21)" rx="2" ry="2" />
+<text  x="45.00" y="1007.5" ></text>
 </g>
 <g >
-<title>alloc_pages_vma (5 samples, 0.01%)</title><rect x="1095.8" y="69" width="0.1" height="15.0" fill="rgb(208,112,42)" rx="2" ry="2" />
-<text  x="1098.83" y="79.5" ></text>
+<title>geos::geom::CoordinateSequence::operator[] (20 samples, 1.75%)</title><rect x="1136.3" y="1461" width="20.7" height="15.0" fill="rgb(242,60,12)" rx="2" ry="2" />
+<text  x="1139.32" y="1471.5" ></text>
 </g>
 <g >
-<title>__x64_sys_exit_group (5 samples, 0.01%)</title><rect x="1097.4" y="261" width="0.1" height="15.0" fill="rgb(236,89,10)" rx="2" ry="2" />
-<text  x="1100.35" y="271.5" ></text>
+<title>geos::algorithm::Centroid::addShell (993 samples, 86.88%)</title><rect x="69.9" y="965" width="1025.1" height="15.0" fill="rgb(223,229,41)" rx="2" ry="2" />
+<text  x="72.88" y="975.5" >geos::algorithm::Centroid::addShell</text>
 </g>
 <g >
-<title>__dynamic_cast (47 samples, 0.08%)</title><rect x="150.9" y="277" width="0.9" height="15.0" fill="rgb(224,40,51)" rx="2" ry="2" />
-<text  x="153.90" y="287.5" ></text>
+<title>geos::geom::LineString::isEmpty (2 samples, 0.17%)</title><rect x="1102.2" y="1013" width="2.1" height="15.0" fill="rgb(229,103,54)" rx="2" ry="2" />
+<text  x="1105.25" y="1023.5" ></text>
 </g>
 <g >
-<title>__do_page_fault (8 samples, 0.01%)</title><rect x="1189.8" y="261" width="0.2" height="15.0" fill="rgb(252,83,3)" rx="2" ry="2" />
-<text  x="1192.84" y="271.5" ></text>
+<title>alloc::boxed::Box&lt;T,A&gt;::try_new_uninit_in (1 samples, 0.09%)</title><rect x="41.0" y="629" width="1.0" height="15.0" fill="rgb(221,46,8)" rx="2" ry="2" />
+<text  x="43.97" y="639.5" ></text>
 </g>
 <g >
-<title>serde_json::value::Value::as_f64 (6 samples, 0.01%)</title><rect x="1188.8" y="293" width="0.1" height="15.0" fill="rgb(246,37,22)" rx="2" ry="2" />
-<text  x="1191.82" y="303.5" ></text>
+<title>harness::notsofine::run_once (1,033 samples, 90.38%)</title><rect x="44.1" y="1189" width="1066.4" height="15.0" fill="rgb(249,126,2)" rx="2" ry="2" />
+<text  x="47.07" y="1199.5" >harness::notsofine::run_once</text>
 </g>
 <g >
-<title>smp_apic_timer_interrupt (7 samples, 0.01%)</title><rect x="728.8" y="245" width="0.2" height="15.0" fill="rgb(224,156,36)" rx="2" ry="2" />
-<text  x="731.84" y="255.5" ></text>
+<title>geos::geom::CoordinateSequence::getY (60 samples, 5.25%)</title><rect x="875.1" y="933" width="62.0" height="15.0" fill="rgb(233,139,27)" rx="2" ry="2" />
+<text  x="878.13" y="943.5" >geos::..</text>
 </g>
 <g >
-<title>__alloc_pages_nodemask (11 samples, 0.02%)</title><rect x="13.0" y="181" width="0.2" height="15.0" fill="rgb(244,135,27)" rx="2" ry="2" />
-<text  x="15.96" y="191.5" ></text>
+<title>geos::algorithm::Centroid::area2 (29 samples, 2.54%)</title><rect x="680.0" y="933" width="29.9" height="15.0" fill="rgb(242,85,4)" rx="2" ry="2" />
+<text  x="683.01" y="943.5" >ge..</text>
 </g>
 <g >
-<title>geos::algorithm::Centroid::addTriangle (1,009 samples, 1.71%)</title><rect x="101.2" y="261" width="20.2" height="15.0" fill="rgb(206,32,8)" rx="2" ry="2" />
-<text  x="104.20" y="271.5" ></text>
+<title>std::sys::unix::fs::File::read (2 samples, 0.17%)</title><rect x="42.0" y="1013" width="2.1" height="15.0" fill="rgb(218,63,49)" rx="2" ry="2" />
+<text  x="45.00" y="1023.5" ></text>
 </g>
 <g >
-<title>alloc_pages_vma (11 samples, 0.02%)</title><rect x="13.0" y="197" width="0.2" height="15.0" fill="rgb(240,208,50)" rx="2" ry="2" />
-<text  x="15.96" y="207.5" ></text>
+<title>execute&lt;GEOSGetCentroid_r::{lambda (1,009 samples, 88.28%)</title><rect x="66.8" y="1109" width="1041.6" height="15.0" fill="rgb(230,122,38)" rx="2" ry="2" />
+<text  x="69.78" y="1119.5" >execute&lt;GEOSGetCentroid_r::{lambda</text>
 </g>
 <g >
-<title>[unknown] (23 samples, 0.04%)</title><rect x="1082.8" y="261" width="0.4" height="15.0" fill="rgb(233,33,7)" rx="2" ry="2" />
-<text  x="1085.76" y="271.5" ></text>
+<title>clear_page_erms (1 samples, 0.09%)</title><rect x="31.7" y="37" width="1.0" height="15.0" fill="rgb(233,205,9)" rx="2" ry="2" />
+<text  x="34.68" y="47.5" ></text>
 </g>
 <g >
-<title>entry_SYSCALL_64_after_hwframe (15 samples, 0.03%)</title><rect x="1095.7" y="277" width="0.3" height="15.0" fill="rgb(240,44,1)" rx="2" ry="2" />
-<text  x="1098.65" y="287.5" ></text>
+<title>__strcmp_avx2 (1 samples, 0.09%)</title><rect x="67.8" y="965" width="1.0" height="15.0" fill="rgb(248,83,51)" rx="2" ry="2" />
+<text  x="70.81" y="975.5" ></text>
 </g>
 <g >
-<title>geos::algorithm::Orientation::isCCW (7 samples, 0.01%)</title><rect x="130.7" y="261" width="0.2" height="15.0" fill="rgb(240,180,22)" rx="2" ry="2" />
-<text  x="133.72" y="271.5" ></text>
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="31.7" y="117" width="1.0" height="15.0" fill="rgb(208,26,10)" rx="2" ry="2" />
+<text  x="34.68" y="127.5" ></text>
 </g>
 <g >
-<title>malloc (10 samples, 0.02%)</title><rect x="1093.6" y="277" width="0.2" height="15.0" fill="rgb(215,217,42)" rx="2" ry="2" />
-<text  x="1096.55" y="287.5" ></text>
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;serde_json::value::Value&gt;&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1077" width="2.1" height="15.0" fill="rgb(208,83,51)" rx="2" ry="2" />
+<text  x="13.00" y="1087.5" ></text>
 </g>
 <g >
-<title>geojson::util::json_to_position (5 samples, 0.01%)</title><rect x="1186.6" y="293" width="0.1" height="15.0" fill="rgb(225,20,15)" rx="2" ry="2" />
-<text  x="1189.58" y="303.5" ></text>
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::empty (1 samples, 0.09%)</title><rect x="1097.1" y="917" width="1.0" height="15.0" fill="rgb(205,194,18)" rx="2" ry="2" />
+<text  x="1100.09" y="927.5" ></text>
 </g>
 <g >
-<title>get_page_from_freelist (5 samples, 0.01%)</title><rect x="1095.8" y="37" width="0.1" height="15.0" fill="rgb(221,135,9)" rx="2" ry="2" />
-<text  x="1098.83" y="47.5" ></text>
+<title>__alloc_pages_nodemask (1 samples, 0.09%)</title><rect x="31.7" y="69" width="1.0" height="15.0" fill="rgb(250,45,32)" rx="2" ry="2" />
+<text  x="34.68" y="79.5" ></text>
 </g>
 <g >
-<title>do_exit (5 samples, 0.01%)</title><rect x="1097.4" y="229" width="0.1" height="15.0" fill="rgb(245,196,15)" rx="2" ry="2" />
-<text  x="1100.35" y="239.5" ></text>
+<title>geo::algorithm::centroid::CentroidOperation$LT$T$GT$::add_ring::_$u7b$$u7b$closure$u7d$$u7d$::hba507e9435c4b508 (5 samples, 0.44%)</title><rect x="49.2" y="1029" width="5.2" height="15.0" fill="rgb(219,132,35)" rx="2" ry="2" />
+<text  x="52.23" y="1039.5" ></text>
 </g>
 <g >
-<title>__do_page_fault (23 samples, 0.04%)</title><rect x="12.0" y="261" width="0.5" height="15.0" fill="rgb(205,31,18)" rx="2" ry="2" />
-<text  x="15.02" y="271.5" ></text>
+<title>&lt;geo_types::line::Line&lt;T&gt; as geo::algorithm::map_coords::MapCoords&lt;T,NT&gt;&gt;::map_coords (2 samples, 0.17%)</title><rect x="63.7" y="1045" width="2.0" height="15.0" fill="rgb(229,140,12)" rx="2" ry="2" />
+<text  x="66.68" y="1055.5" ></text>
 </g>
 <g >
-<title>__handle_mm_fault (7 samples, 0.01%)</title><rect x="1095.8" y="85" width="0.1" height="15.0" fill="rgb(207,108,3)" rx="2" ry="2" />
-<text  x="1098.79" y="95.5" ></text>
+<title>core::ptr::drop_in_place&lt;[alloc::vec::Vec&lt;f64&gt;]&gt; (1 samples, 0.09%)</title><rect x="15.2" y="869" width="1.0" height="15.0" fill="rgb(250,86,14)" rx="2" ry="2" />
+<text  x="18.16" y="879.5" ></text>
 </g>
 <g >
-<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (53 samples, 0.09%)</title><rect x="1188.9" y="293" width="1.1" height="15.0" fill="rgb(245,111,8)" rx="2" ry="2" />
-<text  x="1191.94" y="303.5" ></text>
+<title>_start (1,061 samples, 92.83%)</title><rect x="15.2" y="1461" width="1095.3" height="15.0" fill="rgb(209,217,35)" rx="2" ry="2" />
+<text  x="18.16" y="1471.5" >_start</text>
 </g>
 <g >
-<title>[unknown] (357 samples, 0.61%)</title><rect x="1083.5" y="261" width="7.1" height="15.0" fill="rgb(213,58,49)" rx="2" ry="2" />
-<text  x="1086.50" y="271.5" ></text>
+<title>__handle_mm_fault (5 samples, 0.44%)</title><rect x="17.2" y="149" width="5.2" height="15.0" fill="rgb(210,120,48)" rx="2" ry="2" />
+<text  x="20.23" y="159.5" ></text>
 </g>
 <g >
-<title>benchmark_centroid::geos_centroid (36 samples, 0.06%)</title><rect x="1096.3" y="293" width="0.8" height="15.0" fill="rgb(242,27,27)" rx="2" ry="2" />
-<text  x="1099.33" y="303.5" ></text>
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="27.6" y="309" width="1.0" height="15.0" fill="rgb(237,101,49)" rx="2" ry="2" />
+<text  x="30.55" y="319.5" ></text>
+</g>
+<g >
+<title>geos::geom::Coordinate::Coordinate (1 samples, 0.09%)</title><rect x="1099.2" y="1013" width="1.0" height="15.0" fill="rgb(244,62,11)" rx="2" ry="2" />
+<text  x="1102.15" y="1023.5" ></text>
+</g>
+<g >
+<title>benchmark_centroid::geos_centroid (1,011 samples, 88.45%)</title><rect x="66.8" y="1157" width="1043.7" height="15.0" fill="rgb(234,10,47)" rx="2" ry="2" />
+<text  x="69.78" y="1167.5" >benchmark_centroid::geos_centroid</text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (4 samples, 0.35%)</title><rect x="34.8" y="229" width="4.1" height="15.0" fill="rgb(226,125,42)" rx="2" ry="2" />
+<text  x="37.78" y="239.5" ></text>
+</g>
+<g >
+<title>geos::geom::LineString::getCoordinatesRO (1 samples, 0.09%)</title><rect x="1096.1" y="965" width="1.0" height="15.0" fill="rgb(245,119,26)" rx="2" ry="2" />
+<text  x="1099.05" y="975.5" ></text>
+</g>
+<g >
+<title>geos::geom::MultiPolygon::getGeometryN (1 samples, 0.09%)</title><rect x="1098.1" y="997" width="1.1" height="15.0" fill="rgb(231,68,22)" rx="2" ry="2" />
+<text  x="1101.12" y="1007.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::operator* (8 samples, 0.70%)</title><rect x="1181.7" y="1461" width="8.3" height="15.0" fill="rgb(230,173,10)" rx="2" ry="2" />
+<text  x="1184.74" y="1471.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::~Centroid (1 samples, 0.09%)</title><rect x="1101.2" y="1029" width="1.0" height="15.0" fill="rgb(235,220,3)" rx="2" ry="2" />
+<text  x="1104.22" y="1039.5" ></text>
+</g>
+<g >
+<title>_int_malloc (1 samples, 0.09%)</title><rect x="41.0" y="549" width="1.0" height="15.0" fill="rgb(208,199,20)" rx="2" ry="2" />
+<text  x="43.97" y="559.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::get@plt (4 samples, 0.35%)</title><rect x="1086.8" y="933" width="4.1" height="15.0" fill="rgb(220,139,53)" rx="2" ry="2" />
+<text  x="1089.76" y="943.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Point, std::default_delete&lt;geos::geom::Point&gt; &gt;::__uniq_ptr_impl (1 samples, 0.09%)</title><rect x="1106.4" y="1045" width="1.0" height="15.0" fill="rgb(235,196,20)" rx="2" ry="2" />
+<text  x="1109.38" y="1055.5" ></text>
+</g>
+<g >
+<title>&lt;f64 as core::ops::arith::Sub&gt;::sub (1 samples, 0.09%)</title><rect x="65.7" y="1029" width="1.1" height="15.0" fill="rgb(208,16,33)" rx="2" ry="2" />
+<text  x="68.75" y="1039.5" ></text>
+</g>
+<g >
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="14.1" y="1333" width="1.1" height="15.0" fill="rgb(206,218,35)" rx="2" ry="2" />
+<text  x="17.13" y="1343.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::area2@plt (1 samples, 0.09%)</title><rect x="709.9" y="933" width="1.1" height="15.0" fill="rgb(216,71,46)" rx="2" ry="2" />
+<text  x="712.95" y="943.5" ></text>
+</g>
+<g >
+<title>handle_mm_fault (6 samples, 0.52%)</title><rect x="17.2" y="165" width="6.2" height="15.0" fill="rgb(231,215,18)" rx="2" ry="2" />
+<text  x="20.23" y="175.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;[serde_json::value::Value]&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1045" width="2.1" height="15.0" fill="rgb(211,194,22)" rx="2" ry="2" />
+<text  x="13.00" y="1055.5" ></text>
+</g>
+<g >
+<title>&lt;f64 as core::ops::arith::Add&gt;::add (2 samples, 0.17%)</title><rect x="49.2" y="997" width="2.1" height="15.0" fill="rgb(235,127,35)" rx="2" ry="2" />
+<text  x="52.23" y="1007.5" ></text>
+</g>
+<g >
+<title>std::io::read_to_end (2 samples, 0.17%)</title><rect x="42.0" y="1061" width="2.1" height="15.0" fill="rgb(210,173,27)" rx="2" ry="2" />
+<text  x="45.00" y="1071.5" ></text>
+</g>
+<g >
+<title>std::__get_helper&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (30 samples, 2.62%)</title><rect x="1054.8" y="885" width="30.9" height="15.0" fill="rgb(227,77,8)" rx="2" ry="2" />
+<text  x="1057.76" y="895.5" >st..</text>
+</g>
+<g >
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="24.5" y="149" width="1.0" height="15.0" fill="rgb(212,73,23)" rx="2" ry="2" />
+<text  x="27.45" y="159.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::getAt (1 samples, 0.09%)</title><rect x="1132.2" y="1445" width="1.0" height="15.0" fill="rgb(240,113,0)" rx="2" ry="2" />
+<text  x="1135.19" y="1455.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::isEmpty (1 samples, 0.09%)</title><rect x="1097.1" y="949" width="1.0" height="15.0" fill="rgb(206,219,10)" rx="2" ry="2" />
+<text  x="1100.09" y="959.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="14.1" y="1365" width="1.1" height="15.0" fill="rgb(241,158,17)" rx="2" ry="2" />
+<text  x="17.13" y="1375.5" ></text>
+</g>
+<g >
+<title>alloc_pages_vma (1 samples, 0.09%)</title><rect x="27.6" y="293" width="1.0" height="15.0" fill="rgb(239,116,28)" rx="2" ry="2" />
+<text  x="30.55" y="303.5" ></text>
+</g>
+<g >
+<title>std::_Tuple_impl&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_head (3 samples, 0.26%)</title><rect x="1158.0" y="1445" width="3.1" height="15.0" fill="rgb(218,98,9)" rx="2" ry="2" />
+<text  x="1161.00" y="1455.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::end (1 samples, 0.09%)</title><rect x="1103.3" y="949" width="1.0" height="15.0" fill="rgb(247,99,19)" rx="2" ry="2" />
+<text  x="1106.28" y="959.5" ></text>
+</g>
+<g >
+<title>&lt;geojson::geojson::GeoJson as core::str::traits::FromStr&gt;::from_str (4 samples, 0.35%)</title><rect x="10.0" y="1349" width="4.1" height="15.0" fill="rgb(253,176,20)" rx="2" ry="2" />
+<text  x="13.00" y="1359.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::~unique_ptr (1 samples, 0.09%)</title><rect x="1101.2" y="1013" width="1.0" height="15.0" fill="rgb(225,146,24)" rx="2" ry="2" />
+<text  x="1104.22" y="1023.5" ></text>
+</g>
+<g >
+<title>geos::geom::LineString::isEmpty (1 samples, 0.09%)</title><rect x="1157.0" y="1445" width="1.0" height="15.0" fill="rgb(222,13,0)" rx="2" ry="2" />
+<text  x="1159.96" y="1455.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="30.6" y="149" width="1.1" height="15.0" fill="rgb(214,28,6)" rx="2" ry="2" />
+<text  x="33.65" y="159.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::raw_vec::RawVec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (1 samples, 0.09%)</title><rect x="15.2" y="821" width="1.0" height="15.0" fill="rgb(249,151,12)" rx="2" ry="2" />
+<text  x="18.16" y="831.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_seq (24 samples, 2.10%)</title><rect x="17.2" y="917" width="24.8" height="15.0" fill="rgb(235,155,14)" rx="2" ry="2" />
+<text  x="20.23" y="927.5" >&lt;..</text>
+</g>
+<g >
+<title>&lt;serde_json::de::SeqAccess&lt;R&gt; as serde::de::SeqAccess&gt;::next_element_seed (6 samples, 0.52%)</title><rect x="33.7" y="277" width="6.2" height="15.0" fill="rgb(237,146,43)" rx="2" ry="2" />
+<text  x="36.74" y="287.5" ></text>
+</g>
+<g >
+<title>run_timer_softirq (1 samples, 0.09%)</title><rect x="394.0" y="853" width="1.1" height="15.0" fill="rgb(252,48,22)" rx="2" ry="2" />
+<text  x="397.04" y="863.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;serde_json::value::Value&gt;&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1141" width="2.1" height="15.0" fill="rgb(247,60,54)" rx="2" ry="2" />
+<text  x="13.00" y="1151.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::add (995 samples, 87.05%)</title><rect x="69.9" y="981" width="1027.2" height="15.0" fill="rgb(233,87,27)" rx="2" ry="2" />
+<text  x="72.88" y="991.5" >geos::algorithm::Centroid::add</text>
+</g>
+<g >
+<title>GEOSGeom_destroy_r (1 samples, 0.09%)</title><rect x="1109.5" y="1125" width="1.0" height="15.0" fill="rgb(253,56,52)" rx="2" ry="2" />
+<text  x="1112.48" y="1135.5" ></text>
+</g>
+<g >
+<title>alloc::boxed::Box&lt;T,A&gt;::new_uninit_in (1 samples, 0.09%)</title><rect x="41.0" y="645" width="1.0" height="15.0" fill="rgb(213,53,12)" rx="2" ry="2" />
+<text  x="43.97" y="655.5" ></text>
+</g>
+<g >
+<title>std::tuple&lt;geos::geom::Envelope*, std::default_delete&lt;geos::geom::Envelope&gt; &gt;::tuple&lt;geos::geom::Envelope*, std::default_delete&lt;geos::geom::Envelope&gt;, true&gt; (1 samples, 0.09%)</title><rect x="1105.3" y="981" width="1.1" height="15.0" fill="rgb(236,113,1)" rx="2" ry="2" />
+<text  x="1108.35" y="991.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_ptr (8 samples, 0.70%)</title><rect x="1173.5" y="1445" width="8.2" height="15.0" fill="rgb(207,53,44)" rx="2" ry="2" />
+<text  x="1176.48" y="1455.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::centroid::CentroidOperation&lt;T&gt;::add_multi_polygon (22 samples, 1.92%)</title><rect x="44.1" y="1125" width="22.7" height="15.0" fill="rgb(237,147,16)" rx="2" ry="2" />
+<text  x="47.07" y="1135.5" >g..</text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;[alloc::vec::Vec&lt;alloc::vec::Vec&lt;f64&gt;&gt;]&gt; (2 samples, 0.17%)</title><rect x="15.2" y="917" width="2.0" height="15.0" fill="rgb(215,49,42)" rx="2" ry="2" />
+<text  x="18.16" y="927.5" ></text>
+</g>
+<g >
+<title>geos::geom::GeometryCollection::isEmpty (3 samples, 0.26%)</title><rect x="1102.2" y="1045" width="3.1" height="15.0" fill="rgb(221,86,4)" rx="2" ry="2" />
+<text  x="1105.25" y="1055.5" ></text>
+</g>
+<g >
+<title>&lt;core::iter::adapters::map::Map&lt;I,F&gt; as core::iter::traits::iterator::Iterator&gt;::next (7 samples, 0.61%)</title><rect x="56.5" y="1045" width="7.2" height="15.0" fill="rgb(244,130,16)" rx="2" ry="2" />
+<text  x="59.46" y="1055.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::raw_vec::RawVec&lt;alloc::vec::Vec&lt;f64&gt;&gt;&gt; (1 samples, 0.09%)</title><rect x="16.2" y="885" width="1.0" height="15.0" fill="rgb(209,64,38)" rx="2" ry="2" />
+<text  x="19.19" y="895.5" ></text>
+</g>
+<g >
+<title>alloc::raw_vec::finish_grow (4 samples, 0.35%)</title><rect x="28.6" y="213" width="4.1" height="15.0" fill="rgb(228,2,10)" rx="2" ry="2" />
+<text  x="31.58" y="223.5" ></text>
+</g>
+<g >
+<title>alloc::collections::btree::node::LeafNode&lt;K,V&gt;::new (1 samples, 0.09%)</title><rect x="41.0" y="677" width="1.0" height="15.0" fill="rgb(220,199,12)" rx="2" ry="2" />
+<text  x="43.97" y="687.5" ></text>
+</g>
+<g >
+<title>copyout (1 samples, 0.09%)</title><rect x="42.0" y="853" width="1.0" height="15.0" fill="rgb(243,185,1)" rx="2" ry="2" />
+<text  x="45.00" y="863.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::de::MapAccess&lt;R&gt; as serde::de::MapAccess&gt;::next_value_seed (24 samples, 2.10%)</title><rect x="17.2" y="981" width="24.8" height="15.0" fill="rgb(234,141,12)" rx="2" ry="2" />
+<text  x="20.23" y="991.5" >&lt;..</text>
+</g>
+<g >
+<title>alloc_pages_vma (1 samples, 0.09%)</title><rect x="41.0" y="469" width="1.0" height="15.0" fill="rgb(222,190,49)" rx="2" ry="2" />
+<text  x="43.97" y="479.5" ></text>
+</g>
+<g >
+<title>core::ops::function::impls::&lt;impl core::ops::function::FnOnce&lt;A&gt; for &amp;F&gt;::call_once (1,061 samples, 92.83%)</title><rect x="15.2" y="1285" width="1095.3" height="15.0" fill="rgb(232,74,18)" rx="2" ry="2" />
+<text  x="18.16" y="1295.5" >core::ops::function::impls::&lt;impl core::ops::function::FnOnce&lt;A&gt; for &amp;F&gt;::call_once</text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::parse_decimal (3 samples, 0.26%)</title><rect x="35.8" y="165" width="3.1" height="15.0" fill="rgb(205,119,24)" rx="2" ry="2" />
+<text  x="38.81" y="175.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::area::twice_signed_ring_area (10 samples, 0.87%)</title><rect x="56.5" y="1061" width="10.3" height="15.0" fill="rgb(219,59,37)" rx="2" ry="2" />
+<text  x="59.46" y="1071.5" ></text>
+</g>
+<g >
+<title>&lt;std::fs::File as std::io::Read&gt;::read (2 samples, 0.17%)</title><rect x="42.0" y="1029" width="2.1" height="15.0" fill="rgb(227,149,48)" rx="2" ry="2" />
+<text  x="45.00" y="1039.5" ></text>
+</g>
+<g >
+<title>serde_json::de::from_str (24 samples, 2.10%)</title><rect x="17.2" y="1093" width="24.8" height="15.0" fill="rgb(243,148,0)" rx="2" ry="2" />
+<text  x="20.23" y="1103.5" >s..</text>
+</g>
+<g >
+<title>alloc::alloc::alloc (1 samples, 0.09%)</title><rect x="41.0" y="581" width="1.0" height="15.0" fill="rgb(218,167,9)" rx="2" ry="2" />
+<text  x="43.97" y="591.5" ></text>
+</g>
+<g >
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::grow_amortized (4 samples, 0.35%)</title><rect x="28.6" y="229" width="4.1" height="15.0" fill="rgb(206,121,11)" rx="2" ry="2" />
+<text  x="31.58" y="239.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::read::SliceRead as serde_json::read::Read&gt;::peek (1 samples, 0.09%)</title><rect x="38.9" y="213" width="1.0" height="15.0" fill="rgb(221,191,4)" rx="2" ry="2" />
+<text  x="41.91" y="223.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::centroid::CentroidOperation&lt;T&gt;::add_ring (22 samples, 1.92%)</title><rect x="44.1" y="1093" width="22.7" height="15.0" fill="rgb(232,173,0)" rx="2" ry="2" />
+<text  x="47.07" y="1103.5" >g..</text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry_seed (22 samples, 1.92%)</title><rect x="17.2" y="789" width="22.7" height="15.0" fill="rgb(246,53,46)" rx="2" ry="2" />
+<text  x="20.23" y="799.5" >s..</text>
+</g>
+<g >
+<title>geozero::geojson::geojson_reader::read_geojson (4 samples, 0.35%)</title><rect x="10.0" y="1381" width="4.1" height="15.0" fill="rgb(221,153,28)" rx="2" ry="2" />
+<text  x="13.00" y="1391.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::CGAlgorithmsDD::orientationIndexFilter (2 samples, 0.17%)</title><rect x="860.7" y="885" width="2.0" height="15.0" fill="rgb(243,207,18)" rx="2" ry="2" />
+<text  x="863.67" y="895.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::centroid3@plt (2 samples, 0.17%)</title><rect x="770.9" y="933" width="2.0" height="15.0" fill="rgb(241,174,38)" rx="2" ry="2" />
+<text  x="773.86" y="943.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::getAt (115 samples, 10.06%)</title><rect x="462.2" y="917" width="118.7" height="15.0" fill="rgb(249,109,28)" rx="2" ry="2" />
+<text  x="465.18" y="927.5" >geos::geom::Co..</text>
+</g>
+<g >
+<title>serde::de::SeqAccess::next_element (24 samples, 2.10%)</title><rect x="17.2" y="901" width="24.8" height="15.0" fill="rgb(235,19,7)" rx="2" ry="2" />
+<text  x="20.23" y="911.5" >s..</text>
+</g>
+<g >
+<title>geozero::geojson::geojson_reader::read_geojson (28 samples, 2.45%)</title><rect x="15.2" y="1157" width="28.9" height="15.0" fill="rgb(229,217,13)" rx="2" ry="2" />
+<text  x="18.16" y="1167.5" >ge..</text>
+</g>
+<g >
+<title>__radix_tree_lookup (1 samples, 0.09%)</title><rect x="43.0" y="821" width="1.1" height="15.0" fill="rgb(229,93,35)" rx="2" ry="2" />
+<text  x="46.04" y="831.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;geojson::Feature&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1061" width="2.0" height="15.0" fill="rgb(215,65,48)" rx="2" ry="2" />
+<text  x="18.16" y="1071.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="27.6" y="341" width="1.0" height="15.0" fill="rgb(210,185,14)" rx="2" ry="2" />
+<text  x="30.55" y="351.5" ></text>
+</g>
+<g >
+<title>alloc::raw_vec::finish_grow (9 samples, 0.79%)</title><rect x="17.2" y="309" width="9.3" height="15.0" fill="rgb(233,161,42)" rx="2" ry="2" />
+<text  x="20.23" y="319.5" ></text>
+</g>
+<g >
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::reserve (4 samples, 0.35%)</title><rect x="28.6" y="261" width="4.1" height="15.0" fill="rgb(208,166,38)" rx="2" ry="2" />
+<text  x="31.58" y="271.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::add (997 samples, 87.23%)</title><rect x="68.8" y="997" width="1029.3" height="15.0" fill="rgb(244,74,23)" rx="2" ry="2" />
+<text  x="71.85" y="1007.5" >geos::algorithm::Centroid::add</text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::empty (2 samples, 0.17%)</title><rect x="1102.2" y="981" width="2.1" height="15.0" fill="rgb(234,49,7)" rx="2" ry="2" />
+<text  x="1105.25" y="991.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (11 samples, 0.96%)</title><rect x="28.6" y="341" width="11.3" height="15.0" fill="rgb(209,184,18)" rx="2" ry="2" />
+<text  x="31.58" y="351.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::alloc::Global as core::alloc::Allocator&gt;::deallocate (1 samples, 0.09%)</title><rect x="16.2" y="853" width="1.0" height="15.0" fill="rgb(207,127,30)" rx="2" ry="2" />
+<text  x="19.19" y="863.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_seq (11 samples, 0.96%)</title><rect x="28.6" y="309" width="11.3" height="15.0" fill="rgb(214,67,11)" rx="2" ry="2" />
+<text  x="31.58" y="319.5" ></text>
+</g>
+<g >
+<title>&lt;geos::geometry::Geometry as geos::geometry::Geom&gt;::get_centroid (1,009 samples, 88.28%)</title><rect x="66.8" y="1141" width="1041.6" height="15.0" fill="rgb(215,62,36)" rx="2" ry="2" />
+<text  x="69.78" y="1151.5" >&lt;geos::geometry::Geometry as geos::geometry::Geom&gt;::get_centroid</text>
+</g>
+<g >
+<title>&lt;serde_json::de::SeqAccess&lt;R&gt; as serde::de::SeqAccess&gt;::next_element_seed (22 samples, 1.92%)</title><rect x="17.2" y="469" width="22.7" height="15.0" fill="rgb(238,199,46)" rx="2" ry="2" />
+<text  x="20.23" y="479.5" >&lt;..</text>
+</g>
+<g >
+<title>geos::geom::Point::~Point (1 samples, 0.09%)</title><rect x="1109.5" y="1061" width="1.0" height="15.0" fill="rgb(247,130,28)" rx="2" ry="2" />
+<text  x="1112.48" y="1071.5" ></text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (22 samples, 1.92%)</title><rect x="17.2" y="613" width="22.7" height="15.0" fill="rgb(216,56,54)" rx="2" ry="2" />
+<text  x="20.23" y="623.5" >&lt;..</text>
+</g>
+<g >
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="549" width="22.7" height="15.0" fill="rgb(213,11,45)" rx="2" ry="2" />
+<text  x="20.23" y="559.5" >&lt;..</text>
+</g>
+<g >
+<title>get_page_from_freelist (1 samples, 0.09%)</title><rect x="27.6" y="261" width="1.0" height="15.0" fill="rgb(242,31,30)" rx="2" ry="2" />
+<text  x="30.55" y="271.5" ></text>
+</g>
+<g >
+<title>&lt;f64 as core::ops::arith::Sub&gt;::sub (2 samples, 0.17%)</title><rect x="63.7" y="997" width="2.0" height="15.0" fill="rgb(252,103,48)" rx="2" ry="2" />
+<text  x="66.68" y="1007.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Orientation::index (2 samples, 0.17%)</title><rect x="860.7" y="933" width="2.0" height="15.0" fill="rgb(213,154,26)" rx="2" ry="2" />
+<text  x="863.67" y="943.5" ></text>
+</g>
+<g >
+<title>geos::geom::Geometry::getCentroid (1,005 samples, 87.93%)</title><rect x="67.8" y="1061" width="1037.5" height="15.0" fill="rgb(208,194,49)" rx="2" ry="2" />
+<text  x="70.81" y="1071.5" >geos::geom::Geometry::getCentroid</text>
+</g>
+<g >
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="14.1" y="1349" width="1.1" height="15.0" fill="rgb(250,166,8)" rx="2" ry="2" />
+<text  x="17.13" y="1359.5" ></text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::parse_any_number (3 samples, 0.26%)</title><rect x="35.8" y="213" width="3.1" height="15.0" fill="rgb(249,40,27)" rx="2" ry="2" />
+<text  x="38.81" y="223.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_ptr (9 samples, 0.79%)</title><rect x="1161.1" y="1461" width="9.3" height="15.0" fill="rgb(243,53,27)" rx="2" ry="2" />
+<text  x="1164.09" y="1471.5" ></text>
+</g>
+<g >
+<title>rebalance_domains (1 samples, 0.09%)</title><rect x="255.7" y="869" width="1.0" height="15.0" fill="rgb(233,52,11)" rx="2" ry="2" />
+<text  x="258.70" y="879.5" ></text>
+</g>
+<g >
+<title>std::tuple&lt;geos::geom::Point*, std::default_delete&lt;geos::geom::Point&gt; &gt;::tuple&lt;geos::geom::Point*, std::default_delete&lt;geos::geom::Point&gt;, true&gt; (1 samples, 0.09%)</title><rect x="1106.4" y="1029" width="1.0" height="15.0" fill="rgb(223,94,44)" rx="2" ry="2" />
+<text  x="1109.38" y="1039.5" ></text>
+</g>
+<g >
+<title>__alloc_pages_nodemask (5 samples, 0.44%)</title><rect x="17.2" y="117" width="5.2" height="15.0" fill="rgb(247,113,12)" rx="2" ry="2" />
+<text  x="20.23" y="127.5" ></text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::peek (1 samples, 0.09%)</title><rect x="38.9" y="245" width="1.0" height="15.0" fill="rgb(238,97,10)" rx="2" ry="2" />
+<text  x="41.91" y="255.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[] (54 samples, 4.72%)</title><rect x="509.7" y="901" width="55.7" height="15.0" fill="rgb(248,27,16)" rx="2" ry="2" />
+<text  x="512.67" y="911.5" >std::..</text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[] (15 samples, 1.31%)</title><rect x="983.5" y="917" width="15.5" height="15.0" fill="rgb(251,128,14)" rx="2" ry="2" />
+<text  x="986.53" y="927.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[] (9 samples, 0.79%)</title><rect x="865.8" y="917" width="9.3" height="15.0" fill="rgb(235,205,20)" rx="2" ry="2" />
+<text  x="868.84" y="927.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;core::option::Option&lt;geojson::geometry::Geometry&gt;&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1045" width="2.0" height="15.0" fill="rgb(249,95,0)" rx="2" ry="2" />
+<text  x="18.16" y="1055.5" ></text>
+</g>
+<g >
+<title>sysmalloc (1 samples, 0.09%)</title><rect x="25.5" y="197" width="1.0" height="15.0" fill="rgb(212,10,13)" rx="2" ry="2" />
+<text  x="28.49" y="207.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::getAt (1 samples, 0.09%)</title><rect x="1133.2" y="1445" width="1.1" height="15.0" fill="rgb(252,172,25)" rx="2" ry="2" />
+<text  x="1136.22" y="1455.5" ></text>
+</g>
+<g >
+<title>__GI___sbrk (1 samples, 0.09%)</title><rect x="25.5" y="165" width="1.0" height="15.0" fill="rgb(247,41,16)" rx="2" ry="2" />
+<text  x="28.49" y="175.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::CoordinateSequence, std::default_delete&lt;geos::geom::CoordinateSequence&gt; &gt;::_M_ptr (1 samples, 0.09%)</title><rect x="1096.1" y="933" width="1.0" height="15.0" fill="rgb(239,223,0)" rx="2" ry="2" />
+<text  x="1099.05" y="943.5" ></text>
+</g>
+<g >
+<title>benchmark_centr (1,143 samples, 100.00%)</title><rect x="10.0" y="1477" width="1180.0" height="15.0" fill="rgb(225,164,15)" rx="2" ry="2" />
+<text  x="13.00" y="1487.5" >benchmark_centr</text>
+</g>
+<g >
+<title>get_page_from_freelist (1 samples, 0.09%)</title><rect x="24.5" y="101" width="1.0" height="15.0" fill="rgb(207,78,28)" rx="2" ry="2" />
+<text  x="27.45" y="111.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::raw_vec::RawVec&lt;f64&gt;&gt; (1 samples, 0.09%)</title><rect x="15.2" y="837" width="1.0" height="15.0" fill="rgb(222,102,1)" rx="2" ry="2" />
+<text  x="18.16" y="847.5" ></text>
+</g>
+<g >
+<title>alloc::alloc::dealloc (1 samples, 0.09%)</title><rect x="16.2" y="837" width="1.0" height="15.0" fill="rgb(228,24,53)" rx="2" ry="2" />
+<text  x="19.19" y="847.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::de::SeqAccess&lt;R&gt; as serde::de::SeqAccess&gt;::next_element_seed (24 samples, 2.10%)</title><rect x="17.2" y="885" width="24.8" height="15.0" fill="rgb(210,83,8)" rx="2" ry="2" />
+<text  x="20.23" y="895.5" >&lt;..</text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry (22 samples, 1.92%)</title><rect x="17.2" y="805" width="22.7" height="15.0" fill="rgb(229,212,37)" rx="2" ry="2" />
+<text  x="20.23" y="815.5" >s..</text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Geometry, std::default_delete&lt;geos::geom::Geometry&gt; &gt;::_M_ptr (1 samples, 0.09%)</title><rect x="1098.1" y="965" width="1.1" height="15.0" fill="rgb(229,43,27)" rx="2" ry="2" />
+<text  x="1101.12" y="975.5" ></text>
+</g>
+<g >
+<title>&lt;geojson::geometry::Geometry as core::convert::TryFrom&lt;serde_json::map::Map&lt;alloc::string::String,serde_json::value::Value&gt;&gt;&gt;::try_from (4 samples, 0.35%)</title><rect x="10.0" y="1205" width="4.1" height="15.0" fill="rgb(251,203,13)" rx="2" ry="2" />
+<text  x="13.00" y="1215.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[] (8 samples, 0.70%)</title><rect x="928.8" y="885" width="8.3" height="15.0" fill="rgb(237,111,5)" rx="2" ry="2" />
+<text  x="931.81" y="895.5" ></text>
+</g>
+<g >
+<title>&lt;geojson::feature_collection::FeatureCollection as core::convert::TryFrom&lt;serde_json::map::Map&lt;alloc::string::String,serde_json::value::Value&gt;&gt;&gt;::try_from (4 samples, 0.35%)</title><rect x="10.0" y="1301" width="4.1" height="15.0" fill="rgb(240,89,25)" rx="2" ry="2" />
+<text  x="13.00" y="1311.5" ></text>
+</g>
+<g >
+<title>_int_malloc (1 samples, 0.09%)</title><rect x="39.9" y="709" width="1.1" height="15.0" fill="rgb(246,195,6)" rx="2" ry="2" />
+<text  x="42.94" y="719.5" ></text>
+</g>
+<g >
+<title>call_init (1 samples, 0.09%)</title><rect x="14.1" y="1413" width="1.1" height="15.0" fill="rgb(232,160,24)" rx="2" ry="2" />
+<text  x="17.13" y="1423.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;[geojson::Feature]&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1077" width="2.0" height="15.0" fill="rgb(218,56,18)" rx="2" ry="2" />
+<text  x="18.16" y="1087.5" ></text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (11 samples, 0.96%)</title><rect x="28.6" y="325" width="11.3" height="15.0" fill="rgb(226,183,36)" rx="2" ry="2" />
+<text  x="31.58" y="335.5" ></text>
+</g>
+<g >
+<title>page_fault (1 samples, 0.09%)</title><rect x="24.5" y="197" width="1.0" height="15.0" fill="rgb(206,86,14)" rx="2" ry="2" />
+<text  x="27.45" y="207.5" ></text>
+</g>
+<g >
+<title>alloc::raw_vec::RawVec&lt;T,A&gt;::reserve (9 samples, 0.79%)</title><rect x="17.2" y="357" width="9.3" height="15.0" fill="rgb(240,43,21)" rx="2" ry="2" />
+<text  x="20.23" y="367.5" ></text>
+</g>
+<g >
+<title>__alloc_pages_nodemask (1 samples, 0.09%)</title><rect x="27.6" y="277" width="1.0" height="15.0" fill="rgb(237,222,9)" rx="2" ry="2" />
+<text  x="30.55" y="287.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::getY (2 samples, 0.17%)</title><rect x="1134.3" y="1461" width="2.0" height="15.0" fill="rgb(217,85,17)" rx="2" ry="2" />
+<text  x="1137.25" y="1471.5" ></text>
+</g>
+<g >
+<title>__brk (1 samples, 0.09%)</title><rect x="25.5" y="133" width="1.0" height="15.0" fill="rgb(253,70,29)" rx="2" ry="2" />
+<text  x="28.49" y="143.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Orientation::isCCW (1 samples, 0.09%)</title><rect x="1132.2" y="1461" width="1.0" height="15.0" fill="rgb(229,214,47)" rx="2" ry="2" />
+<text  x="1135.19" y="1471.5" ></text>
+</g>
+<g >
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="30.6" y="117" width="1.1" height="15.0" fill="rgb(229,42,2)" rx="2" ry="2" />
+<text  x="33.65" y="127.5" ></text>
+</g>
+<g >
+<title>&lt;geo_types::multi_polygon::MultiPolygon&lt;T&gt; as geo::algorithm::centroid::Centroid&gt;::centroid (22 samples, 1.92%)</title><rect x="44.1" y="1141" width="22.7" height="15.0" fill="rgb(234,195,39)" rx="2" ry="2" />
+<text  x="47.07" y="1151.5" >&lt;..</text>
+</g>
+<g >
+<title>geos::geom::LineString::isEmpty (1 samples, 0.09%)</title><rect x="1097.1" y="965" width="1.0" height="15.0" fill="rgb(241,132,46)" rx="2" ry="2" />
+<text  x="1100.09" y="975.5" ></text>
+</g>
+<g >
+<title>get_page_from_freelist (1 samples, 0.09%)</title><rect x="41.0" y="437" width="1.0" height="15.0" fill="rgb(244,113,45)" rx="2" ry="2" />
+<text  x="43.97" y="447.5" ></text>
+</g>
+<g >
+<title>ksys_read (2 samples, 0.17%)</title><rect x="42.0" y="933" width="2.1" height="15.0" fill="rgb(218,92,52)" rx="2" ry="2" />
+<text  x="45.00" y="943.5" ></text>
+</g>
+<g >
+<title>&lt;geo_types::point::Point&lt;T&gt; as geo::algorithm::map_coords::MapCoords&lt;T,NT&gt;&gt;::map_coords (1 samples, 0.09%)</title><rect x="53.4" y="997" width="1.0" height="15.0" fill="rgb(208,105,42)" rx="2" ry="2" />
+<text  x="56.36" y="1007.5" ></text>
+</g>
+<g >
+<title>_int_malloc (3 samples, 0.26%)</title><rect x="23.4" y="213" width="3.1" height="15.0" fill="rgb(242,134,23)" rx="2" ry="2" />
+<text  x="26.42" y="223.5" ></text>
+</g>
+<g >
+<title>geojson::util::json_to_3d_positions (2 samples, 0.17%)</title><rect x="12.1" y="1157" width="2.0" height="15.0" fill="rgb(233,93,33)" rx="2" ry="2" />
+<text  x="15.06" y="1167.5" ></text>
+</g>
+<g >
+<title>main (1,061 samples, 92.83%)</title><rect x="15.2" y="1429" width="1095.3" height="15.0" fill="rgb(222,49,17)" rx="2" ry="2" />
+<text  x="18.16" y="1439.5" >main</text>
+</g>
+<g >
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="15.2" y="981" width="2.0" height="15.0" fill="rgb(253,27,44)" rx="2" ry="2" />
+<text  x="18.16" y="991.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (4 samples, 0.35%)</title><rect x="34.8" y="245" width="4.1" height="15.0" fill="rgb(235,120,54)" rx="2" ry="2" />
+<text  x="37.78" y="255.5" ></text>
+</g>
+<g >
+<title>__ieee754_sqrt (33 samples, 2.89%)</title><rect x="342.4" y="917" width="34.1" height="15.0" fill="rgb(247,178,10)" rx="2" ry="2" />
+<text  x="345.42" y="927.5" >__..</text>
+</g>
+<g >
+<title>__GI___libc_free (1 samples, 0.09%)</title><rect x="10.0" y="965" width="1.0" height="15.0" fill="rgb(208,201,36)" rx="2" ry="2" />
+<text  x="13.00" y="975.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_seq (22 samples, 1.92%)</title><rect x="17.2" y="405" width="22.7" height="15.0" fill="rgb(211,78,32)" rx="2" ry="2" />
+<text  x="20.23" y="415.5" >&lt;..</text>
+</g>
+<g >
+<title>serde::de::SeqAccess::next_element (6 samples, 0.52%)</title><rect x="33.7" y="293" width="6.2" height="15.0" fill="rgb(210,116,36)" rx="2" ry="2" />
+<text  x="36.74" y="303.5" ></text>
+</g>
+<g >
+<title>&lt;geos::geometry::Geometry as geos::traits::ContextHandling&gt;::get_raw_context (1 samples, 0.09%)</title><rect x="1108.4" y="1109" width="1.1" height="15.0" fill="rgb(216,133,4)" rx="2" ry="2" />
+<text  x="1111.44" y="1119.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="437" width="22.7" height="15.0" fill="rgb(206,126,12)" rx="2" ry="2" />
+<text  x="20.23" y="447.5" >s..</text>
+</g>
+<g >
+<title>clear_page_erms (1 samples, 0.09%)</title><rect x="41.0" y="421" width="1.0" height="15.0" fill="rgb(222,86,2)" rx="2" ry="2" />
+<text  x="43.97" y="431.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::de::MapAccess&lt;R&gt; as serde::de::MapAccess&gt;::next_value_seed (22 samples, 1.92%)</title><rect x="17.2" y="773" width="22.7" height="15.0" fill="rgb(230,61,1)" rx="2" ry="2" />
+<text  x="20.23" y="783.5" >&lt;..</text>
+</g>
+<g >
+<title>geojson::feature::&lt;impl core::convert::TryFrom&lt;serde_json::map::Map&lt;alloc::string::String,serde_json::value::Value&gt;&gt; for geojson::Feature&gt;::try_from (4 samples, 0.35%)</title><rect x="10.0" y="1253" width="4.1" height="15.0" fill="rgb(205,190,44)" rx="2" ry="2" />
+<text  x="13.00" y="1263.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::CGAlgorithmsDD::orientationIndex (2 samples, 0.17%)</title><rect x="860.7" y="901" width="2.0" height="15.0" fill="rgb(239,150,13)" rx="2" ry="2" />
+<text  x="863.67" y="911.5" ></text>
+</g>
+<g >
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="27.6" y="325" width="1.0" height="15.0" fill="rgb(207,105,47)" rx="2" ry="2" />
+<text  x="30.55" y="335.5" ></text>
+</g>
+<g >
+<title>geos::geom::Geometry::getCentroid (1,007 samples, 88.10%)</title><rect x="67.8" y="1077" width="1039.6" height="15.0" fill="rgb(229,203,1)" rx="2" ry="2" />
+<text  x="70.81" y="1087.5" >geos::geom::Geometry::getCentroid</text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::parse_integer (3 samples, 0.26%)</title><rect x="35.8" y="197" width="3.1" height="15.0" fill="rgb(244,113,36)" rx="2" ry="2" />
+<text  x="38.81" y="207.5" ></text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (24 samples, 2.10%)</title><rect x="17.2" y="837" width="24.8" height="15.0" fill="rgb(236,79,52)" rx="2" ry="2" />
+<text  x="20.23" y="847.5" >&lt;..</text>
+</g>
+<g >
+<title>core::iter::adapters::map::map_fold::_$u7b$$u7b$closure$u7d$$u7d$::h852ff4143359a141 (7 samples, 0.61%)</title><rect x="49.2" y="1045" width="7.3" height="15.0" fill="rgb(252,49,35)" rx="2" ry="2" />
+<text  x="52.23" y="1055.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::de::MapAccess&lt;R&gt; as serde::de::MapAccess&gt;::next_value_seed (1 samples, 0.09%)</title><rect x="39.9" y="789" width="1.1" height="15.0" fill="rgb(239,182,18)" rx="2" ry="2" />
+<text  x="42.94" y="799.5" ></text>
+</g>
+<g >
+<title>geojson::geometry::Geometry::from_json_object (4 samples, 0.35%)</title><rect x="10.0" y="1221" width="4.1" height="15.0" fill="rgb(249,140,49)" rx="2" ry="2" />
+<text  x="13.00" y="1231.5" ></text>
+</g>
+<g >
+<title>__memmove_avx_unaligned_erms (6 samples, 0.52%)</title><rect x="17.2" y="213" width="6.2" height="15.0" fill="rgb(205,112,32)" rx="2" ry="2" />
+<text  x="20.23" y="223.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[]@plt (2 samples, 0.17%)</title><rect x="999.0" y="917" width="2.1" height="15.0" fill="rgb(230,202,50)" rx="2" ry="2" />
+<text  x="1002.01" y="927.5" ></text>
+</g>
+<g >
+<title>page_fault (1 samples, 0.09%)</title><rect x="31.7" y="149" width="1.0" height="15.0" fill="rgb(246,7,18)" rx="2" ry="2" />
+<text  x="34.68" y="159.5" ></text>
+</g>
+<g >
+<title>__alloc_pages_nodemask (1 samples, 0.09%)</title><rect x="24.5" y="117" width="1.0" height="15.0" fill="rgb(227,113,30)" rx="2" ry="2" />
+<text  x="27.45" y="127.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::read::SliceRead as serde_json::read::Read&gt;::discard (2 samples, 0.17%)</title><rect x="36.8" y="117" width="2.1" height="15.0" fill="rgb(247,181,29)" rx="2" ry="2" />
+<text  x="39.84" y="127.5" ></text>
+</g>
+<g >
+<title>std::panic::catch_unwind (1,061 samples, 92.83%)</title><rect x="15.2" y="1333" width="1095.3" height="15.0" fill="rgb(210,103,49)" rx="2" ry="2" />
+<text  x="18.16" y="1343.5" >std::panic::catch_unwind</text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (1 samples, 0.09%)</title><rect x="39.9" y="741" width="1.1" height="15.0" fill="rgb(222,122,28)" rx="2" ry="2" />
+<text  x="42.94" y="751.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;serde_json::value::Value&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1157" width="2.1" height="15.0" fill="rgb(250,177,17)" rx="2" ry="2" />
+<text  x="13.00" y="1167.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="10.0" y="1125" width="2.1" height="15.0" fill="rgb(241,136,26)" rx="2" ry="2" />
+<text  x="13.00" y="1135.5" ></text>
+</g>
+<g >
+<title>__cxxabiv1::__si_class_type_info::__do_dyncast (1 samples, 0.09%)</title><rect x="67.8" y="981" width="1.0" height="15.0" fill="rgb(212,229,12)" rx="2" ry="2" />
+<text  x="70.81" y="991.5" ></text>
+</g>
+<g >
+<title>std::sys_common::backtrace::__rust_begin_short_backtrace (1,061 samples, 92.83%)</title><rect x="15.2" y="1253" width="1095.3" height="15.0" fill="rgb(251,178,22)" rx="2" ry="2" />
+<text  x="18.16" y="1263.5" >std::sys_common::backtrace::__rust_begin_short_backtrace</text>
+</g>
+<g >
+<title>core::ptr::write (2 samples, 0.17%)</title><rect x="26.5" y="373" width="2.1" height="15.0" fill="rgb(222,12,33)" rx="2" ry="2" />
+<text  x="29.52" y="383.5" ></text>
+</g>
+<g >
+<title>core::ops::function::FnOnce::call_once (1,061 samples, 92.83%)</title><rect x="15.2" y="1237" width="1095.3" height="15.0" fill="rgb(227,61,53)" rx="2" ry="2" />
+<text  x="18.16" y="1247.5" >core::ops::function::FnOnce::call_once</text>
+</g>
+<g >
+<title>&lt;alloc::alloc::Global as core::alloc::Allocator&gt;::allocate (1 samples, 0.09%)</title><rect x="41.0" y="613" width="1.0" height="15.0" fill="rgb(253,51,42)" rx="2" ry="2" />
+<text  x="43.97" y="623.5" ></text>
+</g>
+<g >
+<title>core::ops::function::impls::&lt;impl core::ops::function::FnOnce&lt;A&gt; for &amp;mut F&gt;::call_once (4 samples, 0.35%)</title><rect x="59.6" y="1013" width="4.1" height="15.0" fill="rgb(216,171,23)" rx="2" ry="2" />
+<text  x="62.55" y="1023.5" ></text>
+</g>
+<g >
+<title>alloc::collections::btree::map::BTreeMap&lt;K,V&gt;::insert (1 samples, 0.09%)</title><rect x="41.0" y="789" width="1.0" height="15.0" fill="rgb(207,89,40)" rx="2" ry="2" />
+<text  x="43.97" y="799.5" ></text>
+</g>
+<g >
+<title>&lt;geozero::geojson::geojson_reader::GeoJsonReader&lt;R&gt; as geozero::api::GeozeroDatasource&gt;::process (28 samples, 2.45%)</title><rect x="15.2" y="1173" width="28.9" height="15.0" fill="rgb(218,36,6)" rx="2" ry="2" />
+<text  x="18.16" y="1183.5" >&lt;g..</text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addShell (9 samples, 0.79%)</title><rect x="1120.8" y="1461" width="9.3" height="15.0" fill="rgb(220,153,4)" rx="2" ry="2" />
+<text  x="1123.83" y="1471.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::get (8 samples, 0.70%)</title><rect x="1181.7" y="1445" width="8.3" height="15.0" fill="rgb(219,144,9)" rx="2" ry="2" />
+<text  x="1184.74" y="1455.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;f64&gt;&gt;&gt; (2 samples, 0.17%)</title><rect x="15.2" y="901" width="2.0" height="15.0" fill="rgb(249,59,52)" rx="2" ry="2" />
+<text  x="18.16" y="911.5" ></text>
+</g>
+<g >
+<title>GEOSGetCentroid_r (1,009 samples, 88.28%)</title><rect x="66.8" y="1125" width="1041.6" height="15.0" fill="rgb(244,90,17)" rx="2" ry="2" />
+<text  x="69.78" y="1135.5" >GEOSGetCentroid_r</text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::operator* (83 samples, 7.26%)</title><rect x="1005.2" y="949" width="85.7" height="15.0" fill="rgb(236,28,32)" rx="2" ry="2" />
+<text  x="1008.21" y="959.5" >std::uniqu..</text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::area2 (2 samples, 0.17%)</title><rect x="1130.1" y="1445" width="2.1" height="15.0" fill="rgb(209,177,18)" rx="2" ry="2" />
+<text  x="1133.12" y="1455.5" ></text>
+</g>
+<g >
+<title>__softirqentry_text_start (1 samples, 0.09%)</title><rect x="394.0" y="869" width="1.1" height="15.0" fill="rgb(217,152,54)" rx="2" ry="2" />
+<text  x="397.04" y="879.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addTriangle (179 samples, 15.66%)</title><rect x="588.1" y="949" width="184.8" height="15.0" fill="rgb(234,125,28)" rx="2" ry="2" />
+<text  x="591.13" y="959.5" >geos::algorithm::Centroi..</text>
+</g>
+<g >
+<title>std::_Tuple_impl&lt;0ul, geos::geom::Point*, std::default_delete&lt;geos::geom::Point&gt; &gt;::_Tuple_impl@plt (1 samples, 0.09%)</title><rect x="1106.4" y="1013" width="1.0" height="15.0" fill="rgb(223,28,24)" rx="2" ry="2" />
+<text  x="1109.38" y="1023.5" ></text>
+</g>
+<g >
+<title>serde::de::SeqAccess::next_element (22 samples, 1.92%)</title><rect x="17.2" y="485" width="22.7" height="15.0" fill="rgb(220,91,33)" rx="2" ry="2" />
+<text  x="20.23" y="495.5" >s..</text>
+</g>
+<g >
+<title>clear_page_erms (1 samples, 0.09%)</title><rect x="27.6" y="245" width="1.0" height="15.0" fill="rgb(210,61,38)" rx="2" ry="2" />
+<text  x="30.55" y="255.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addTriangle (2 samples, 0.17%)</title><rect x="1130.1" y="1461" width="2.1" height="15.0" fill="rgb(251,134,18)" rx="2" ry="2" />
+<text  x="1133.12" y="1471.5" ></text>
+</g>
+<g >
+<title>std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h9f2d0c57023350de (1,061 samples, 92.83%)</title><rect x="15.2" y="1269" width="1095.3" height="15.0" fill="rgb(214,201,18)" rx="2" ry="2" />
+<text  x="18.16" y="1279.5" >std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h9f2d0c57023350de</text>
+</g>
+<g >
+<title>std::_Tuple_impl&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_head@plt (1 samples, 0.09%)</title><rect x="1084.7" y="869" width="1.0" height="15.0" fill="rgb(243,30,2)" rx="2" ry="2" />
+<text  x="1087.70" y="879.5" ></text>
+</g>
+<g >
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (11 samples, 0.96%)</title><rect x="28.6" y="357" width="11.3" height="15.0" fill="rgb(214,217,45)" rx="2" ry="2" />
+<text  x="31.58" y="367.5" ></text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (22 samples, 1.92%)</title><rect x="17.2" y="517" width="22.7" height="15.0" fill="rgb(239,6,32)" rx="2" ry="2" />
+<text  x="20.23" y="527.5" >&lt;..</text>
+</g>
+<g >
+<title>alloc_pages_vma (1 samples, 0.09%)</title><rect x="30.6" y="101" width="1.1" height="15.0" fill="rgb(217,180,19)" rx="2" ry="2" />
+<text  x="33.65" y="111.5" ></text>
+</g>
+<g >
+<title>geos::context_handle::ContextHandle::as_raw (1 samples, 0.09%)</title><rect x="1108.4" y="1093" width="1.1" height="15.0" fill="rgb(239,83,6)" rx="2" ry="2" />
+<text  x="1111.44" y="1103.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::getAt (15 samples, 1.31%)</title><rect x="921.6" y="901" width="15.5" height="15.0" fill="rgb(206,30,3)" rx="2" ry="2" />
+<text  x="924.58" y="911.5" ></text>
+</g>
+<g >
+<title>geos::geom::Geometry::Geometry (1 samples, 0.09%)</title><rect x="1105.3" y="1029" width="1.1" height="15.0" fill="rgb(217,79,40)" rx="2" ry="2" />
+<text  x="1108.35" y="1039.5" ></text>
+</g>
+<g >
+<title>geos::geom::Point::~Point (1 samples, 0.09%)</title><rect x="1109.5" y="1077" width="1.0" height="15.0" fill="rgb(233,27,35)" rx="2" ry="2" />
+<text  x="1112.48" y="1087.5" ></text>
+</g>
+<g >
+<title>alloc::vec::Vec&lt;T,A&gt;::push (11 samples, 0.96%)</title><rect x="17.2" y="389" width="11.4" height="15.0" fill="rgb(211,154,22)" rx="2" ry="2" />
+<text  x="20.23" y="399.5" ></text>
+</g>
+<g >
+<title>core::str::&lt;impl str&gt;::parse (4 samples, 0.35%)</title><rect x="10.0" y="1365" width="4.1" height="15.0" fill="rgb(229,152,26)" rx="2" ry="2" />
+<text  x="13.00" y="1375.5" ></text>
+</g>
+<g >
+<title>harness::data::load_multipolygon (4 samples, 0.35%)</title><rect x="10.0" y="1413" width="4.1" height="15.0" fill="rgb(211,153,11)" rx="2" ry="2" />
+<text  x="13.00" y="1423.5" ></text>
+</g>
+<g >
+<title>geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::ha94da3e3994f7f24 (2 samples, 0.17%)</title><rect x="54.4" y="1029" width="2.1" height="15.0" fill="rgb(215,229,20)" rx="2" ry="2" />
+<text  x="57.39" y="1039.5" ></text>
+</g>
+<g >
+<title>get_page_from_freelist (5 samples, 0.44%)</title><rect x="17.2" y="101" width="5.2" height="15.0" fill="rgb(229,124,35)" rx="2" ry="2" />
+<text  x="20.23" y="111.5" ></text>
+</g>
+<g >
+<title>harness::data::load_multipolygon_pack (4 samples, 0.35%)</title><rect x="10.0" y="1429" width="4.1" height="15.0" fill="rgb(226,180,52)" rx="2" ry="2" />
+<text  x="13.00" y="1439.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;serde_json::value::Value&gt;&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1013" width="2.1" height="15.0" fill="rgb(222,202,15)" rx="2" ry="2" />
+<text  x="13.00" y="1023.5" ></text>
+</g>
+<g >
+<title>std::_Head_base&lt;0ul, geos::geom::Coordinate*, false&gt;::_M_head (4 samples, 0.35%)</title><rect x="1079.5" y="853" width="4.2" height="15.0" fill="rgb(240,100,16)" rx="2" ry="2" />
+<text  x="1082.54" y="863.5" ></text>
+</g>
+<g >
+<title>page_fault (6 samples, 0.52%)</title><rect x="17.2" y="197" width="6.2" height="15.0" fill="rgb(218,165,19)" rx="2" ry="2" />
+<text  x="20.23" y="207.5" ></text>
+</g>
+<g >
+<title>__dynamic_cast (1 samples, 0.09%)</title><rect x="67.8" y="997" width="1.0" height="15.0" fill="rgb(228,31,16)" rx="2" ry="2" />
+<text  x="70.81" y="1007.5" ></text>
+</g>
+<g >
+<title>execute&lt;GEOSGeom_destroy_r::{lambda (1 samples, 0.09%)</title><rect x="1109.5" y="1109" width="1.0" height="15.0" fill="rgb(245,198,48)" rx="2" ry="2" />
+<text  x="1112.48" y="1119.5" ></text>
+</g>
+<g >
+<title>benchmark_centroid::geo_centroid (22 samples, 1.92%)</title><rect x="44.1" y="1157" width="22.7" height="15.0" fill="rgb(222,121,1)" rx="2" ry="2" />
+<text  x="47.07" y="1167.5" >b..</text>
+</g>
+<g >
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="15.2" y="1093" width="2.0" height="15.0" fill="rgb(207,88,32)" rx="2" ry="2" />
+<text  x="18.16" y="1103.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="629" width="22.7" height="15.0" fill="rgb(240,166,47)" rx="2" ry="2" />
+<text  x="20.23" y="639.5" >s..</text>
+</g>
+<g >
+<title>benchmark_centroid::main (1,061 samples, 92.83%)</title><rect x="15.2" y="1221" width="1095.3" height="15.0" fill="rgb(213,105,43)" rx="2" ry="2" />
+<text  x="18.16" y="1231.5" >benchmark_centroid::main</text>
+</g>
+<g >
+<title>core::ptr::write (1 samples, 0.09%)</title><rect x="32.7" y="277" width="1.0" height="15.0" fill="rgb(232,166,13)" rx="2" ry="2" />
+<text  x="35.71" y="287.5" ></text>
+</g>
+<g >
+<title>_int_free (1 samples, 0.09%)</title><rect x="16.2" y="821" width="1.0" height="15.0" fill="rgb(206,94,30)" rx="2" ry="2" />
+<text  x="19.19" y="831.5" ></text>
+</g>
+<g >
+<title>_dl_start_user (1 samples, 0.09%)</title><rect x="14.1" y="1461" width="1.1" height="15.0" fill="rgb(205,37,0)" rx="2" ry="2" />
+<text  x="17.13" y="1471.5" ></text>
+</g>
+<g >
+<title>geos::geom::Polygon::isEmpty (2 samples, 0.17%)</title><rect x="1102.2" y="1029" width="2.1" height="15.0" fill="rgb(211,121,24)" rx="2" ry="2" />
+<text  x="1105.25" y="1039.5" ></text>
+</g>
+<g >
+<title>copy_page_to_iter (1 samples, 0.09%)</title><rect x="42.0" y="869" width="1.0" height="15.0" fill="rgb(228,223,18)" rx="2" ry="2" />
+<text  x="45.00" y="879.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (24 samples, 2.10%)</title><rect x="17.2" y="949" width="24.8" height="15.0" fill="rgb(209,156,29)" rx="2" ry="2" />
+<text  x="20.23" y="959.5" >s..</text>
+</g>
+<g >
+<title>geojson::util::get_geometry (4 samples, 0.35%)</title><rect x="10.0" y="1237" width="4.1" height="15.0" fill="rgb(240,21,6)" rx="2" ry="2" />
+<text  x="13.00" y="1247.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::empty (2 samples, 0.17%)</title><rect x="1102.2" y="965" width="2.1" height="15.0" fill="rgb(230,188,45)" rx="2" ry="2" />
+<text  x="1105.25" y="975.5" ></text>
+</g>
+<g >
+<title>std::io::Read::read_to_string (2 samples, 0.17%)</title><rect x="42.0" y="1109" width="2.1" height="15.0" fill="rgb(206,222,17)" rx="2" ry="2" />
+<text  x="45.00" y="1119.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::operator*@plt (4 samples, 0.35%)</title><rect x="1090.9" y="949" width="4.1" height="15.0" fill="rgb(218,14,44)" rx="2" ry="2" />
+<text  x="1093.89" y="959.5" ></text>
+</g>
+<g >
+<title>alloc::vec::Vec&lt;T,A&gt;::reserve (4 samples, 0.35%)</title><rect x="28.6" y="277" width="4.1" height="15.0" fill="rgb(207,64,14)" rx="2" ry="2" />
+<text  x="31.58" y="287.5" ></text>
+</g>
+<g >
+<title>std::rt::lang_start_internal::_$u7b$$u7b$closure$u7d$$u7d$::h3a398a8154de3106 (1,061 samples, 92.83%)</title><rect x="15.2" y="1349" width="1095.3" height="15.0" fill="rgb(229,36,20)" rx="2" ry="2" />
+<text  x="18.16" y="1359.5" >std::rt::lang_start_internal::_$u7b$$u7b$closure$u7d$$u7d$::h3a398a8154de3106</text>
+</g>
+<g >
+<title>page_fault (1 samples, 0.09%)</title><rect x="41.0" y="533" width="1.0" height="15.0" fill="rgb(229,17,3)" rx="2" ry="2" />
+<text  x="43.97" y="543.5" ></text>
+</g>
+<g >
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="757" width="22.7" height="15.0" fill="rgb(210,28,52)" rx="2" ry="2" />
+<text  x="20.23" y="767.5" >&lt;..</text>
+</g>
+<g >
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (1 samples, 0.09%)</title><rect x="39.9" y="773" width="1.1" height="15.0" fill="rgb(208,81,25)" rx="2" ry="2" />
+<text  x="42.94" y="783.5" ></text>
+</g>
+<g >
+<title>std::io::append_to_string (2 samples, 0.17%)</title><rect x="42.0" y="1093" width="2.1" height="15.0" fill="rgb(253,75,35)" rx="2" ry="2" />
+<text  x="45.00" y="1103.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;std::unique_ptr&lt;geos::geom::Geometry, std::default_delete&lt;geos::geom::Geometry&gt; &gt;, std::allocator&lt;std::unique_ptr&lt;geos::geom::Geometry, std::default_delete&lt;geos::geom::Geometry&gt; &gt; &gt; &gt;::begin (1 samples, 0.09%)</title><rect x="1104.3" y="1029" width="1.0" height="15.0" fill="rgb(235,125,41)" rx="2" ry="2" />
+<text  x="1107.31" y="1039.5" ></text>
+</g>
+<g >
+<title>std::panicking::try (1,061 samples, 92.83%)</title><rect x="15.2" y="1381" width="1095.3" height="15.0" fill="rgb(223,133,51)" rx="2" ry="2" />
+<text  x="18.16" y="1391.5" >std::panicking::try</text>
+</g>
+<g >
+<title>&lt;geo_types::point::Point&lt;T&gt; as geo::algorithm::map_coords::MapCoords&lt;T,NT&gt;&gt;::map_coords (2 samples, 0.17%)</title><rect x="63.7" y="1029" width="2.0" height="15.0" fill="rgb(254,67,54)" rx="2" ry="2" />
+<text  x="66.68" y="1039.5" ></text>
+</g>
+<g >
+<title>std::rt::lang_start_internal (1,061 samples, 92.83%)</title><rect x="15.2" y="1413" width="1095.3" height="15.0" fill="rgb(215,172,1)" rx="2" ry="2" />
+<text  x="18.16" y="1423.5" >std::rt::lang_start_internal</text>
+</g>
+<g >
+<title>geojson::util::get_features (4 samples, 0.35%)</title><rect x="10.0" y="1285" width="4.1" height="15.0" fill="rgb(239,115,28)" rx="2" ry="2" />
+<text  x="13.00" y="1295.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (6 samples, 0.52%)</title><rect x="17.2" y="181" width="6.2" height="15.0" fill="rgb(222,71,6)" rx="2" ry="2" />
+<text  x="20.23" y="191.5" ></text>
+</g>
+<g >
+<title>std::io::Read::read_to_string::_$u7b$$u7b$closure$u7d$$u7d$::hace5fe1ab9e3c1a8 (2 samples, 0.17%)</title><rect x="42.0" y="1077" width="2.1" height="15.0" fill="rgb(234,79,22)" rx="2" ry="2" />
+<text  x="45.00" y="1087.5" ></text>
+</g>
+<g >
+<title>std::_Tuple_impl&lt;0ul, geos::geom::Envelope*, std::default_delete&lt;geos::geom::Envelope&gt; &gt;::_Tuple_impl@plt (1 samples, 0.09%)</title><rect x="1105.3" y="965" width="1.1" height="15.0" fill="rgb(218,152,37)" rx="2" ry="2" />
+<text  x="1108.35" y="975.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize::ValueVisitor as serde::de::Visitor&gt;::visit_map (22 samples, 1.92%)</title><rect x="17.2" y="709" width="22.7" height="15.0" fill="rgb(222,94,22)" rx="2" ry="2" />
+<text  x="20.23" y="719.5" >&lt;..</text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::operator[]@plt (7 samples, 0.61%)</title><rect x="580.9" y="933" width="7.2" height="15.0" fill="rgb(218,128,35)" rx="2" ry="2" />
+<text  x="583.90" y="943.5" ></text>
+</g>
+<g >
+<title>__GI___libc_malloc (4 samples, 0.35%)</title><rect x="28.6" y="197" width="4.1" height="15.0" fill="rgb(247,71,49)" rx="2" ry="2" />
+<text  x="31.58" y="207.5" ></text>
+</g>
+<g >
+<title>std::io::impls::&lt;impl std::io::Read for &amp;mut R&gt;::read_to_string (2 samples, 0.17%)</title><rect x="42.0" y="1141" width="2.1" height="15.0" fill="rgb(236,122,36)" rx="2" ry="2" />
+<text  x="45.00" y="1151.5" ></text>
+</g>
+<g >
+<title>_int_free (1 samples, 0.09%)</title><rect x="11.0" y="965" width="1.1" height="15.0" fill="rgb(251,143,29)" rx="2" ry="2" />
+<text  x="14.03" y="975.5" ></text>
+</g>
+<g >
+<title>geojson::util::get_coords_3d_pos (4 samples, 0.35%)</title><rect x="10.0" y="1173" width="4.1" height="15.0" fill="rgb(226,150,40)" rx="2" ry="2" />
+<text  x="13.00" y="1183.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addShell@plt (1 samples, 0.09%)</title><rect x="1095.0" y="965" width="1.1" height="15.0" fill="rgb(254,212,19)" rx="2" ry="2" />
+<text  x="1098.02" y="975.5" ></text>
+</g>
+<g >
+<title>std::panicking::try (1,061 samples, 92.83%)</title><rect x="15.2" y="1317" width="1095.3" height="15.0" fill="rgb(212,189,10)" rx="2" ry="2" />
+<text  x="18.16" y="1327.5" >std::panicking::try</text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::parse_number (3 samples, 0.26%)</title><rect x="35.8" y="181" width="3.1" height="15.0" fill="rgb(222,147,5)" rx="2" ry="2" />
+<text  x="38.81" y="191.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::centroid::CentroidOperation$LT$T$GT$::add_ring::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h991ecb602947a8d8 (1 samples, 0.09%)</title><rect x="53.4" y="981" width="1.0" height="15.0" fill="rgb(218,172,43)" rx="2" ry="2" />
+<text  x="56.36" y="991.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::get (8 samples, 0.70%)</title><rect x="1173.5" y="1461" width="8.2" height="15.0" fill="rgb(216,200,9)" rx="2" ry="2" />
+<text  x="1176.48" y="1471.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::operator[]@plt (15 samples, 1.31%)</title><rect x="565.4" y="901" width="15.5" height="15.0" fill="rgb(209,102,30)" rx="2" ry="2" />
+<text  x="568.42" y="911.5" ></text>
+</g>
+<g >
+<title>std::_Head_base&lt;0ul, geos::geom::Coordinate*, false&gt;::_M_head@plt (1 samples, 0.09%)</title><rect x="1083.7" y="853" width="1.0" height="15.0" fill="rgb(230,159,25)" rx="2" ry="2" />
+<text  x="1086.67" y="863.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::area::get_linestring_area (10 samples, 0.87%)</title><rect x="56.5" y="1077" width="10.3" height="15.0" fill="rgb(250,219,52)" rx="2" ry="2" />
+<text  x="59.46" y="1087.5" ></text>
+</g>
+<g >
+<title>&lt;geo_types::coordinate::Coordinate&lt;T&gt; as core::ops::arith::Add&gt;::add (2 samples, 0.17%)</title><rect x="49.2" y="1013" width="2.1" height="15.0" fill="rgb(252,157,27)" rx="2" ry="2" />
+<text  x="52.23" y="1023.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::add (999 samples, 87.40%)</title><rect x="67.8" y="1013" width="1031.4" height="15.0" fill="rgb(250,170,23)" rx="2" ry="2" />
+<text  x="70.81" y="1023.5" >geos::algorithm::Centroid::add</text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::centroid3 (58 samples, 5.07%)</title><rect x="711.0" y="933" width="59.9" height="15.0" fill="rgb(213,73,37)" rx="2" ry="2" />
+<text  x="713.98" y="943.5" >geos::..</text>
+</g>
+<g >
+<title>&lt;alloc::raw_vec::RawVec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (1 samples, 0.09%)</title><rect x="16.2" y="869" width="1.0" height="15.0" fill="rgb(247,62,24)" rx="2" ry="2" />
+<text  x="19.19" y="879.5" ></text>
+</g>
+<g >
+<title>mem_cgroup_from_task (1 samples, 0.09%)</title><rect x="22.4" y="149" width="1.0" height="15.0" fill="rgb(219,38,17)" rx="2" ry="2" />
+<text  x="25.39" y="159.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_ptr@plt (1 samples, 0.09%)</title><rect x="1085.7" y="917" width="1.1" height="15.0" fill="rgb(211,162,50)" rx="2" ry="2" />
+<text  x="1088.73" y="927.5" ></text>
+</g>
+<g >
+<title>std::vector&lt;geos::geom::Coordinate, std::allocator&lt;geos::geom::Coordinate&gt; &gt;::begin@plt (1 samples, 0.09%)</title><rect x="1102.2" y="949" width="1.1" height="15.0" fill="rgb(215,190,29)" rx="2" ry="2" />
+<text  x="1105.25" y="959.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Orientation::isCCW (159 samples, 13.91%)</title><rect x="772.9" y="949" width="164.2" height="15.0" fill="rgb(234,211,0)" rx="2" ry="2" />
+<text  x="775.92" y="959.5" >geos::algorithm::Orie..</text>
+</g>
+<g >
+<title>GEOSGeom_destroy_r::{lambda (1 samples, 0.09%)</title><rect x="1109.5" y="1093" width="1.0" height="15.0" fill="rgb(219,39,12)" rx="2" ry="2" />
+<text  x="1112.48" y="1103.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;serde_json::value::Value&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1093" width="2.1" height="15.0" fill="rgb(217,37,11)" rx="2" ry="2" />
+<text  x="13.00" y="1103.5" ></text>
+</g>
+<g >
+<title>geos::geom::Coordinate::equals2D (1 samples, 0.09%)</title><rect x="862.7" y="933" width="1.1" height="15.0" fill="rgb(240,19,52)" rx="2" ry="2" />
+<text  x="865.74" y="943.5" ></text>
+</g>
+<g >
+<title>copy_user_enhanced_fast_string (1 samples, 0.09%)</title><rect x="42.0" y="837" width="1.0" height="15.0" fill="rgb(251,173,19)" rx="2" ry="2" />
+<text  x="45.00" y="847.5" ></text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_value (1 samples, 0.09%)</title><rect x="39.9" y="805" width="1.1" height="15.0" fill="rgb(248,79,40)" rx="2" ry="2" />
+<text  x="42.94" y="815.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="31.7" y="133" width="1.0" height="15.0" fill="rgb(219,92,22)" rx="2" ry="2" />
+<text  x="34.68" y="143.5" ></text>
+</g>
+<g >
+<title>geo::algorithm::centroid::CentroidOperation&lt;T&gt;::add_polygon (22 samples, 1.92%)</title><rect x="44.1" y="1109" width="22.7" height="15.0" fill="rgb(214,94,18)" rx="2" ry="2" />
+<text  x="47.07" y="1119.5" >g..</text>
+</g>
+<g >
+<title>entry_SYSCALL_64_after_hwframe (1 samples, 0.09%)</title><rect x="25.5" y="117" width="1.0" height="15.0" fill="rgb(240,47,13)" rx="2" ry="2" />
+<text  x="28.49" y="127.5" ></text>
+</g>
+<g >
+<title>geos::geom::Coordinate::distance (134 samples, 11.72%)</title><rect x="256.7" y="933" width="138.4" height="15.0" fill="rgb(207,22,6)" rx="2" ry="2" />
+<text  x="259.74" y="943.5" >geos::geom::Coord..</text>
+</g>
+<g >
+<title>&lt;core::iter::adapters::map::Map&lt;I,F&gt; as core::iter::traits::iterator::Iterator&gt;::fold (12 samples, 1.05%)</title><rect x="44.1" y="1077" width="12.4" height="15.0" fill="rgb(213,113,21)" rx="2" ry="2" />
+<text  x="47.07" y="1087.5" ></text>
+</g>
+<g >
+<title>geojson::util::json_to_1d_positions (2 samples, 0.17%)</title><rect x="12.1" y="1125" width="2.0" height="15.0" fill="rgb(231,58,3)" rx="2" ry="2" />
+<text  x="15.06" y="1135.5" ></text>
+</g>
+<g >
+<title>__libc_start_main (1,061 samples, 92.83%)</title><rect x="15.2" y="1445" width="1095.3" height="15.0" fill="rgb(248,78,18)" rx="2" ry="2" />
+<text  x="18.16" y="1455.5" >__libc_start_main</text>
+</g>
+<g >
+<title>malloc_consolidate (1 samples, 0.09%)</title><rect x="16.2" y="805" width="1.0" height="15.0" fill="rgb(245,1,20)" rx="2" ry="2" />
+<text  x="19.19" y="815.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (24 samples, 2.10%)</title><rect x="17.2" y="1061" width="24.8" height="15.0" fill="rgb(221,150,42)" rx="2" ry="2" />
+<text  x="20.23" y="1071.5" >s..</text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;f64&gt;&gt; (1 samples, 0.09%)</title><rect x="15.2" y="853" width="1.0" height="15.0" fill="rgb(244,145,32)" rx="2" ry="2" />
+<text  x="18.16" y="863.5" ></text>
+</g>
+<g >
+<title>std::get&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (3 samples, 0.26%)</title><rect x="1170.4" y="1461" width="3.1" height="15.0" fill="rgb(235,5,48)" rx="2" ry="2" />
+<text  x="1173.38" y="1471.5" ></text>
+</g>
+<g >
+<title>pagecache_get_page (1 samples, 0.09%)</title><rect x="43.0" y="869" width="1.1" height="15.0" fill="rgb(251,165,30)" rx="2" ry="2" />
+<text  x="46.04" y="879.5" ></text>
+</g>
+<g >
+<title>entry_SYSCALL_64_after_hwframe (2 samples, 0.17%)</title><rect x="42.0" y="965" width="2.1" height="15.0" fill="rgb(210,227,26)" rx="2" ry="2" />
+<text  x="45.00" y="975.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateArraySequence::isEmpty (2 samples, 0.17%)</title><rect x="1102.2" y="997" width="2.1" height="15.0" fill="rgb(239,9,4)" rx="2" ry="2" />
+<text  x="1105.25" y="1007.5" ></text>
+</g>
+<g >
+<title>std::io::impls::&lt;impl std::io::Read for &amp;mut R&gt;::read_to_string (2 samples, 0.17%)</title><rect x="42.0" y="1125" width="2.1" height="15.0" fill="rgb(254,50,37)" rx="2" ry="2" />
+<text  x="45.00" y="1135.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::alloc::Global as core::alloc::Allocator&gt;::grow (9 samples, 0.79%)</title><rect x="17.2" y="293" width="9.3" height="15.0" fill="rgb(250,134,17)" rx="2" ry="2" />
+<text  x="20.23" y="303.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::getCentroid (1 samples, 0.09%)</title><rect x="1100.2" y="1029" width="1.0" height="15.0" fill="rgb(224,33,38)" rx="2" ry="2" />
+<text  x="1103.18" y="1039.5" ></text>
+</g>
+<g >
+<title>alloc::alloc::dealloc (1 samples, 0.09%)</title><rect x="15.2" y="789" width="1.0" height="15.0" fill="rgb(226,49,9)" rx="2" ry="2" />
+<text  x="18.16" y="799.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addTriangle (1 samples, 0.09%)</title><rect x="1120.8" y="1445" width="1.1" height="15.0" fill="rgb(227,127,17)" rx="2" ry="2" />
+<text  x="1123.83" y="1455.5" ></text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (22 samples, 1.92%)</title><rect x="17.2" y="725" width="22.7" height="15.0" fill="rgb(220,49,48)" rx="2" ry="2" />
+<text  x="20.23" y="735.5" >&lt;..</text>
+</g>
+<g >
+<title>std::get&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt; (9 samples, 0.79%)</title><rect x="1161.1" y="1445" width="9.3" height="15.0" fill="rgb(253,56,48)" rx="2" ry="2" />
+<text  x="1164.09" y="1455.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::addLineSegments (479 samples, 41.91%)</title><rect x="93.6" y="949" width="494.5" height="15.0" fill="rgb(245,35,42)" rx="2" ry="2" />
+<text  x="96.62" y="959.5" >geos::algorithm::Centroid::addLineSegments</text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry_seed (22 samples, 1.92%)</title><rect x="17.2" y="677" width="22.7" height="15.0" fill="rgb(212,226,51)" rx="2" ry="2" />
+<text  x="20.23" y="687.5" >s..</text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::getOrdinate (2 samples, 0.17%)</title><rect x="1134.3" y="1445" width="2.0" height="15.0" fill="rgb(223,71,7)" rx="2" ry="2" />
+<text  x="1137.25" y="1455.5" ></text>
+</g>
+<g >
+<title>alloc_pages_vma (1 samples, 0.09%)</title><rect x="24.5" y="133" width="1.0" height="15.0" fill="rgb(211,162,32)" rx="2" ry="2" />
+<text  x="27.45" y="143.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;geojson::feature_collection::FeatureCollection&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1125" width="2.0" height="15.0" fill="rgb(235,209,42)" rx="2" ry="2" />
+<text  x="18.16" y="1135.5" ></text>
+</g>
+<g >
+<title>std::_Tuple_impl&lt;0ul, geos::geom::Coordinate*, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_head (21 samples, 1.84%)</title><rect x="1063.0" y="869" width="21.7" height="15.0" fill="rgb(218,194,51)" rx="2" ry="2" />
+<text  x="1066.02" y="879.5" >s..</text>
+</g>
+<g >
+<title>serde_json::map::Map&lt;alloc::string::String,serde_json::value::Value&gt;::insert (1 samples, 0.09%)</title><rect x="41.0" y="805" width="1.0" height="15.0" fill="rgb(212,72,11)" rx="2" ry="2" />
+<text  x="43.97" y="815.5" ></text>
+</g>
+<g >
+<title>_dl_init (1 samples, 0.09%)</title><rect x="14.1" y="1445" width="1.1" height="15.0" fill="rgb(237,18,27)" rx="2" ry="2" />
+<text  x="17.13" y="1455.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::operator[] (62 samples, 5.42%)</title><rect x="937.1" y="949" width="64.0" height="15.0" fill="rgb(214,187,25)" rx="2" ry="2" />
+<text  x="940.07" y="959.5" >geos::g..</text>
+</g>
+<g >
+<title>__alloc_pages_nodemask (1 samples, 0.09%)</title><rect x="41.0" y="453" width="1.0" height="15.0" fill="rgb(240,197,32)" rx="2" ry="2" />
+<text  x="43.97" y="463.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;alloc::vec::Vec&lt;f64&gt;&gt;&gt;&gt;&gt; (2 samples, 0.17%)</title><rect x="15.2" y="997" width="2.0" height="15.0" fill="rgb(254,125,0)" rx="2" ry="2" />
+<text  x="18.16" y="1007.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Geometry, std::default_delete&lt;geos::geom::Geometry&gt; &gt;::get (1 samples, 0.09%)</title><rect x="1098.1" y="981" width="1.1" height="15.0" fill="rgb(233,83,26)" rx="2" ry="2" />
+<text  x="1101.12" y="991.5" ></text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry (22 samples, 1.92%)</title><rect x="17.2" y="693" width="22.7" height="15.0" fill="rgb(246,127,17)" rx="2" ry="2" />
+<text  x="20.23" y="703.5" >s..</text>
+</g>
+<g >
+<title>get_page_from_freelist (1 samples, 0.09%)</title><rect x="31.7" y="53" width="1.0" height="15.0" fill="rgb(247,222,8)" rx="2" ry="2" />
+<text  x="34.68" y="63.5" ></text>
+</g>
+<g >
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="41.0" y="501" width="1.0" height="15.0" fill="rgb(246,166,4)" rx="2" ry="2" />
+<text  x="43.97" y="511.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;[serde_json::value::Value]&gt; (2 samples, 0.17%)</title><rect x="10.0" y="981" width="2.1" height="15.0" fill="rgb(220,184,26)" rx="2" ry="2" />
+<text  x="13.00" y="991.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::Centroid (1,000 samples, 87.49%)</title><rect x="67.8" y="1029" width="1032.4" height="15.0" fill="rgb(250,53,40)" rx="2" ry="2" />
+<text  x="70.81" y="1039.5" >geos::algorithm::Centroid::Centroid</text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::operator* (7 samples, 0.61%)</title><rect x="1122.9" y="1445" width="7.2" height="15.0" fill="rgb(213,79,19)" rx="2" ry="2" />
+<text  x="1125.90" y="1455.5" ></text>
+</g>
+<g >
+<title>geojson::util::json_to_position (1 samples, 0.09%)</title><rect x="13.1" y="1109" width="1.0" height="15.0" fill="rgb(227,0,30)" rx="2" ry="2" />
+<text  x="16.10" y="1119.5" ></text>
+</g>
+<g >
+<title>page_fault (1 samples, 0.09%)</title><rect x="30.6" y="165" width="1.1" height="15.0" fill="rgb(232,159,50)" rx="2" ry="2" />
+<text  x="33.65" y="175.5" ></text>
+</g>
+<g >
+<title>alloc::vec::Vec&lt;T,A&gt;::reserve (9 samples, 0.79%)</title><rect x="17.2" y="373" width="9.3" height="15.0" fill="rgb(213,101,5)" rx="2" ry="2" />
+<text  x="20.23" y="383.5" ></text>
+</g>
+<g >
+<title>clear_page_erms (1 samples, 0.09%)</title><rect x="30.6" y="53" width="1.1" height="15.0" fill="rgb(219,145,10)" rx="2" ry="2" />
+<text  x="33.65" y="63.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Coordinate, std::default_delete&lt;geos::geom::Coordinate&gt; &gt;::_M_ptr (56 samples, 4.90%)</title><rect x="1027.9" y="917" width="57.8" height="15.0" fill="rgb(230,23,31)" rx="2" ry="2" />
+<text  x="1030.92" y="927.5" >std::_..</text>
+</g>
+<g >
+<title>find_get_entry (1 samples, 0.09%)</title><rect x="43.0" y="853" width="1.1" height="15.0" fill="rgb(228,120,47)" rx="2" ry="2" />
+<text  x="46.04" y="863.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;geojson::geometry::Geometry&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1029" width="2.0" height="15.0" fill="rgb(240,119,53)" rx="2" ry="2" />
+<text  x="18.16" y="1039.5" ></text>
+</g>
+<g >
+<title>alloc::alloc::Global::alloc_impl (1 samples, 0.09%)</title><rect x="41.0" y="597" width="1.0" height="15.0" fill="rgb(217,122,48)" rx="2" ry="2" />
+<text  x="43.97" y="607.5" ></text>
+</g>
+<g >
+<title>alloc::collections::btree::map::BTreeMap&lt;K,V&gt;::ensure_is_owned (1 samples, 0.09%)</title><rect x="41.0" y="757" width="1.0" height="15.0" fill="rgb(241,49,36)" rx="2" ry="2" />
+<text  x="43.97" y="767.5" ></text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry_seed (24 samples, 2.10%)</title><rect x="17.2" y="997" width="24.8" height="15.0" fill="rgb(210,74,29)" rx="2" ry="2" />
+<text  x="20.23" y="1007.5" >s..</text>
+</g>
+<g >
+<title>alloc::vec::Vec&lt;T,A&gt;::push (5 samples, 0.44%)</title><rect x="28.6" y="293" width="5.1" height="15.0" fill="rgb(247,4,1)" rx="2" ry="2" />
+<text  x="31.58" y="303.5" ></text>
+</g>
+<g >
+<title>__GI___default_morecore (1 samples, 0.09%)</title><rect x="25.5" y="181" width="1.0" height="15.0" fill="rgb(210,101,19)" rx="2" ry="2" />
+<text  x="28.49" y="191.5" ></text>
+</g>
+<g >
+<title>serde::de::MapAccess::next_entry (24 samples, 2.10%)</title><rect x="17.2" y="1013" width="24.8" height="15.0" fill="rgb(228,51,2)" rx="2" ry="2" />
+<text  x="20.23" y="1023.5" >s..</text>
+</g>
+<g >
+<title>__handle_mm_fault (1 samples, 0.09%)</title><rect x="31.7" y="101" width="1.0" height="15.0" fill="rgb(243,113,25)" rx="2" ry="2" />
+<text  x="34.68" y="111.5" ></text>
+</g>
+<g >
+<title>&lt;serde_json::read::StrRead as serde_json::read::Read&gt;::peek (1 samples, 0.09%)</title><rect x="38.9" y="229" width="1.0" height="15.0" fill="rgb(223,34,25)" rx="2" ry="2" />
+<text  x="41.91" y="239.5" ></text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::operator[]@plt (4 samples, 0.35%)</title><rect x="1001.1" y="949" width="4.1" height="15.0" fill="rgb(228,180,26)" rx="2" ry="2" />
+<text  x="1004.08" y="959.5" ></text>
+</g>
+<g >
+<title>&lt;f64 as core::ops::arith::Mul&gt;::mul (2 samples, 0.17%)</title><rect x="51.3" y="997" width="2.1" height="15.0" fill="rgb(205,7,14)" rx="2" ry="2" />
+<text  x="54.29" y="1007.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;serde_json::value::Value&gt; (2 samples, 0.17%)</title><rect x="10.0" y="1029" width="2.1" height="15.0" fill="rgb(242,95,16)" rx="2" ry="2" />
+<text  x="13.00" y="1039.5" ></text>
+</g>
+<g >
+<title>handle_mm_fault (1 samples, 0.09%)</title><rect x="30.6" y="133" width="1.1" height="15.0" fill="rgb(206,34,40)" rx="2" ry="2" />
+<text  x="33.65" y="143.5" ></text>
+</g>
+<g >
+<title>__GI___libc_realloc (9 samples, 0.79%)</title><rect x="17.2" y="245" width="9.3" height="15.0" fill="rgb(235,84,42)" rx="2" ry="2" />
+<text  x="20.23" y="255.5" ></text>
+</g>
+<g >
+<title>benchmark_centroid::main (4 samples, 0.35%)</title><rect x="10.0" y="1445" width="4.1" height="15.0" fill="rgb(207,203,0)" rx="2" ry="2" />
+<text  x="13.00" y="1455.5" ></text>
+</g>
+<g >
+<title>smp_apic_timer_interrupt (1 samples, 0.09%)</title><rect x="255.7" y="917" width="1.0" height="15.0" fill="rgb(225,117,16)" rx="2" ry="2" />
+<text  x="258.70" y="927.5" ></text>
+</g>
+<g >
+<title>harness::data::load_multipolygon_pack (28 samples, 2.45%)</title><rect x="15.2" y="1205" width="28.9" height="15.0" fill="rgb(246,68,35)" rx="2" ry="2" />
+<text  x="18.16" y="1215.5" >ha..</text>
+</g>
+<g >
+<title>&lt;&amp;mut serde_json::de::Deserializer&lt;R&gt; as serde::de::Deserializer&gt;::deserialize_any (24 samples, 2.10%)</title><rect x="17.2" y="1045" width="24.8" height="15.0" fill="rgb(220,38,42)" rx="2" ry="2" />
+<text  x="20.23" y="1055.5" >&lt;..</text>
+</g>
+<g >
+<title>geos::geom::CoordinateSequence::getOrdinate (29 samples, 2.54%)</title><rect x="907.1" y="917" width="30.0" height="15.0" fill="rgb(242,69,6)" rx="2" ry="2" />
+<text  x="910.13" y="927.5" >ge..</text>
+</g>
+<g >
+<title>&lt;serde_json::read::StrRead as serde_json::read::Read&gt;::discard (2 samples, 0.17%)</title><rect x="36.8" y="133" width="2.1" height="15.0" fill="rgb(248,68,54)" rx="2" ry="2" />
+<text  x="39.84" y="143.5" ></text>
+</g>
+<g >
+<title>filemap_map_pages (1 samples, 0.09%)</title><rect x="14.1" y="1317" width="1.1" height="15.0" fill="rgb(207,132,36)" rx="2" ry="2" />
+<text  x="17.13" y="1327.5" ></text>
+</g>
+<g >
+<title>&lt;harness::notsofine::simple::FnWithArgProgram&lt;T&gt; as harness::notsofine::PreparedProgram&gt;::benchmark_this (1,033 samples, 90.38%)</title><rect x="44.1" y="1173" width="1066.4" height="15.0" fill="rgb(232,218,46)" rx="2" ry="2" />
+<text  x="47.07" y="1183.5" >&lt;harness::notsofine::simple::FnWithArgProgram&lt;T&gt; as harness::notsofine::PreparedProgram&gt;::benchmark_this</text>
+</g>
+<g >
+<title>geojson::geojson::GeoJson::from_json_object (4 samples, 0.35%)</title><rect x="10.0" y="1333" width="4.1" height="15.0" fill="rgb(208,167,49)" rx="2" ry="2" />
+<text  x="13.00" y="1343.5" ></text>
+</g>
+<g >
+<title>_int_realloc (9 samples, 0.79%)</title><rect x="17.2" y="229" width="9.3" height="15.0" fill="rgb(232,67,39)" rx="2" ry="2" />
+<text  x="20.23" y="239.5" ></text>
+</g>
+<g >
+<title>__do_page_fault (1 samples, 0.09%)</title><rect x="24.5" y="181" width="1.0" height="15.0" fill="rgb(234,131,6)" rx="2" ry="2" />
+<text  x="27.45" y="191.5" ></text>
+</g>
+<g >
+<title>get_page_from_freelist (1 samples, 0.09%)</title><rect x="30.6" y="69" width="1.1" height="15.0" fill="rgb(226,69,27)" rx="2" ry="2" />
+<text  x="33.65" y="79.5" ></text>
+</g>
+<g >
+<title>geos::algorithm::Centroid::getCentroid (1,002 samples, 87.66%)</title><rect x="67.8" y="1045" width="1034.4" height="15.0" fill="rgb(229,43,48)" rx="2" ry="2" />
+<text  x="70.81" y="1055.5" >geos::algorithm::Centroid::getCentroid</text>
+</g>
+<g >
+<title>page_fault (1 samples, 0.09%)</title><rect x="27.6" y="357" width="1.0" height="15.0" fill="rgb(216,0,47)" rx="2" ry="2" />
+<text  x="30.55" y="367.5" ></text>
+</g>
+<g >
+<title>sysmalloc (1 samples, 0.09%)</title><rect x="31.7" y="165" width="1.0" height="15.0" fill="rgb(241,150,26)" rx="2" ry="2" />
+<text  x="34.68" y="175.5" ></text>
+</g>
+<g >
+<title>&lt;geojson::geojson::GeoJson as core::convert::TryFrom&lt;serde_json::map::Map&lt;alloc::string::String,serde_json::value::Value&gt;&gt;&gt;::try_from (4 samples, 0.35%)</title><rect x="10.0" y="1317" width="4.1" height="15.0" fill="rgb(217,1,28)" rx="2" ry="2" />
+<text  x="13.00" y="1327.5" ></text>
+</g>
+<g >
+<title>__softirqentry_text_start (1 samples, 0.09%)</title><rect x="255.7" y="885" width="1.0" height="15.0" fill="rgb(244,155,44)" rx="2" ry="2" />
+<text  x="258.70" y="895.5" ></text>
+</g>
+<g >
+<title>irq_exit (1 samples, 0.09%)</title><rect x="255.7" y="901" width="1.0" height="15.0" fill="rgb(230,18,12)" rx="2" ry="2" />
+<text  x="258.70" y="911.5" ></text>
+</g>
+<g >
+<title>alloc::collections::btree::node::NodeRef&lt;alloc::collections::btree::node::marker::Owned,K,V,alloc::collections::btree::node::marker::Leaf&gt;::new_leaf (1 samples, 0.09%)</title><rect x="41.0" y="693" width="1.0" height="15.0" fill="rgb(230,57,44)" rx="2" ry="2" />
+<text  x="43.97" y="703.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (1 samples, 0.09%)</title><rect x="15.2" y="885" width="1.0" height="15.0" fill="rgb(227,226,2)" rx="2" ry="2" />
+<text  x="18.16" y="895.5" ></text>
+</g>
+<g >
+<title>&lt;alloc::vec::Vec&lt;T,A&gt; as core::ops::drop::Drop&gt;::drop (2 samples, 0.17%)</title><rect x="10.0" y="1061" width="2.1" height="15.0" fill="rgb(210,137,6)" rx="2" ry="2" />
+<text  x="13.00" y="1071.5" ></text>
+</g>
+<g >
+<title>geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::ha94da3e3994f7f24 (4 samples, 0.35%)</title><rect x="59.6" y="997" width="4.1" height="15.0" fill="rgb(208,12,9)" rx="2" ry="2" />
+<text  x="62.55" y="1007.5" ></text>
+</g>
+<g >
+<title>harness::notsofine::benchmark_run (1,033 samples, 90.38%)</title><rect x="44.1" y="1205" width="1066.4" height="15.0" fill="rgb(253,7,54)" rx="2" ry="2" />
+<text  x="47.07" y="1215.5" >harness::notsofine::benchmark_run</text>
+</g>
+<g >
+<title>geo::algorithm::area::twice_signed_ring_area::_$u7b$$u7b$closure$u7d$$u7d$::h0c0bb9bdc36e4a85 (2 samples, 0.17%)</title><rect x="63.7" y="1013" width="2.0" height="15.0" fill="rgb(231,130,46)" rx="2" ry="2" />
+<text  x="66.68" y="1023.5" ></text>
+</g>
+<g >
+<title>serde_json::value::de::&lt;impl serde::de::Deserialize for serde_json::value::Value&gt;::deserialize (24 samples, 2.10%)</title><rect x="17.2" y="853" width="24.8" height="15.0" fill="rgb(218,28,47)" rx="2" ry="2" />
+<text  x="20.23" y="863.5" >s..</text>
+</g>
+<g >
+<title>harness::data::load_multipolygon (28 samples, 2.45%)</title><rect x="15.2" y="1189" width="28.9" height="15.0" fill="rgb(213,30,46)" rx="2" ry="2" />
+<text  x="18.16" y="1199.5" >ha..</text>
+</g>
+<g >
+<title>__sqrt (17 samples, 1.49%)</title><rect x="376.5" y="917" width="17.5" height="15.0" fill="rgb(212,75,21)" rx="2" ry="2" />
+<text  x="379.49" y="927.5" ></text>
+</g>
+<g >
+<title>clear_page_erms (5 samples, 0.44%)</title><rect x="17.2" y="85" width="5.2" height="15.0" fill="rgb(208,44,30)" rx="2" ry="2" />
+<text  x="20.23" y="95.5" ></text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;alloc::vec::Vec&lt;geojson::Feature&gt;&gt; (2 samples, 0.17%)</title><rect x="15.2" y="1109" width="2.0" height="15.0" fill="rgb(252,3,11)" rx="2" ry="2" />
+<text  x="18.16" y="1119.5" ></text>
+</g>
+<g >
+<title>[unknown] (4 samples, 0.35%)</title><rect x="10.0" y="1461" width="4.1" height="15.0" fill="rgb(218,225,17)" rx="2" ry="2" />
+<text  x="13.00" y="1471.5" ></text>
+</g>
+<g >
+<title>&lt;geozero::geojson::geojson_reader::GeoJsonReader&lt;R&gt; as geozero::api::GeozeroDatasource&gt;::process (4 samples, 0.35%)</title><rect x="10.0" y="1397" width="4.1" height="15.0" fill="rgb(226,120,4)" rx="2" ry="2" />
+<text  x="13.00" y="1407.5" ></text>
+</g>
+<g >
+<title>__rust_dealloc (1 samples, 0.09%)</title><rect x="15.2" y="773" width="1.0" height="15.0" fill="rgb(211,218,53)" rx="2" ry="2" />
+<text  x="18.16" y="783.5" ></text>
+</g>
+<g >
+<title>geojson::feature::&lt;impl geojson::Feature&gt;::from_json_object (4 samples, 0.35%)</title><rect x="10.0" y="1269" width="4.1" height="15.0" fill="rgb(248,3,24)" rx="2" ry="2" />
+<text  x="13.00" y="1279.5" ></text>
+</g>
+<g >
+<title>std::unique_ptr&lt;geos::geom::Point, std::default_delete&lt;geos::geom::Point&gt; &gt;::release (1 samples, 0.09%)</title><rect x="1107.4" y="1077" width="1.0" height="15.0" fill="rgb(206,119,51)" rx="2" ry="2" />
+<text  x="1110.41" y="1087.5" ></text>
+</g>
+<g >
+<title>&lt;core::marker::PhantomData&lt;T&gt; as serde::de::DeserializeSeed&gt;::deserialize (22 samples, 1.92%)</title><rect x="17.2" y="645" width="22.7" height="15.0" fill="rgb(237,118,42)" rx="2" ry="2" />
+<text  x="20.23" y="655.5" >&lt;..</text>
+</g>
+<g >
+<title>core::ptr::drop_in_place&lt;serde_json::value::Value&gt; (1 samples, 0.09%)</title><rect x="34.8" y="213" width="1.0" height="15.0" fill="rgb(215,143,9)" rx="2" ry="2" />
+<text  x="37.78" y="223.5" ></text>
+</g>
+<g >
+<title>std::__uniq_ptr_impl&lt;geos::geom::Envelope, std::default_delete&lt;geos::geom::Envelope&gt; &gt;::__uniq_ptr_impl (1 samples, 0.09%)</title><rect x="1105.3" y="997" width="1.1" height="15.0" fill="rgb(234,3,5)" rx="2" ry="2" />
+<text  x="1108.35" y="1007.5" ></text>
+</g>
+<g >
+<title>serde_json::de::Deserializer&lt;R&gt;::parse_whitespace (1 samples, 0.09%)</title><rect x="38.9" y="261" width="1.0" height="15.0" fill="rgb(248,3,21)" rx="2" ry="2" />
+<text  x="41.91" y="271.5" ></text>
+</g>
+<g >
+<title>geojson::util::json_to_2d_positions (2 samples, 0.17%)</title><rect x="12.1" y="1141" width="2.0" height="15.0" fill="rgb(206,54,37)" rx="2" ry="2" />
+<text  x="15.06" y="1151.5" ></text>
 </g>
 </g>
 </svg>

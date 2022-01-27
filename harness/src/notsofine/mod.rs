@@ -66,7 +66,7 @@ pub fn benchmark_run(args: Args) -> BenchmarkResult {
 
         if should_report_iteration(i, &args) {
             result.iterations.push(iteration);
-            println!("REPPORTED  Iteration {} of {}", i + 1, args.iterations);
+            println!("REPORTED  Iteration {} of {}", i + 1, args.iterations);
         } else {
             println!("SKIPPED    Iteration {} of {}", i + 1, args.iterations);
         }
