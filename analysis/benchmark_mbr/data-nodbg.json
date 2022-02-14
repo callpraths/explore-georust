@@ -1,0 +1,5554 @@
+{
+  "iterations": [
+    {
+      "i": 20,
+      "started_at": {
+        "secs_since_epoch": 1644869819,
+        "nanos_since_epoch": 39815018
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176218997
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17284047
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34872343
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35076121
+          }
+        }
+      ]
+    },
+    {
+      "i": 21,
+      "started_at": {
+        "secs_since_epoch": 1644869819,
+        "nanos_since_epoch": 303347479
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17735531
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34838736
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35007080
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174621824
+          }
+        }
+      ]
+    },
+    {
+      "i": 22,
+      "started_at": {
+        "secs_since_epoch": 1644869819,
+        "nanos_since_epoch": 565640963
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35458700
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35101865
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176962960
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17356128
+          }
+        }
+      ]
+    },
+    {
+      "i": 23,
+      "started_at": {
+        "secs_since_epoch": 1644869819,
+        "nanos_since_epoch": 830634115
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35680864
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 182478399
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17767961
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34969801
+          }
+        }
+      ]
+    },
+    {
+      "i": 24,
+      "started_at": {
+        "secs_since_epoch": 1644869820,
+        "nanos_since_epoch": 101641661
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175855122
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17225032
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35046682
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34934104
+          }
+        }
+      ]
+    },
+    {
+      "i": 25,
+      "started_at": {
+        "secs_since_epoch": 1644869820,
+        "nanos_since_epoch": 364809510
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17820814
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34898428
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35005948
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175259406
+          }
+        }
+      ]
+    },
+    {
+      "i": 26,
+      "started_at": {
+        "secs_since_epoch": 1644869820,
+        "nanos_since_epoch": 627879807
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35562735
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35446106
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176427344
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17436185
+          }
+        }
+      ]
+    },
+    {
+      "i": 27,
+      "started_at": {
+        "secs_since_epoch": 1644869820,
+        "nanos_since_epoch": 892879256
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35922271
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175385851
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17296584
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34958348
+          }
+        }
+      ]
+    },
+    {
+      "i": 28,
+      "started_at": {
+        "secs_since_epoch": 1644869821,
+        "nanos_since_epoch": 156559004
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175576853
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17262057
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34980037
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34959392
+          }
+        }
+      ]
+    },
+    {
+      "i": 29,
+      "started_at": {
+        "secs_since_epoch": 1644869821,
+        "nanos_since_epoch": 419431107
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18501360
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34812015
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35068113
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174342875
+          }
+        }
+      ]
+    },
+    {
+      "i": 30,
+      "started_at": {
+        "secs_since_epoch": 1644869821,
+        "nanos_since_epoch": 682243483
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35424229
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35165631
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 187091521
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17347541
+          }
+        }
+      ]
+    },
+    {
+      "i": 31,
+      "started_at": {
+        "secs_since_epoch": 1644869821,
+        "nanos_since_epoch": 957397701
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35566545
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176220314
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17762345
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35326777
+          }
+        }
+      ]
+    },
+    {
+      "i": 32,
+      "started_at": {
+        "secs_since_epoch": 1644869822,
+        "nanos_since_epoch": 222392168
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176518056
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17303348
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35128511
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35140361
+          }
+        }
+      ]
+    },
+    {
+      "i": 33,
+      "started_at": {
+        "secs_since_epoch": 1644869822,
+        "nanos_since_epoch": 486592902
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17892766
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34987005
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34996869
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174978794
+          }
+        }
+      ]
+    },
+    {
+      "i": 34,
+      "started_at": {
+        "secs_since_epoch": 1644869822,
+        "nanos_since_epoch": 749539187
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35285791
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35023538
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175339885
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17328796
+          }
+        }
+      ]
+    },
+    {
+      "i": 35,
+      "started_at": {
+        "secs_since_epoch": 1644869823,
+        "nanos_since_epoch": 12640653
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35787660
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175162830
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17478314
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34911377
+          }
+        }
+      ]
+    },
+    {
+      "i": 36,
+      "started_at": {
+        "secs_since_epoch": 1644869823,
+        "nanos_since_epoch": 276084470
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 177957328
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17352037
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34859461
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35417994
+          }
+        }
+      ]
+    },
+    {
+      "i": 37,
+      "started_at": {
+        "secs_since_epoch": 1644869823,
+        "nanos_since_epoch": 541764667
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17897634
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35102523
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35117875
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 187370908
+          }
+        }
+      ]
+    },
+    {
+      "i": 38,
+      "started_at": {
+        "secs_since_epoch": 1644869823,
+        "nanos_since_epoch": 817353336
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 36193872
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35018972
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175610617
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17306280
+          }
+        }
+      ]
+    },
+    {
+      "i": 39,
+      "started_at": {
+        "secs_since_epoch": 1644869824,
+        "nanos_since_epoch": 81628449
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35757159
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175564567
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17434933
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35038893
+          }
+        }
+      ]
+    },
+    {
+      "i": 40,
+      "started_at": {
+        "secs_since_epoch": 1644869824,
+        "nanos_since_epoch": 345538820
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175330256
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17238742
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34898386
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35375581
+          }
+        }
+      ]
+    },
+    {
+      "i": 41,
+      "started_at": {
+        "secs_since_epoch": 1644869824,
+        "nanos_since_epoch": 608472445
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17731593
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34941843
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35042882
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 177037663
+          }
+        }
+      ]
+    },
+    {
+      "i": 42,
+      "started_at": {
+        "secs_since_epoch": 1644869824,
+        "nanos_since_epoch": 873320685
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35390644
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35174517
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175006317
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17227444
+          }
+        }
+      ]
+    },
+    {
+      "i": 43,
+      "started_at": {
+        "secs_since_epoch": 1644869825,
+        "nanos_since_epoch": 136236189
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35701277
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176025581
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17355863
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35419859
+          }
+        }
+      ]
+    },
+    {
+      "i": 44,
+      "started_at": {
+        "secs_since_epoch": 1644869825,
+        "nanos_since_epoch": 400843892
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176233485
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17516355
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34875977
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34974748
+          }
+        }
+      ]
+    },
+    {
+      "i": 45,
+      "started_at": {
+        "secs_since_epoch": 1644869825,
+        "nanos_since_epoch": 664540575
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18444716
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35084339
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35148496
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175504386
+          }
+        }
+      ]
+    },
+    {
+      "i": 46,
+      "started_at": {
+        "secs_since_epoch": 1644869825,
+        "nanos_since_epoch": 928833021
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 36023378
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35356230
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175357645
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17932770
+          }
+        }
+      ]
+    },
+    {
+      "i": 47,
+      "started_at": {
+        "secs_since_epoch": 1644869826,
+        "nanos_since_epoch": 193625025
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35752721
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175110390
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17221406
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34864989
+          }
+        }
+      ]
+    },
+    {
+      "i": 48,
+      "started_at": {
+        "secs_since_epoch": 1644869826,
+        "nanos_since_epoch": 456684910
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174861558
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17215769
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34863628
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35004917
+          }
+        }
+      ]
+    },
+    {
+      "i": 49,
+      "started_at": {
+        "secs_since_epoch": 1644869826,
+        "nanos_since_epoch": 718707923
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17760676
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34881387
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35138127
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174174247
+          }
+        }
+      ]
+    },
+    {
+      "i": 50,
+      "started_at": {
+        "secs_since_epoch": 1644869826,
+        "nanos_since_epoch": 980752048
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35499917
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34873330
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174715255
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17227207
+          }
+        }
+      ]
+    },
+    {
+      "i": 51,
+      "started_at": {
+        "secs_since_epoch": 1644869827,
+        "nanos_since_epoch": 243174071
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35381282
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174624154
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17272527
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34940980
+          }
+        }
+      ]
+    },
+    {
+      "i": 52,
+      "started_at": {
+        "secs_since_epoch": 1644869827,
+        "nanos_since_epoch": 505487984
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174880817
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17201692
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35050874
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34895798
+          }
+        }
+      ]
+    },
+    {
+      "i": 53,
+      "started_at": {
+        "secs_since_epoch": 1644869827,
+        "nanos_since_epoch": 767596355
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18183847
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35526437
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35392105
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175312774
+          }
+        }
+      ]
+    },
+    {
+      "i": 54,
+      "started_at": {
+        "secs_since_epoch": 1644869828,
+        "nanos_since_epoch": 32134087
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35544910
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35107561
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175880721
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17390211
+          }
+        }
+      ]
+    },
+    {
+      "i": 55,
+      "started_at": {
+        "secs_since_epoch": 1644869828,
+        "nanos_since_epoch": 296183397
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35760670
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176268363
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17362403
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35343698
+          }
+        }
+      ]
+    },
+    {
+      "i": 56,
+      "started_at": {
+        "secs_since_epoch": 1644869828,
+        "nanos_since_epoch": 561029501
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 181264400
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 24147403
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35173254
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35005190
+          }
+        }
+      ]
+    },
+    {
+      "i": 57,
+      "started_at": {
+        "secs_since_epoch": 1644869828,
+        "nanos_since_epoch": 836732015
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18109650
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34817609
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35000815
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175105704
+          }
+        }
+      ]
+    },
+    {
+      "i": 58,
+      "started_at": {
+        "secs_since_epoch": 1644869829,
+        "nanos_since_epoch": 99865933
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35451823
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35405953
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175486719
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17358007
+          }
+        }
+      ]
+    },
+    {
+      "i": 59,
+      "started_at": {
+        "secs_since_epoch": 1644869829,
+        "nanos_since_epoch": 363733265
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35702982
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174474540
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17619287
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34922446
+          }
+        }
+      ]
+    },
+    {
+      "i": 60,
+      "started_at": {
+        "secs_since_epoch": 1644869829,
+        "nanos_since_epoch": 626576745
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 177534098
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17360837
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35051625
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35143112
+          }
+        }
+      ]
+    },
+    {
+      "i": 61,
+      "started_at": {
+        "secs_since_epoch": 1644869829,
+        "nanos_since_epoch": 891751201
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18217445
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35532149
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35522616
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 218003795
+          }
+        }
+      ]
+    },
+    {
+      "i": 62,
+      "started_at": {
+        "secs_since_epoch": 1644869830,
+        "nanos_since_epoch": 199531071
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 39586829
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 38155935
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176546870
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17378813
+          }
+        }
+      ]
+    },
+    {
+      "i": 63,
+      "started_at": {
+        "secs_since_epoch": 1644869830,
+        "nanos_since_epoch": 472086309
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35559876
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174858614
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17395772
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 45191516
+          }
+        }
+      ]
+    },
+    {
+      "i": 64,
+      "started_at": {
+        "secs_since_epoch": 1644869830,
+        "nanos_since_epoch": 745209404
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175256649
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17277078
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35051471
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35126960
+          }
+        }
+      ]
+    },
+    {
+      "i": 65,
+      "started_at": {
+        "secs_since_epoch": 1644869831,
+        "nanos_since_epoch": 8001440
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17652341
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34961499
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35065611
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175294960
+          }
+        }
+      ]
+    },
+    {
+      "i": 66,
+      "started_at": {
+        "secs_since_epoch": 1644869831,
+        "nanos_since_epoch": 271080326
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35453474
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34919141
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174688521
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17338892
+          }
+        }
+      ]
+    },
+    {
+      "i": 67,
+      "started_at": {
+        "secs_since_epoch": 1644869831,
+        "nanos_since_epoch": 533622359
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35443778
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174846406
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17347677
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34895773
+          }
+        }
+      ]
+    },
+    {
+      "i": 68,
+      "started_at": {
+        "secs_since_epoch": 1644869831,
+        "nanos_since_epoch": 796248046
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176692407
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17456905
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34888628
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35181150
+          }
+        }
+      ]
+    },
+    {
+      "i": 69,
+      "started_at": {
+        "secs_since_epoch": 1644869832,
+        "nanos_since_epoch": 60591769
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17823247
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34937835
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34905057
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175263385
+          }
+        }
+      ]
+    },
+    {
+      "i": 70,
+      "started_at": {
+        "secs_since_epoch": 1644869832,
+        "nanos_since_epoch": 323616375
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35418779
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35171545
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174226007
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17301348
+          }
+        }
+      ]
+    },
+    {
+      "i": 71,
+      "started_at": {
+        "secs_since_epoch": 1644869832,
+        "nanos_since_epoch": 585840412
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35513114
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174916277
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17430457
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34848998
+          }
+        }
+      ]
+    },
+    {
+      "i": 72,
+      "started_at": {
+        "secs_since_epoch": 1644869832,
+        "nanos_since_epoch": 848656888
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175850129
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17360230
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35278481
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35278568
+          }
+        }
+      ]
+    },
+    {
+      "i": 73,
+      "started_at": {
+        "secs_since_epoch": 1644869833,
+        "nanos_since_epoch": 112525660
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17866120
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35248780
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35518228
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176260908
+          }
+        }
+      ]
+    },
+    {
+      "i": 74,
+      "started_at": {
+        "secs_since_epoch": 1644869833,
+        "nanos_since_epoch": 377532554
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35483141
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35005297
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174467922
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17215860
+          }
+        }
+      ]
+    },
+    {
+      "i": 75,
+      "started_at": {
+        "secs_since_epoch": 1644869833,
+        "nanos_since_epoch": 639824422
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35507500
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 188765412
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17361032
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35015259
+          }
+        }
+      ]
+    },
+    {
+      "i": 76,
+      "started_at": {
+        "secs_since_epoch": 1644869833,
+        "nanos_since_epoch": 916607038
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176823030
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17329519
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35042769
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35255193
+          }
+        }
+      ]
+    },
+    {
+      "i": 77,
+      "started_at": {
+        "secs_since_epoch": 1644869834,
+        "nanos_since_epoch": 181145946
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18019418
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35329199
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35133414
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175794339
+          }
+        }
+      ]
+    },
+    {
+      "i": 78,
+      "started_at": {
+        "secs_since_epoch": 1644869834,
+        "nanos_since_epoch": 445518155
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35289329
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34983078
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175982271
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17601057
+          }
+        }
+      ]
+    },
+    {
+      "i": 79,
+      "started_at": {
+        "secs_since_epoch": 1644869834,
+        "nanos_since_epoch": 709494544
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35645009
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 178031882
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17671454
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35281393
+          }
+        }
+      ]
+    },
+    {
+      "i": 80,
+      "started_at": {
+        "secs_since_epoch": 1644869834,
+        "nanos_since_epoch": 976236390
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176763432
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17280527
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35300346
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35148512
+          }
+        }
+      ]
+    },
+    {
+      "i": 81,
+      "started_at": {
+        "secs_since_epoch": 1644869835,
+        "nanos_since_epoch": 240832977
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17767603
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35052934
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35105778
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175513017
+          }
+        }
+      ]
+    },
+    {
+      "i": 82,
+      "started_at": {
+        "secs_since_epoch": 1644869835,
+        "nanos_since_epoch": 504388195
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35634669
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35335616
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175778218
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17220609
+          }
+        }
+      ]
+    },
+    {
+      "i": 83,
+      "started_at": {
+        "secs_since_epoch": 1644869835,
+        "nanos_since_epoch": 768490226
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35560610
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174524394
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17513154
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35821224
+          }
+        }
+      ]
+    },
+    {
+      "i": 84,
+      "started_at": {
+        "secs_since_epoch": 1644869836,
+        "nanos_since_epoch": 32021655
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176090494
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17404960
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35214303
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35166591
+          }
+        }
+      ]
+    },
+    {
+      "i": 85,
+      "started_at": {
+        "secs_since_epoch": 1644869836,
+        "nanos_since_epoch": 295991940
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17870025
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34989949
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35191348
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174176899
+          }
+        }
+      ]
+    },
+    {
+      "i": 86,
+      "started_at": {
+        "secs_since_epoch": 1644869836,
+        "nanos_since_epoch": 558323349
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35281166
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34945752
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174383319
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17252679
+          }
+        }
+      ]
+    },
+    {
+      "i": 87,
+      "started_at": {
+        "secs_since_epoch": 1644869836,
+        "nanos_since_epoch": 820299985
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35472841
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174877363
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17592498
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34964383
+          }
+        }
+      ]
+    },
+    {
+      "i": 88,
+      "started_at": {
+        "secs_since_epoch": 1644869837,
+        "nanos_since_epoch": 83343133
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174934374
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17292863
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34899127
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34863019
+          }
+        }
+      ]
+    },
+    {
+      "i": 89,
+      "started_at": {
+        "secs_since_epoch": 1644869837,
+        "nanos_since_epoch": 345421764
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17641529
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34905318
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34992876
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174173926
+          }
+        }
+      ]
+    },
+    {
+      "i": 90,
+      "started_at": {
+        "secs_since_epoch": 1644869837,
+        "nanos_since_epoch": 607222180
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35228832
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34873236
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174462703
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17273934
+          }
+        }
+      ]
+    },
+    {
+      "i": 91,
+      "started_at": {
+        "secs_since_epoch": 1644869837,
+        "nanos_since_epoch": 869185016
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35470376
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175539332
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17279751
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34802019
+          }
+        }
+      ]
+    },
+    {
+      "i": 92,
+      "started_at": {
+        "secs_since_epoch": 1644869838,
+        "nanos_since_epoch": 132389629
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176594343
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17844792
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35226208
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35316183
+          }
+        }
+      ]
+    },
+    {
+      "i": 93,
+      "started_at": {
+        "secs_since_epoch": 1644869838,
+        "nanos_since_epoch": 397474689
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17729281
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35330017
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35107511
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175019268
+          }
+        }
+      ]
+    },
+    {
+      "i": 94,
+      "started_at": {
+        "secs_since_epoch": 1644869838,
+        "nanos_since_epoch": 660772565
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35374566
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 37164195
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 185229156
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17557733
+          }
+        }
+      ]
+    },
+    {
+      "i": 95,
+      "started_at": {
+        "secs_since_epoch": 1644869838,
+        "nanos_since_epoch": 936259047
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35685559
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175709473
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17433685
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35582422
+          }
+        }
+      ]
+    },
+    {
+      "i": 96,
+      "started_at": {
+        "secs_since_epoch": 1644869839,
+        "nanos_since_epoch": 203187694
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175416225
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17485546
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34997699
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34883318
+          }
+        }
+      ]
+    },
+    {
+      "i": 97,
+      "started_at": {
+        "secs_since_epoch": 1644869839,
+        "nanos_since_epoch": 466654388
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17715048
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34916668
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34892086
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174620371
+          }
+        }
+      ]
+    },
+    {
+      "i": 98,
+      "started_at": {
+        "secs_since_epoch": 1644869839,
+        "nanos_since_epoch": 729381852
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 38192612
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35189840
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175052297
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17316702
+          }
+        }
+      ]
+    },
+    {
+      "i": 99,
+      "started_at": {
+        "secs_since_epoch": 1644869839,
+        "nanos_since_epoch": 995257578
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35912508
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176686636
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17376570
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34824796
+          }
+        }
+      ]
+    },
+    {
+      "i": 100,
+      "started_at": {
+        "secs_since_epoch": 1644869840,
+        "nanos_since_epoch": 260165763
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176107856
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17345421
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35265474
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35146522
+          }
+        }
+      ]
+    },
+    {
+      "i": 101,
+      "started_at": {
+        "secs_since_epoch": 1644869840,
+        "nanos_since_epoch": 524142116
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18118406
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35000502
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35284683
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174659215
+          }
+        }
+      ]
+    },
+    {
+      "i": 102,
+      "started_at": {
+        "secs_since_epoch": 1644869840,
+        "nanos_since_epoch": 787309932
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35509284
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35058810
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175988822
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17403855
+          }
+        }
+      ]
+    },
+    {
+      "i": 103,
+      "started_at": {
+        "secs_since_epoch": 1644869841,
+        "nanos_since_epoch": 51841696
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35520683
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175995809
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17317425
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35193608
+          }
+        }
+      ]
+    },
+    {
+      "i": 104,
+      "started_at": {
+        "secs_since_epoch": 1644869841,
+        "nanos_since_epoch": 315983577
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175699717
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17303245
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35223668
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35221608
+          }
+        }
+      ]
+    },
+    {
+      "i": 105,
+      "started_at": {
+        "secs_since_epoch": 1644869841,
+        "nanos_since_epoch": 579548116
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17850528
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35360836
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35937573
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 177155468
+          }
+        }
+      ]
+    },
+    {
+      "i": 106,
+      "started_at": {
+        "secs_since_epoch": 1644869841,
+        "nanos_since_epoch": 845951499
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35312107
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 36666126
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175619614
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17228538
+          }
+        }
+      ]
+    },
+    {
+      "i": 107,
+      "started_at": {
+        "secs_since_epoch": 1644869842,
+        "nanos_since_epoch": 110923293
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35484436
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175077664
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17353113
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34885483
+          }
+        }
+      ]
+    },
+    {
+      "i": 108,
+      "started_at": {
+        "secs_since_epoch": 1644869842,
+        "nanos_since_epoch": 373832634
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174806658
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17253813
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34914482
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34978426
+          }
+        }
+      ]
+    },
+    {
+      "i": 109,
+      "started_at": {
+        "secs_since_epoch": 1644869842,
+        "nanos_since_epoch": 635878736
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17797316
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34786785
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35066065
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174448284
+          }
+        }
+      ]
+    },
+    {
+      "i": 110,
+      "started_at": {
+        "secs_since_epoch": 1644869842,
+        "nanos_since_epoch": 898063977
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35898616
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35128825
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175300801
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17353831
+          }
+        }
+      ]
+    },
+    {
+      "i": 111,
+      "started_at": {
+        "secs_since_epoch": 1644869843,
+        "nanos_since_epoch": 161865391
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35675507
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175025565
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17419305
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35182413
+          }
+        }
+      ]
+    },
+    {
+      "i": 112,
+      "started_at": {
+        "secs_since_epoch": 1644869843,
+        "nanos_since_epoch": 425270301
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174920741
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17347801
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34910733
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35084925
+          }
+        }
+      ]
+    },
+    {
+      "i": 113,
+      "started_at": {
+        "secs_since_epoch": 1644869843,
+        "nanos_since_epoch": 687623588
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17648653
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 41843058
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 42145236
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175642173
+          }
+        }
+      ]
+    },
+    {
+      "i": 114,
+      "started_at": {
+        "secs_since_epoch": 1644869843,
+        "nanos_since_epoch": 965026808
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35459204
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35149515
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174885573
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17311115
+          }
+        }
+      ]
+    },
+    {
+      "i": 115,
+      "started_at": {
+        "secs_since_epoch": 1644869844,
+        "nanos_since_epoch": 227949787
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35343289
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174714761
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17231411
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34792961
+          }
+        }
+      ]
+    },
+    {
+      "i": 116,
+      "started_at": {
+        "secs_since_epoch": 1644869844,
+        "nanos_since_epoch": 490127135
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175469213
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17365147
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34956203
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35049958
+          }
+        }
+      ]
+    },
+    {
+      "i": 117,
+      "started_at": {
+        "secs_since_epoch": 1644869844,
+        "nanos_since_epoch": 753059112
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 20172517
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35323683
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35339664
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176073190
+          }
+        }
+      ]
+    },
+    {
+      "i": 118,
+      "started_at": {
+        "secs_since_epoch": 1644869845,
+        "nanos_since_epoch": 20073798
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35715605
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35099901
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174711311
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17356807
+          }
+        }
+      ]
+    },
+    {
+      "i": 119,
+      "started_at": {
+        "secs_since_epoch": 1644869845,
+        "nanos_since_epoch": 283081979
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35381958
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174294230
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17214724
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34782525
+          }
+        }
+      ]
+    },
+    {
+      "i": 120,
+      "started_at": {
+        "secs_since_epoch": 1644869845,
+        "nanos_since_epoch": 544855145
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176404281
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17629324
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35974491
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35226353
+          }
+        }
+      ]
+    },
+    {
+      "i": 121,
+      "started_at": {
+        "secs_since_epoch": 1644869845,
+        "nanos_since_epoch": 810213522
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17783319
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34832568
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 37952298
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175575492
+          }
+        }
+      ]
+    },
+    {
+      "i": 122,
+      "started_at": {
+        "secs_since_epoch": 1644869846,
+        "nanos_since_epoch": 76462757
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35719815
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35045151
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175051688
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17224344
+          }
+        }
+      ]
+    },
+    {
+      "i": 123,
+      "started_at": {
+        "secs_since_epoch": 1644869846,
+        "nanos_since_epoch": 339631266
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35392611
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 180475558
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17367150
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35396430
+          }
+        }
+      ]
+    },
+    {
+      "i": 124,
+      "started_at": {
+        "secs_since_epoch": 1644869846,
+        "nanos_since_epoch": 608382746
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176072609
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17296371
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35078635
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35138543
+          }
+        }
+      ]
+    },
+    {
+      "i": 125,
+      "started_at": {
+        "secs_since_epoch": 1644869846,
+        "nanos_since_epoch": 872078356
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17907354
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35302982
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35119005
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175607455
+          }
+        }
+      ]
+    },
+    {
+      "i": 126,
+      "started_at": {
+        "secs_since_epoch": 1644869847,
+        "nanos_since_epoch": 136123700
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35566429
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35461809
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175876715
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17519403
+          }
+        }
+      ]
+    },
+    {
+      "i": 127,
+      "started_at": {
+        "secs_since_epoch": 1644869847,
+        "nanos_since_epoch": 400690491
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 36064039
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175617445
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18757115
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35020812
+          }
+        }
+      ]
+    },
+    {
+      "i": 128,
+      "started_at": {
+        "secs_since_epoch": 1644869847,
+        "nanos_since_epoch": 666263043
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175852463
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17562347
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35376708
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35478536
+          }
+        }
+      ]
+    },
+    {
+      "i": 129,
+      "started_at": {
+        "secs_since_epoch": 1644869847,
+        "nanos_since_epoch": 930666144
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17816893
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35208637
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35268344
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 179890689
+          }
+        }
+      ]
+    },
+    {
+      "i": 130,
+      "started_at": {
+        "secs_since_epoch": 1644869848,
+        "nanos_since_epoch": 198963622
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35355826
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 34968692
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174637167
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17237619
+          }
+        }
+      ]
+    },
+    {
+      "i": 131,
+      "started_at": {
+        "secs_since_epoch": 1644869848,
+        "nanos_since_epoch": 461280091
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35270332
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174473854
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17281045
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35093984
+          }
+        }
+      ]
+    },
+    {
+      "i": 132,
+      "started_at": {
+        "secs_since_epoch": 1644869848,
+        "nanos_since_epoch": 723498960
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 187123185
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17239852
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35509055
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35815503
+          }
+        }
+      ]
+    },
+    {
+      "i": 133,
+      "started_at": {
+        "secs_since_epoch": 1644869848,
+        "nanos_since_epoch": 999319879
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18184467
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35214578
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35822111
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176516887
+          }
+        }
+      ]
+    },
+    {
+      "i": 134,
+      "started_at": {
+        "secs_since_epoch": 1644869849,
+        "nanos_since_epoch": 265184975
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35554345
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35005003
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174584754
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17198598
+          }
+        }
+      ]
+    },
+    {
+      "i": 135,
+      "started_at": {
+        "secs_since_epoch": 1644869849,
+        "nanos_since_epoch": 527656834
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35392666
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174726982
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17274725
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 37319037
+          }
+        }
+      ]
+    },
+    {
+      "i": 136,
+      "started_at": {
+        "secs_since_epoch": 1644869849,
+        "nanos_since_epoch": 792476011
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175782825
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17385615
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34982806
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35448602
+          }
+        }
+      ]
+    },
+    {
+      "i": 137,
+      "started_at": {
+        "secs_since_epoch": 1644869850,
+        "nanos_since_epoch": 56186503
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17767458
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35644841
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35348520
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175364632
+          }
+        }
+      ]
+    },
+    {
+      "i": 138,
+      "started_at": {
+        "secs_since_epoch": 1644869850,
+        "nanos_since_epoch": 320424380
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35316681
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35184734
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174661962
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17239621
+          }
+        }
+      ]
+    },
+    {
+      "i": 139,
+      "started_at": {
+        "secs_since_epoch": 1644869850,
+        "nanos_since_epoch": 582955629
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35460053
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174917756
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17254816
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34991964
+          }
+        }
+      ]
+    },
+    {
+      "i": 140,
+      "started_at": {
+        "secs_since_epoch": 1644869850,
+        "nanos_since_epoch": 845679084
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175008066
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17488292
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35315236
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35383161
+          }
+        }
+      ]
+    },
+    {
+      "i": 141,
+      "started_at": {
+        "secs_since_epoch": 1644869851,
+        "nanos_since_epoch": 108998614
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17981508
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35201002
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35446554
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 194147805
+          }
+        }
+      ]
+    },
+    {
+      "i": 142,
+      "started_at": {
+        "secs_since_epoch": 1644869851,
+        "nanos_since_epoch": 392539606
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35561386
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 37136621
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 180950236
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18830101
+          }
+        }
+      ]
+    },
+    {
+      "i": 143,
+      "started_at": {
+        "secs_since_epoch": 1644869851,
+        "nanos_since_epoch": 665166967
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 57028441
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 192425086
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17259975
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35104432
+          }
+        }
+      ]
+    },
+    {
+      "i": 144,
+      "started_at": {
+        "secs_since_epoch": 1644869851,
+        "nanos_since_epoch": 967116275
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 247367868
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 28338883
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 62055476
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 62615183
+          }
+        }
+      ]
+    },
+    {
+      "i": 145,
+      "started_at": {
+        "secs_since_epoch": 1644869852,
+        "nanos_since_epoch": 368013066
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 31970669
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 57590472
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 89700912
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 267875713
+          }
+        }
+      ]
+    },
+    {
+      "i": 146,
+      "started_at": {
+        "secs_since_epoch": 1644869852,
+        "nanos_since_epoch": 819373745
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 36283565
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 58159039
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 410263083
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 23684738
+          }
+        }
+      ]
+    },
+    {
+      "i": 147,
+      "started_at": {
+        "secs_since_epoch": 1644869853,
+        "nanos_since_epoch": 347913763
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 38804166
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 229478516
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 30764520
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 60033426
+          }
+        }
+      ]
+    },
+    {
+      "i": 148,
+      "started_at": {
+        "secs_since_epoch": 1644869853,
+        "nanos_since_epoch": 707127746
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 267129963
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 28030062
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 93144929
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 89478564
+          }
+        }
+      ]
+    },
+    {
+      "i": 149,
+      "started_at": {
+        "secs_since_epoch": 1644869854,
+        "nanos_since_epoch": 185068591
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 31255945
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 62381175
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 60226532
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 278903486
+          }
+        }
+      ]
+    },
+    {
+      "i": 150,
+      "started_at": {
+        "secs_since_epoch": 1644869854,
+        "nanos_since_epoch": 617986871
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 39512579
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 38736456
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 179139339
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18105926
+          }
+        }
+      ]
+    },
+    {
+      "i": 151,
+      "started_at": {
+        "secs_since_epoch": 1644869854,
+        "nanos_since_epoch": 894093639
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 37622619
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 254393314
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 28905031
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 56223439
+          }
+        }
+      ]
+    },
+    {
+      "i": 152,
+      "started_at": {
+        "secs_since_epoch": 1644869855,
+        "nanos_since_epoch": 271796092
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 254547283
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 26362088
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 61624428
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 58195617
+          }
+        }
+      ]
+    },
+    {
+      "i": 153,
+      "started_at": {
+        "secs_since_epoch": 1644869855,
+        "nanos_since_epoch": 673032074
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 29277684
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 57784056
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 55405068
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 333450165
+          }
+        }
+      ]
+    },
+    {
+      "i": 154,
+      "started_at": {
+        "secs_since_epoch": 1644869856,
+        "nanos_since_epoch": 150300786
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 87981990
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 61533847
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 350499828
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 29391636
+          }
+        }
+      ]
+    },
+    {
+      "i": 155,
+      "started_at": {
+        "secs_since_epoch": 1644869856,
+        "nanos_since_epoch": 680971277
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 63336827
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 427199246
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 119426126
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 158617578
+          }
+        }
+      ]
+    },
+    {
+      "i": 156,
+      "started_at": {
+        "secs_since_epoch": 1644869857,
+        "nanos_since_epoch": 455616205
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 713056069
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 90942489
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 193925635
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 124036541
+          }
+        }
+      ]
+    },
+    {
+      "i": 157,
+      "started_at": {
+        "secs_since_epoch": 1644869858,
+        "nanos_since_epoch": 584782363
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 84846679
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 144165276
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 230323276
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 814307965
+          }
+        }
+      ]
+    },
+    {
+      "i": 158,
+      "started_at": {
+        "secs_since_epoch": 1644869859,
+        "nanos_since_epoch": 867516868
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 137244553
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 176785974
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 1,
+            "nanos": 18100642
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 88495148
+          }
+        }
+      ]
+    },
+    {
+      "i": 159,
+      "started_at": {
+        "secs_since_epoch": 1644869861,
+        "nanos_since_epoch": 293991469
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 295731294
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 782869545
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 126682704
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 85181294
+          }
+        }
+      ]
+    },
+    {
+      "i": 160,
+      "started_at": {
+        "secs_since_epoch": 1644869862,
+        "nanos_since_epoch": 587582423
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 507264018
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 33212714
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 61154570
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 60800222
+          }
+        }
+      ]
+    },
+    {
+      "i": 161,
+      "started_at": {
+        "secs_since_epoch": 1644869863,
+        "nanos_since_epoch": 251096941
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 28858326
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 55958029
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 109243206
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 441221459
+          }
+        }
+      ]
+    },
+    {
+      "i": 162,
+      "started_at": {
+        "secs_since_epoch": 1644869863,
+        "nanos_since_epoch": 886661101
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 126435213
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 54025909
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 295703050
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17208565
+          }
+        }
+      ]
+    },
+    {
+      "i": 163,
+      "started_at": {
+        "secs_since_epoch": 1644869864,
+        "nanos_since_epoch": 380197033
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35466570
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175386838
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17483030
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35205595
+          }
+        }
+      ]
+    },
+    {
+      "i": 164,
+      "started_at": {
+        "secs_since_epoch": 1644869864,
+        "nanos_since_epoch": 643851868
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175757329
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17540148
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35436667
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35195229
+          }
+        }
+      ]
+    },
+    {
+      "i": 165,
+      "started_at": {
+        "secs_since_epoch": 1644869864,
+        "nanos_since_epoch": 907900962
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17890134
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 38692245
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35159896
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175217669
+          }
+        }
+      ]
+    },
+    {
+      "i": 166,
+      "started_at": {
+        "secs_since_epoch": 1644869865,
+        "nanos_since_epoch": 174963051
+      },
+      "runs": [
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35807843
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35337703
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 176451029
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17238260
+          }
+        }
+      ]
+    },
+    {
+      "i": 167,
+      "started_at": {
+        "secs_since_epoch": 1644869865,
+        "nanos_since_epoch": 439957777
+      },
+      "runs": [
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 36497870
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175894759
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17293357
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34824611
+          }
+        }
+      ]
+    },
+    {
+      "i": 168,
+      "started_at": {
+        "secs_since_epoch": 1644869865,
+        "nanos_since_epoch": 704578969
+      },
+      "runs": [
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 175111781
+          }
+        },
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 17309034
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 34887087
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35171952
+          }
+        }
+      ]
+    },
+    {
+      "i": 169,
+      "started_at": {
+        "secs_since_epoch": 1644869865,
+        "nanos_since_epoch": 967171564
+      },
+      "runs": [
+        {
+          "program": "geos",
+          "duration": {
+            "secs": 0,
+            "nanos": 18305199
+          }
+        },
+        {
+          "program": "geos_twice",
+          "duration": {
+            "secs": 0,
+            "nanos": 35009855
+          }
+        },
+        {
+          "program": "geos_twice_cloned",
+          "duration": {
+            "secs": 0,
+            "nanos": 35553643
+          }
+        },
+        {
+          "program": "geo",
+          "duration": {
+            "secs": 0,
+            "nanos": 174282984
+          }
+        }
+      ]
+    }
+  ]
+}
