@@ -1,0 +1,29 @@
+-    9.85%     0.22%  benchmark_area  benchmark_area  [.] benchmark_area::geo_area
+     9.63% benchmark_area::geo_area
+        <geo_types::multi_polygon::MultiPolygon<T> as geo::algorithm::area::Area<T>>::signed_area (inlined)
+        core::iter::traits::iterator::Iterator::fold (inlined)
+        _$LT$geo_types..multi_polygon..MultiPolygon$LT$T$GT$$u20$as$u20$geo..algorithm..area..Area$LT$T$GT$$GT$::signed_area::_$u7b$$u7b$closure$u7d$$u7d$::h7499759712fc2893 (inlined)
+        <geo_types::polygon::Polygon<T> as geo::algorithm::area::Area<T>>::signed_area (inlined)
+        geo::algorithm::area::get_linestring_area
+      - geo::algorithm::area::twice_signed_ring_area (inlined)
+         - 5.14% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next (inlined)
+            - 2.95% core::option::Option<T>::map (inlined)
+                 core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &mut F>::call_once (inlined)
+                 geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::h56776f40cf098343 (inlined)
+              2.19% <core::slice::iter::Windows<T> as core::iter::traits::iterator::Iterator>::next (inlined)
+         - 2.63% geo_types::line::Line<T>::determinant (inlined)
+              <f64 as core::ops::arith::Sub>::sub (inlined)
+         - 1.86% <geo_types::line::Line<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
+              <geo_types::point::Point<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
+              geo::algorithm::area::twice_signed_ring_area::_$u7b$$u7b$closure$u7d$$u7d$::hac06ea9fa53ccbc4 (inlined)
+              <f64 as core::ops::arith::Sub>::sub (inlined)
+-    1.09%     0.00%  benchmark_area  benchmark_area  [.] benchmark_area::geo_area
+     benchmark_area::geo_area
+     <geo_types::multi_polygon::MultiPolygon<T> as geo::algorithm::area::Area<T>>::signed_area (inlined)
+     core::iter::traits::iterator::Iterator::fold (inlined)
+     _$LT$geo_types..multi_polygon..MultiPolygon$LT$T$GT$$u20$as$u20$geo..algorithm..area..Area$LT$T$GT$$GT$::signed_area::_$u7b$$u7b$closure$u7d$$u7d$::h7499759712fc2893 (inlined)
+     <geo_types::polygon::Polygon<T> as geo::algorithm::area::Area<T>>::signed_area (inlined)
+     geo::algorithm::area::get_linestring_area
+   - geo::algorithm::area::twice_signed_ring_area (inlined)
+      - 0.55% geo_types::line::Line<T>::determinant (inlined)
+           <f64 as core::ops::arith::Sub>::sub (inlined)

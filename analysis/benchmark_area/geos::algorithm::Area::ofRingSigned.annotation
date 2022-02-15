@@ -1,0 +1,145 @@
+geos::algorithm::Area::ofRingSigned() /usr/local/lib/libgeos.so.3.10.1
+Event: cpu-clock
+
+Percent        
+               
+               
+             Disassembly of section .text:
+               
+             00000000004f6ae2 <geos::algorithm::Area::ofRingSigned(geos::geom::CoordinateSequence const*)>:
+             _ZN4geos9algorithm4Area12ofRingSignedEPKNS_4geom18CoordinateSequenceE():
+             }          
+               
+             /* public static */
+             double     
+             Area::ofRingSigned(const geom::CoordinateSequence* ring)
+             {          
+               push   %rbp    
+               mov    %rsp,%rbp
+               sub    $0x90,%rsp
+               mov    %rdi,-0x88(%rbp)
+                 std::size_t n = ring->size();
+               mov    -0x88(%rbp),%rax
+  0.11         mov    %rax,%rdi
+             → callq  geos::geom::CoordinateSequence::size@plt
+               mov    %rax,-0x18(%rbp)
+                 if(n < 3) {
+               cmpq   $0x2,-0x18(%rbp)
+             ↓ ja     35      
+                     return 0.0;
+               pxor   %xmm0,%xmm0
+             ↓ jmpq   1bc     
+                 }      
+                 /*     
+                  * Based on the Shoelace formula.
+                  * http://en.wikipedia.org/wiki/Shoelace_formula
+                  */    
+                 geom::Coordinate p0, p1, p2;
+  0.11   35:   lea    -0x40(%rbp),%rax
+               mov    %rax,%rdi
+             → callq  geos::geom::Coordinate::Coordinate@plt
+               lea    -0x60(%rbp),%rax
+               mov    %rax,%rdi
+             → callq  geos::geom::Coordinate::Coordinate@plt
+               lea    -0x80(%rbp),%rax
+               mov    %rax,%rdi
+             → callq  geos::geom::Coordinate::Coordinate@plt
+                 p1 = ring->getAt(0);
+               mov    -0x88(%rbp),%rax
+               mov    (%rax),%rax
+               add    $0x18,%rax
+               mov    (%rax),%rax
+               mov    -0x88(%rbp),%rdx
+               mov    $0x0,%esi
+               mov    %rdx,%rdi
+             → callq  *%rax   
+               mov    %rax,%rcx
+               mov    (%rcx),%rax
+  0.11         mov    0x8(%rcx),%rdx
+               mov    %rax,-0x60(%rbp)
+               mov    %rdx,-0x58(%rbp)
+               mov    0x10(%rcx),%rax
+               mov    %rax,-0x50(%rbp)
+                 p2 = ring->getAt(1);
+               mov    -0x88(%rbp),%rax
+               mov    (%rax),%rax
+               add    $0x18,%rax
+               mov    (%rax),%rax
+               mov    -0x88(%rbp),%rdx
+               mov    $0x1,%esi
+               mov    %rdx,%rdi
+             → callq  *%rax   
+               mov    %rax,%rcx
+               mov    (%rcx),%rax
+               mov    0x8(%rcx),%rdx
+               mov    %rax,-0x80(%rbp)
+               mov    %rdx,-0x78(%rbp)
+               mov    0x10(%rcx),%rax
+               mov    %rax,-0x70(%rbp)
+                 double x0 = p1.x;
+               movsd  -0x60(%rbp),%xmm0
+               movsd  %xmm0,-0x20(%rbp)
+                 p2.x -= x0;
+               movsd  -0x80(%rbp),%xmm0
+               subsd  -0x20(%rbp),%xmm0
+               movsd  %xmm0,-0x80(%rbp)
+                 double sum = 0.0;
+               pxor   %xmm0,%xmm0
+               movsd  %xmm0,-0x8(%rbp)
+                 for(std::size_t i = 1; i < n - 1; i++) {
+               movq   $0x1,-0x10(%rbp)
+  0.11   fb:   mov    -0x18(%rbp),%rax
+  2.52         sub    $0x1,%rax
+  0.11         cmp    %rax,-0x10(%rbp)
+             ↓ jae    1ab     
+                     p0.y = p1.y;
+               movsd  -0x58(%rbp),%xmm0
+  0.11         movsd  %xmm0,-0x38(%rbp)
+                     p1.x = p2.x;
+  2.74         movsd  -0x80(%rbp),%xmm0
+               movsd  %xmm0,-0x60(%rbp)
+                     p1.y = p2.y;
+               movsd  -0x78(%rbp),%xmm0
+               movsd  %xmm0,-0x58(%rbp)
+                     p2 = ring->getAt(i + 1);
+  2.52         mov    -0x88(%rbp),%rax
+               mov    (%rax),%rax
+               add    $0x18,%rax
+               mov    (%rax),%rax
+  1.97         mov    -0x10(%rbp),%rdx
+               lea    0x1(%rdx),%rcx
+               mov    -0x88(%rbp),%rdx
+               mov    %rcx,%rsi
+  2.52         mov    %rdx,%rdi
+             → callq  *%rax   
+               mov    %rax,%rcx
+  2.19         mov    (%rcx),%rax
+  0.77         mov    0x8(%rcx),%rdx
+  0.98         mov    %rax,-0x80(%rbp)
+  0.88         mov    %rdx,-0x78(%rbp)
+  3.06         mov    0x10(%rcx),%rax
+  0.11         mov    %rax,-0x70(%rbp)
+                     p2.x -= x0;
+  1.20         movsd  -0x80(%rbp),%xmm0
+  2.41         subsd  -0x20(%rbp),%xmm0
+ 10.18         movsd  %xmm0,-0x80(%rbp)
+                     sum += p1.x * (p0.y - p2.y);
+  2.63         movsd  -0x60(%rbp),%xmm1
+               movsd  -0x38(%rbp),%xmm0
+               movsd  -0x78(%rbp),%xmm2
+               subsd  %xmm2,%xmm0
+  2.52         mulsd  %xmm1,%xmm0
+  6.46         movsd  -0x8(%rbp),%xmm1
+               addsd  %xmm1,%xmm0
+ 11.71         movsd  %xmm0,-0x8(%rbp)
+                 for(std::size_t i = 1; i < n - 1; i++) {
+  3.17         addq   $0x1,-0x10(%rbp)
+             ↑ jmpq   fb      
+                 }      
+                 return sum / 2.0;
+        1ab:   movsd  -0x8(%rbp),%xmm0
+  0.11         movsd  std::ignore+0x28,%xmm1
+               divsd  %xmm1,%xmm0
+             }          
+        1bc:   leaveq         
+             ← retq           

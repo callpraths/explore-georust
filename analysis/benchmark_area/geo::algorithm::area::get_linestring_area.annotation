@@ -1,0 +1,146 @@
+geo::algorithm::area::get_linestring_area() /mnt/data/source/explore-georust/harness/target/release/benchmark_area
+Event: cpu-clock
+
+Percent        
+               
+               
+             Disassembly of section .text:
+               
+             0000000000014050 <geo::algorithm::area::get_linestring_area>:
+             _ZN3geo9algorithm4area22twice_signed_ring_area17hf6ae8fb4ce21ff1cE():
+             where      
+                 T: CoordNum,
+             {          
+                 // LineString with less than 3 points is empty, or a
+                 // single point, or is not closed.
+                 if linestring.0.len() < 3 {
+               mov    0x10(%rdi),%rdx
+               xorpd  %xmm0,%xmm0
+               cmp    $0x3,%rdx
+             ↓ jb     135     
+             _ZN5alloc3vec16Vec$LT$T$C$A$GT$6as_ptr17h45cdc1d222aed4d4E():
+               mov    (%rdi),%rax
+             _ZN4core5slice29_$LT$impl$u20$$u5b$T$u5d$$GT$4last17h6305a8be3b9521baE():
+               mov    %rdx,%rcx
+               shl    $0x4,%rcx
+             _ZN3geo9algorithm4area22twice_signed_ring_area17hf6ae8fb4ce21ff1cE():
+                     return T::zero();
+                 }      
+               
+                 // Above test ensures the vector has at least 2 elements.
+                 // We check if linestring is closed, and return 0 otherwise.
+                 if linestring.0.first().unwrap() != linestring.0.last().unwrap() {
+               movupd (%rax),%xmm1
+             _ZN4core3cmp5impls54_$LT$impl$u20$core..cmp..PartialEq$u20$for$u20$f64$GT$2ne17h528be7c844f6b56fE():
+               ucomisd -0x10(%rcx,%rax,1),%xmm1
+             _ZN3geo9algorithm4area22twice_signed_ring_area17hf6ae8fb4ce21ff1cE():
+             ↓ jne    135     
+             ↓ jp     135     
+             _ZN3geo9algorithm4area19get_linestring_area17h93f4a6666d75b565E():
+               movapd %xmm1,%xmm2
+               unpckhpd %xmm1,%xmm2
+             _ZN3geo9algorithm4area22twice_signed_ring_area17hf6ae8fb4ce21ff1cE():
+               ucomisd -0x8(%rcx,%rax,1),%xmm2
+             ↓ jne    135     
+             ↓ jp     135     
+             _ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$13get_unchecked17h00ddc2259fd66df5E():
+               lea    -0x1(%rdx),%rcx
+             _ZN9geo_types11line_string19LineString$LT$T$GT$5lines28_$u7b$$u7b$closure$u7d$$u7d$17h56776f40cf098343E():
+                 /// assert!(lines.next().is_none());
+                 /// ```
+                 pub fn lines(&'_ self) -> impl ExactSizeIterator + Iterator<Item = Line<T>> + '_ {
+                     self.0.windows(2).map(|w| {
+                         // slice::windows(N) is guaranteed to yield a slice with exactly N elements
+                         unsafe { Line::new(*w.get_unchecked(0), *w.get_unchecked(1)) }
+               movupd 0x10(%rax),%xmm2
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               movapd %xmm1,%xmm0
+               subpd  %xmm1,%xmm0
+               movapd %xmm2,%xmm3
+               subpd  %xmm1,%xmm3
+               movapd %xmm3,%xmm4
+               shufpd $0x1,%xmm3,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               mulpd  %xmm0,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               movapd %xmm4,%xmm0
+               unpckhpd %xmm4,%xmm0
+               subsd  %xmm0,%xmm4
+               xorpd  %xmm0,%xmm0
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+               addsd  %xmm4,%xmm0
+             _ZN94_$LT$core..slice..iter..Windows$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h1372d264a5da9eaeE():
+               cmp    $0x2,%rcx
+             ↓ jb     12d     
+               test   $0x1,%dl
+             ↓ je     c3      
+             _ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$13get_unchecked17h00ddc2259fd66df5E():
+               lea    -0x2(%rdx),%rcx
+             _ZN9geo_types11line_string19LineString$LT$T$GT$5lines28_$u7b$$u7b$closure$u7d$$u7d$17h56776f40cf098343E():
+               movupd 0x20(%rax),%xmm2
+             _ZN4core3ptr9const_ptr33_$LT$impl$u20$$BP$const$u20$T$GT$6offset17hfd88377c94a3db5dE():
+               add    $0x10,%rax
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               movapd %xmm2,%xmm4
+               subpd  %xmm1,%xmm4
+               shufpd $0x1,%xmm4,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               mulpd  %xmm4,%xmm3
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               movapd %xmm3,%xmm4
+               unpckhpd %xmm3,%xmm4
+               subsd  %xmm4,%xmm3
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+               addsd  %xmm3,%xmm0
+             _ZN94_$LT$core..slice..iter..Windows$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h1372d264a5da9eaeE():
+         c3:   cmp    $0x3,%rdx
+             ↓ je     12d     
+               add    $0x30,%rax
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               nop            
+         d0:   subpd  %xmm1,%xmm2
+             _ZN9geo_types11line_string19LineString$LT$T$GT$5lines28_$u7b$$u7b$closure$u7d$$u7d$17h56776f40cf098343E():
+               movupd -0x10(%rax),%xmm3
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+  1.31         subpd  %xmm1,%xmm3
+               movapd %xmm3,%xmm4
+               shufpd $0x1,%xmm3,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               mulpd  %xmm2,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+  1.86         movapd %xmm4,%xmm2
+               unpckhpd %xmm4,%xmm2
+               subsd  %xmm2,%xmm4
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+               addsd  %xmm0,%xmm4
+             _ZN9geo_types11line_string19LineString$LT$T$GT$5lines28_$u7b$$u7b$closure$u7d$$u7d$17h56776f40cf098343E():
+  3.06         movupd (%rax),%xmm0
+             _ZN106_$LT$core..ops..range..Range$LT$usize$GT$$u20$as$u20$core..slice..index..SliceIndex$LT$$u5b$T$u5d$$GT$$GT$13get_unchecked17h00ddc2259fd66df5E():
+               add    $0xfffffffffffffffe,%rcx
+             _ZN3geo9algorithm4area19get_linestring_area17h93f4a6666d75b565E():
+               movapd %xmm0,%xmm2
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               subpd  %xmm1,%xmm0
+  0.77         shufpd $0x1,%xmm0,%xmm0
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               mulpd  %xmm3,%xmm0
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+  0.11         movapd %xmm0,%xmm3
+               unpckhpd %xmm0,%xmm3
+  1.20         subsd  %xmm3,%xmm0
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+               addsd  %xmm4,%xmm0
+             _ZN94_$LT$core..slice..iter..Windows$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h1372d264a5da9eaeE():
+  2.41         add    $0x20,%rax
+               cmp    $0x1,%rcx
+             ↑ ja     d0      
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Div$GT$3div17h501a7caddd830273E():
+        12d:   mulsd  anon.5e99d9a4875581342b79de7d12ae6163.8.llvm.127053542264222337+0xc,%xmm0
+             _ZN3geo9algorithm4area19get_linestring_area17h93f4a6666d75b565E():
+             pub(crate) fn get_linestring_area<T>(linestring: &LineString<T>) -> T
+             where      
+                 T: CoordFloat,
+             {          
+                 twice_signed_ring_area(linestring) / (T::one() + T::one())
+             }          
+        135: ← retq           

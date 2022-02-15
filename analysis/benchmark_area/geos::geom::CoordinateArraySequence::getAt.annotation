@@ -1,0 +1,31 @@
+geos::geom::CoordinateArraySequence::getAt() /usr/local/lib/libgeos.so.3.10.1
+Event: cpu-clock
+
+Percent        
+               
+               
+            Disassembly of section .text:
+               
+            00000000005248aa <geos::geom::CoordinateArraySequence::getAt(unsigned long) const>:
+            _ZNK4geos4geom23CoordinateArraySequence5getAtEm():
+                return vect.size();
+            }         
+               
+            const Coordinate&
+            CoordinateArraySequence::getAt(std::size_t pos) const
+            {         
+              push   %rbp   
+  2.63        mov    %rsp,%rbp
+              sub    $0x10,%rsp
+              mov    %rdi,-0x8(%rbp)
+  2.41        mov    %rsi,-0x10(%rbp)
+                return vect[pos];
+              mov    -0x8(%rbp),%rax
+              lea    0x8(%rax),%rdx
+              mov    -0x10(%rbp),%rax
+  2.19        mov    %rax,%rsi
+              mov    %rdx,%rdi
+            → callq  std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]@plt
+            }         
+  0.22        leaveq        
+  2.84      ← retq          

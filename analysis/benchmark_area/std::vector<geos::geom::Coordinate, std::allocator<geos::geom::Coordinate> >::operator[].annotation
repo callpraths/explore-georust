@@ -1,0 +1,34 @@
+std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]() /usr/local/lib/libgeos.so.3.10.1
+Event: cpu-clock
+
+Percent        
+               
+               
+            Disassembly of section .text:
+               
+            00000000004f6d4c <std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[](unsigned long) const>:
+            _ZNKSt6vectorIN4geos4geom10CoordinateESaIS2_EEixEm():
+                   *  Note that data access with this operator is unchecked and
+                   *  out_of_range lookups are not defined. (For checked lookups
+                   *  see at().)
+                   */ 
+                  const_reference
+                  operator[](size_type __n) const _GLIBCXX_NOEXCEPT
+  2.74        push   %rbp   
+              mov    %rsp,%rbp
+              mov    %rdi,-0x8(%rbp)
+  3.17        mov    %rsi,-0x10(%rbp)
+                  {   
+                    __glibcxx_requires_subscript(__n);
+                    return *(this->_M_impl._M_start + __n);
+              mov    -0x8(%rbp),%rax
+              mov    (%rax),%rcx
+  0.22        mov    -0x10(%rbp),%rdx
+  2.41        mov    %rdx,%rax
+              add    %rax,%rax
+              add    %rdx,%rax
+              shl    $0x3,%rax
+  2.41        add    %rcx,%rax
+                  }   
+              pop    %rbp   
+            ← retq          
