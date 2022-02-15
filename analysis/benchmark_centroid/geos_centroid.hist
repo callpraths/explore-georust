@@ -1,0 +1,42 @@
+-   88.45%     0.00%  benchmark_centr  benchmark_centroid  [.] benchmark_centroid::geos_centroid
+   - benchmark_centroid::geos_centroid
+      - 88.28% <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
+           GEOSGetCentroid_r
+         - execute<GEOSGetCentroid_r::{lambda()#1}, (decltype(nullptr))0>
+            - GEOSGetCentroid_r::{lambda()#1}::operator()
+               - 88.10% geos::geom::Geometry::getCentroid
+                  - 87.93% geos::geom::Geometry::getCentroid
+                     - 87.66% geos::algorithm::Centroid::getCentroid
+                        - 87.49% geos::algorithm::Centroid::Centroid
+                           - 87.40% geos::algorithm::Centroid::add
+                              - 87.23% geos::algorithm::Centroid::add
+                                 - 87.05% geos::algorithm::Centroid::add
+                                    - 86.88% geos::algorithm::Centroid::addShell
+                                       - 41.91% geos::algorithm::Centroid::addLineSegments
+                                          - 15.66% geos::geom::CoordinateSequence::operator[]
+                                             - geos::geom::CoordinateArraySequence::getAt
+                                                  4.72% std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]
+                                                  1.31% std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]@plt
+                                          - 11.72% geos::geom::Coordinate::distance
+                                               2.89% __ieee754_sqrt (inlined)
+                                               1.49% __sqrt
+                                            0.61% geos::geom::CoordinateSequence::operator[]@plt
+                                       - 15.66% geos::algorithm::Centroid::addTriangle
+                                            5.07% geos::algorithm::Centroid::centroid3
+                                            2.54% geos::algorithm::Centroid::area2
+                                       - 13.91% geos::algorithm::Orientation::isCCW
+                                          - 5.25% geos::geom::CoordinateSequence::getY
+                                             - geos::geom::CoordinateSequence::getOrdinate
+                                                - geos::geom::CoordinateArraySequence::getAt
+                                                     std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]
+                                          - 0.96% geos::geom::CoordinateArraySequence::getAt
+                                               std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]
+                                       - 7.26% std::unique_ptr<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::operator*
+                                          - 5.69% std::unique_ptr<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::get
+                                             - 4.90% std::__uniq_ptr_impl<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::_M_ptr
+                                                - std::get<0ul, geos::geom::Coordinate*, std::default_delete<geos::geom::Coordinate> >
+                                                   - std::__get_helper<0ul, geos::geom::Coordinate*, std::default_delete<geos::geom::Coordinate> >
+                                                        1.84% std::_Tuple_impl<0ul, geos::geom::Coordinate*, std::default_delete<geos::geom::Coordinate> >::_M_head
+                                       - 5.42% geos::geom::CoordinateSequence::operator[]
+                                          - geos::geom::CoordinateArraySequence::getAt
+                                               1.31% std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]

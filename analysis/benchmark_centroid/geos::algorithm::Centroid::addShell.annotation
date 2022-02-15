@@ -1,0 +1,98 @@
+geos::algorithm::Centroid::addShell() /usr/local/lib/libgeos.so.3.10.1
+Event: cpu-clock
+
+Percent        
+               
+               
+            Disassembly of section .text:
+               
+            00000000004f8d86 <geos::algorithm::Centroid::addShell(geos::geom::CoordinateSequence const&)>:
+            _ZN4geos9algorithm8Centroid8addShellERKNS_4geom18CoordinateSequenceE():
+            }         
+               
+            /* private */
+            void      
+            Centroid::addShell(const CoordinateSequence& pts)
+            {         
+              push   %rbp   
+              mov    %rsp,%rbp
+              push   %r13   
+              push   %r12   
+              push   %rbx   
+              sub    $0x38,%rsp
+              mov    %rdi,-0x48(%rbp)
+              mov    %rsi,-0x50(%rbp)
+                std::size_t len = pts.size();
+              mov    -0x50(%rbp),%rax
+              mov    %rax,%rdi
+            → callq  geos::geom::CoordinateSequence::size@plt
+              mov    %rax,-0x30(%rbp)
+                if(len > 0) {
+              cmpq   $0x0,-0x30(%rbp)
+            ↓ je     4f     
+                    setAreaBasePoint(pts[0]);
+              mov    -0x50(%rbp),%rax
+              mov    $0x0,%esi
+              mov    %rax,%rdi
+            → callq  geos::geom::CoordinateSequence::operator[]@plt
+              mov    %rax,%rdx
+              mov    -0x48(%rbp),%rax
+              mov    %rdx,%rsi
+              mov    %rax,%rdi
+            → callq  geos::algorithm::Centroid::setAreaBasePoint@plt
+                }     
+                bool isPositiveArea = ! Orientation::isCCW(&pts);
+        4f:   mov    -0x50(%rbp),%rax
+              mov    %rax,%rdi
+            → callq  geos::algorithm::Orientation::isCCW@plt
+              xor    $0x1,%eax
+              mov    %al,-0x31(%rbp)
+                for(std::size_t i = 0; i < len - 1; ++i) {
+              movq   $0x0,-0x28(%rbp)
+        69:   mov    -0x30(%rbp),%rax
+              sub    $0x1,%rax
+  4.35        cmp    %rax,-0x28(%rbp)
+            ↓ jae    d6     
+                    addTriangle(*areaBasePt, pts[i], pts[i + 1], isPositiveArea);
+              movzbl -0x31(%rbp),%ebx
+              mov    -0x28(%rbp),%rax
+              lea    0x1(%rax),%rdx
+  8.70        mov    -0x50(%rbp),%rax
+              mov    %rdx,%rsi
+              mov    %rax,%rdi
+            → callq  geos::geom::CoordinateSequence::operator[]@plt
+  4.35        mov    %rax,%r13
+ 17.39        mov    -0x28(%rbp),%rdx
+  4.35        mov    -0x50(%rbp),%rax
+              mov    %rdx,%rsi
+              mov    %rax,%rdi
+  4.35      → callq  geos::geom::CoordinateSequence::operator[]@plt
+  8.70        mov    %rax,%r12
+  8.70        mov    -0x48(%rbp),%rax
+  4.35        mov    %rax,%rdi
+            → callq  std::unique_ptr<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::operator*@plt
+  4.35        mov    %rax,%rsi
+              mov    -0x48(%rbp),%rax
+ 13.04        mov    %ebx,%r8d
+              mov    %r13,%rcx
+              mov    %r12,%rdx
+              mov    %rax,%rdi
+ 13.04      → callq  geos::algorithm::Centroid::addTriangle@plt
+                for(std::size_t i = 0; i < len - 1; ++i) {
+              addq   $0x1,-0x28(%rbp)
+  4.35      ↑ jmp    69     
+                }     
+                addLineSegments(pts);
+        d6:   mov    -0x50(%rbp),%rdx
+              mov    -0x48(%rbp),%rax
+              mov    %rdx,%rsi
+              mov    %rax,%rdi
+            → callq  geos::algorithm::Centroid::addLineSegments@plt
+            }         
+              nop           
+              add    $0x38,%rsp
+              pop    %rbx   
+              pop    %r12   
+              pop    %r13   
+              pop    %rbp   
+            ← retq          

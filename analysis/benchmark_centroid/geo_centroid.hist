@@ -1,0 +1,27 @@
+-    1.92%     0.00%  benchmark_centr  benchmark_centroid  [.] benchmark_centroid::geo_centroid
+     benchmark_centroid::geo_centroid
+     <geo_types::multi_polygon::MultiPolygon<T> as geo::algorithm::centroid::Centroid>::centroid (inlined)
+     geo::algorithm::centroid::CentroidOperation<T>::add_multi_polygon
+     geo::algorithm::centroid::CentroidOperation<T>::add_polygon (inlined)
+   - geo::algorithm::centroid::CentroidOperation<T>::add_ring
+      - 1.05% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold (inlined)
+         - core::iter::traits::iterator::Iterator::fold (inlined)
+            - 0.61% core::iter::adapters::map::map_fold::_$u7b$$u7b$closure$u7d$$u7d$::h852ff4143359a141 (inlined)
+               - 0.44% geo::algorithm::centroid::CentroidOperation$LT$T$GT$::add_ring::_$u7b$$u7b$closure$u7d$$u7d$::hba507e9435c4b508 (inlined)
+                  - 0.17% <geo_types::coordinate::Coordinate<T> as core::ops::arith::Mul<T>>::mul (inlined)
+                       <f64 as core::ops::arith::Mul>::mul (inlined)
+                  - 0.17% <geo_types::coordinate::Coordinate<T> as core::ops::arith::Add>::add (inlined)
+                       <f64 as core::ops::arith::Add>::add (inlined)
+                 0.17% geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::ha94da3e3994f7f24 (inlined)
+              0.44% <core::slice::iter::Windows<T> as core::iter::traits::iterator::Iterator>::next (inlined)
+      - 0.87% geo::algorithm::area::get_linestring_area
+         - geo::algorithm::area::twice_signed_ring_area (inlined)
+            - 0.61% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next (inlined)
+               - 0.35% core::option::Option<T>::map (inlined)
+                    core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &mut F>::call_once (inlined)
+                    geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::ha94da3e3994f7f24 (inlined)
+                 0.26% <core::slice::iter::Windows<T> as core::iter::traits::iterator::Iterator>::next (inlined)
+            - 0.17% <geo_types::line::Line<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
+                 <geo_types::point::Point<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
+                 geo::algorithm::area::twice_signed_ring_area::_$u7b$$u7b$closure$u7d$$u7d$::h0c0bb9bdc36e4a85 (inlined)
+                 <f64 as core::ops::arith::Sub>::sub (inlined)

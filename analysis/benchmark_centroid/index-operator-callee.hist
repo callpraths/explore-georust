@@ -1,0 +1,102 @@
+-   23.80%     9.01%  benchmark_centr  libgeos.so.3.10.1  [.] geos::geom::CoordinateSequence::operator[]
+   - geos::geom::CoordinateSequence::operator[]
+      - 16.54% geos::algorithm::Centroid::addLineSegments
+         - geos::algorithm::Centroid::addShell
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::Centroid
+           geos::algorithm::Centroid::getCentroid
+           geos::geom::Geometry::getCentroid
+           geos::geom::Geometry::getCentroid
+           GEOSGetCentroid_r::{lambda()#1}::operator()
+           execute<GEOSGetCentroid_r::{lambda()#1}, (decltype(nullptr))0>
+           GEOSGetCentroid_r
+           <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
+           benchmark_centroid::geos_centroid
+           <harness::notsofine::simple::FnWithArgProgram<T> as harness::notsofine::PreparedProgram>::benchmark_this
+           harness::notsofine::run_once (inlined)
+           harness::notsofine::benchmark_run
+           benchmark_centroid::main
+           core::ops::function::FnOnce::call_once (inlined)
+           std::sys_common::backtrace::__rust_begin_short_backtrace
+           std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h9f2d0c57023350de
+           core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal::_$u7b$$u7b$closure$u7d$$u7d$::h3a398a8154de3106 (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal
+           main
+           __libc_start_main
+           _start
+      - 5.51% geos::algorithm::Centroid::addShell
+         - geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::Centroid
+           geos::algorithm::Centroid::getCentroid
+           geos::geom::Geometry::getCentroid
+           geos::geom::Geometry::getCentroid
+           GEOSGetCentroid_r::{lambda()#1}::operator()
+           execute<GEOSGetCentroid_r::{lambda()#1}, (decltype(nullptr))0>
+           GEOSGetCentroid_r
+           <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
+           benchmark_centroid::geos_centroid
+           <harness::notsofine::simple::FnWithArgProgram<T> as harness::notsofine::PreparedProgram>::benchmark_this
+           harness::notsofine::run_once (inlined)
+           harness::notsofine::benchmark_run
+           benchmark_centroid::main
+           core::ops::function::FnOnce::call_once (inlined)
+           std::sys_common::backtrace::__rust_begin_short_backtrace
+           std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h9f2d0c57023350de
+           core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal::_$u7b$$u7b$closure$u7d$$u7d$::h3a398a8154de3106 (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal
+           main
+           __libc_start_main
+           _start
+-    0.96%     0.96%  benchmark_centr  libgeos.so.3.10.1  [.] geos::geom::CoordinateSequence::operator[]@plt
+   - geos::geom::CoordinateSequence::operator[]@plt
+      - 0.61% geos::algorithm::Centroid::addLineSegments
+           geos::algorithm::Centroid::addShell
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::add
+           geos::algorithm::Centroid::Centroid
+           geos::algorithm::Centroid::getCentroid
+           geos::geom::Geometry::getCentroid
+           geos::geom::Geometry::getCentroid
+           GEOSGetCentroid_r::{lambda()#1}::operator()
+           execute<GEOSGetCentroid_r::{lambda()#1}, (decltype(nullptr))0>
+           GEOSGetCentroid_r
+           <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
+           benchmark_centroid::geos_centroid
+           <harness::notsofine::simple::FnWithArgProgram<T> as harness::notsofine::PreparedProgram>::benchmark_this
+           harness::notsofine::run_once (inlined)
+           harness::notsofine::benchmark_run
+           benchmark_centroid::main
+           core::ops::function::FnOnce::call_once (inlined)
+           std::sys_common::backtrace::__rust_begin_short_backtrace
+           std::rt::lang_start::_$u7b$$u7b$closure$u7d$$u7d$::h9f2d0c57023350de
+           core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal::_$u7b$$u7b$closure$u7d$$u7d$::h3a398a8154de3106 (inlined)
+           std::panicking::try::do_call (inlined)
+           std::panicking::try (inlined)
+           std::panic::catch_unwind (inlined)
+           std::rt::lang_start_internal
+           main
+           __libc_start_main
+           _start
