@@ -1,0 +1,21 @@
+-    3.04%     0.00%  benchmark_conve  benchmark_convex_hull  [.] benchmark_convex_hull::geo_convex_hull
+     benchmark_convex_hull::geo_convex_hull
+     <geo_types::multi_polygon::MultiPolygon<T> as geo::algorithm::convex_hull::ConvexHull>::convex_hull
+   - geo::algorithm::convex_hull::qhull::quick_hull
+      - 1.47% geo::algorithm::convex_hull::qhull::hull_set
+         - 0.79% geo::algorithm::convex_hull::qhull::hull_set
+              0.39% geo::utils::partition_slice
+         - 0.39% geo::utils::partition_slice
+              geo::algorithm::convex_hull::qhull::hull_set::_$u7b$$u7b$closure$u7d$$u7d$::h42e16cf9d6a833ce (inlined)
+      - 0.88% geo::utils::least_and_greatest_index
+           <core::iter::adapters::enumerate::Enumerate<I> as core::iter::traits::iterator::Iterator>::fold (inlined)
+         - core::iter::traits::iterator::Iterator::fold (inlined)
+            - _$LT$core..iter..adapters..enumerate..Enumerate$LT$I$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$::fold::enumerate::_$u7b$$u7b$closure$u7d$$u7d$::h3d15da34c3dd7995 (inlined)
+              geo::utils::least_and_greatest_index::_$u7b$$u7b$closure$u7d$$u7d$::h0ae013e8d05df935 (inlined)
+            - geo::utils::lex_cmp (inlined)
+                 0.69% core::cmp::impls::<impl core::cmp::PartialOrd for f64>::partial_cmp (inlined)
+      - 0.69% geo::utils::partition_slice
+         - geo::algorithm::convex_hull::qhull::quick_hull::_$u7b$$u7b$closure$u7d$$u7d$::h716adabf2c4e273d (inlined)
+            - geo::algorithm::convex_hull::qhull::is_ccw (inlined)
+              <geo::algorithm::kernels::robust::RobustKernel as geo::algorithm::kernels::Kernel<T>>::orient2d (inlined)
+              robust::orient2d (inlined)

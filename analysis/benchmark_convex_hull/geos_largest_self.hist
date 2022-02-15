@@ -1,0 +1,12 @@
++    8.44%  benchmark_conve  libgeos_c.so.1.16.0    [.] geos::geom::Coordinate::compareTo
++    5.79%  benchmark_conve  libgeos_c.so.1.16.0    [.] std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_M_get_insert_unique_pos
++    4.42%  benchmark_conve  libgeos.so.3.10.1      [.] geos::algorithm::CGAlgorithmsDD::orientationIndexFilter
++    3.53%  benchmark_conve  libgeos.so.3.10.1      [.] geos::algorithm::RayCrossingCounter::countSegment
++    3.43%  benchmark_conve  libgeos_c.so.1.16.0    [.] geos::geom::CoordinateLessThen::operator()
++    3.34%  benchmark_conve  libgeos_c.so.1.16.0    [.] std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_S_key
++    3.24%  benchmark_conve  libgeos.so.3.10.1      [.] std::vector<geos::geom::Coordinate const*, std::allocator<geos::geom::Coordinate const*> >::operator[]
++    2.94%  benchmark_conve  libgeos.so.3.10.1      [.] geos::algorithm::ConvexHull::computeOctPts
++    2.75%  benchmark_conve  libgeos.so.3.10.1      [.] geos::algorithm::RayCrossingCounter::locatePointInRing
++    2.45%  benchmark_conve  libstdc++.so.6.0.25    [.] std::_Rb_tree_insert_and_rebalance
++    2.16%  benchmark_conve  libgeos_c.so.1.16.0    [.] std::_Rb_tree_node<geos::geom::Coordinate const*>::_M_valptr
++    2.06%  benchmark_conve  libgeos_c.so.1.16.0    [.] std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_S_value

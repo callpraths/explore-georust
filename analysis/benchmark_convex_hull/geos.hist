@@ -1,0 +1,32 @@
+-   88.03%     0.00%  benchmark_conve  benchmark_convex_hull  [.] benchmark_convex_hull::geos_convex_hull
+   - benchmark_convex_hull::geos_convex_hull
+      - 87.93% <geos::geometry::Geometry as geos::geometry::Geom>::convex_hull
+           GEOSConvexHull_r
+           execute<GEOSConvexHull_r::{lambda()#1}, (decltype(nullptr))0>
+           GEOSConvexHull_r::{lambda()#1}::operator()
+         - geos::geom::Geometry::convexHull
+            - 46.42% geos::algorithm::ConvexHull::ConvexHull
+               - geos::algorithm::ConvexHull::extractCoordinates
+                  - 42.79% geos::geom::GeometryCollection::apply_ro
+                     - geos::geom::Polygon::apply_ro
+                        - 42.49% geos::geom::LineString::apply_ro
+                           - geos::geom::CoordinateArraySequence::apply_ro
+                              - 41.41% geos::util::UniqueCoordinateArrayFilter::filter_ro
+                                 - 38.57% std::set<geos::geom::Coordinate const*, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::insert
+                                    - 37.19% std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_M_insert_unique<geos::geom::Coordinate const* const&>
+                                       + 25.32% std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_M_get_insert_unique_pos
+                                       + 10.30% std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_M_insert_<geos::geom::Coordinate const* const&, std::_Rb_tree<geos::geom::Coordinate const*, geos::geom::Coordinate const*, std::_Identity<geos::geom::Coordinate const*>, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::_Alloc_node>
+                                      1.28% std::pair<std::_Rb_tree_const_iterator<geos::geom::Coordinate const*>, bool>::pair<std::_Rb_tree_iterator<geos::geom::Coordinate const*>&, bool&, true>
+                                 + 2.85% std::vector<geos::geom::Coordinate const*, std::allocator<geos::geom::Coordinate const*> >::push_back
+                  + 3.63% geos::util::UniqueCoordinateArrayFilter::~UniqueCoordinateArrayFilter
+            - 41.51% geos::algorithm::ConvexHull::getConvexHull
+               - 27.97% geos::algorithm::ConvexHull::reduce
+                  - 12.17% geos::algorithm::PointLocation::isInRing
+                     + 12.07% geos::algorithm::PointLocation::locateInRing
+                  + 7.16% std::set<geos::geom::Coordinate const*, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::insert
+                  + 6.28% geos::algorithm::ConvexHull::computeOctRing
+                  + 0.79% std::set<geos::geom::Coordinate const*, geos::geom::CoordinateLessThen, std::allocator<geos::geom::Coordinate const*> >::~set
+                  + 0.59% std::vector<geos::geom::Coordinate const*, std::allocator<geos::geom::Coordinate const*> >::assign<std::_Rb_tree_const_iterator<geos::geom::Coordinate const*>, void>
+               + 7.95% geos::algorithm::ConvexHull::preSort
+               + 4.51% geos::algorithm::ConvexHull::grahamScan
+                 1.08% geos::algorithm::ConvexHull::lineOrPolygon
