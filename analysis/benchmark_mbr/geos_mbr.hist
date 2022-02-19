@@ -1,0 +1,11 @@
+- 89.67% <geos::geometry::Geometry as geos::geometry::Geom>::envelope
+   - 99.47% geos::geom::Geometry::getEnvelope
+      - 98.35% geos::geom::GeometryFactory::toGeometry
+         + 25.84% geos::geom::GeometryFactory::createLinearRing
+         + 21.35% geos::geom::GeometryFactory::createPolygon
+         + 16.29% geos::geom::DefaultCoordinateSequenceFactory::create
+         + 11.24% std::unique_ptr<geos::geom::Geometry, std::default_delete<geos::geom::Geometry> >::unique_ptr<geos::geom::Polygon, std::default_delete<geos::geom::Polygon>, void>
+- 10.33% core::ptr::drop_in_place<geos::geometry::Geometry> (inlined)
+   - 95.24% geos::geom::Polygon::~Polygon
+      + 80.00% std::unique_ptr<geos::geom::LinearRing, std::default_delete<geos::geom::LinearRing> >::~unique_ptr
+      + 15.00% std::vector<std::unique_ptr<geos::geom::LinearRing, std::default_delete<geos::geom::LinearRing> >, std::allocator<std::unique_ptr<geos::geom::LinearRing, std::default_delete<geos::geom::LinearRing> > > >::~vector

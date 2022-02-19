@@ -1,0 +1,2 @@
++ 83.42% geo_types::private_utils::get_min_max (inlined)
++ 16.58% <core::iter::adapters::flatten::FlatMap<I,U,F> as core::iter::traits::iterator::Iterator>::next (inlined)
