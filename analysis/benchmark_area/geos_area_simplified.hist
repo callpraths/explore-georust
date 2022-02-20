@@ -1,0 +1,3 @@
+- 98.45% geos::algorithm::Area::ofRingSigned
+   - 24.41% geos::geom::CoordinateArraySequence::getAt
+      13.24% std::vector<geos::geom::Coordinate, std::allocator<geos::geom::Coordinate> >::operator[]

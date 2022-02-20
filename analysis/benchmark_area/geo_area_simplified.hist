@@ -1,0 +1,4 @@
+- geo::algorithm::area::twice_signed_ring_area (inlined)
+  - 53.37% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next (inlined)
+  - 27.31% geo_types::line::Line<T>::determinant (inlined)
+  - 19.31% <geo_types::line::Line<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
