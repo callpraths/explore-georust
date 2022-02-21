@@ -1,19 +1,19 @@
-      - <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
-               - 99.79% geos::geom::Geometry::getCentroid
-                  - 99.60% geos::geom::Geometry::getCentroid
-                     - 99.30% geos::algorithm::Centroid::getCentroid
-                        - 99.10% geos::algorithm::Centroid::Centroid
-                           - 99.00% geos::algorithm::Centroid::add
-                              - 98.81% geos::algorithm::Centroid::add
-                                 - 98.60% geos::algorithm::Centroid::add
-                                    - 98.41% geos::algorithm::Centroid::addShell
-                                       - 47.47% geos::algorithm::Centroid::addLineSegments
-                                          - 17.73% geos::geom::CoordinateSequence::operator[]
-                                          - 13.27% geos::geom::Coordinate::distance
-                                       - 17.73% geos::algorithm::Centroid::addTriangle
-                                            5.74% geos::algorithm::Centroid::centroid3
-                                            2.87% geos::algorithm::Centroid::area2
-                                       - 15.75% geos::algorithm::Orientation::isCCW
-                                          - 5.94% geos::geom::CoordinateSequence::getY
-                                       - 8.22% std::unique_ptr<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::operator*
-                                       - 6.14% geos::geom::CoordinateSequence::operator[]
+- <geos::geometry::Geometry as geos::geometry::Geom>::get_centroid
+   - 99.79% geos::geom::Geometry::getCentroid
+      - 99.60% geos::geom::Geometry::getCentroid
+         - 99.30% geos::algorithm::Centroid::getCentroid
+            - 99.10% geos::algorithm::Centroid::Centroid
+               - 99.00% geos::algorithm::Centroid::add
+                  - 98.81% geos::algorithm::Centroid::add
+                     - 98.60% geos::algorithm::Centroid::add
+                        - 98.41% geos::algorithm::Centroid::addShell
+                           - 47.47% geos::algorithm::Centroid::addLineSegments
+                              - 17.73% geos::geom::CoordinateSequence::operator[]
+                              - 13.27% geos::geom::Coordinate::distance
+                           - 17.73% geos::algorithm::Centroid::addTriangle
+                              5.74% geos::algorithm::Centroid::centroid3
+                              2.87% geos::algorithm::Centroid::area2
+                           - 15.75% geos::algorithm::Orientation::isCCW
+                              - 5.94% geos::geom::CoordinateSequence::getY
+                           - 8.22% std::unique_ptr<geos::geom::Coordinate, std::default_delete<geos::geom::Coordinate> >::operator*
+                           - 6.14% geos::geom::CoordinateSequence::operator[]
