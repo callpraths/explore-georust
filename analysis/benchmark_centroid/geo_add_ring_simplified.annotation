@@ -1,0 +1,42 @@
+geo::algorithm::centroid::CentroidOperation<T>::add_ring()
+Event: cpu-clock
+
+Percent
+
+[ ...SNIP... ]
+               nop
+             _ZN9geo_types11line_string19LineString$LT$T$GT$5lines28_$u7b$$u7b$closure$u7d$$u7d$17ha94da3e3994f7f24E():
+                 /// assert!(lines.next().is_none());
+                 /// ```
+                 pub fn lines(&'_ self) -> impl ExactSizeIterator + Iterator<Item = Line<T>> + '_ {
+                     self.0.windows(2).map(|w| {
+                         // slice::windows(N) is guaranteed to yield a slice with exactly N elements
+                         unsafe { Line::new(*w.get_unchecked(0), *w.get_unchecked(1)) }
+        1b0:   movapd %xmm3,%xmm4
+ 16.67         movapd %xmm2,%xmm5
+               movupd (%rcx),%xmm3
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Sub$GT$3sub17h7b8b1be7ea3e7a7aE():
+               subpd  %xmm1,%xmm4
+               movapd %xmm3,%xmm6
+  8.33         subpd  %xmm1,%xmm6
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               movapd %xmm6,%xmm2
+               shufpd $0x1,%xmm6,%xmm2
+               mulpd  %xmm4,%xmm2
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+ 16.67         addpd  %xmm4,%xmm6
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Mul$GT$3mul17h6535908bdf049e14E():
+               movapd %xmm2,%xmm4
+               unpckhpd %xmm2,%xmm4
+               subsd  %xmm4,%xmm2
+ 16.67         unpcklpd %xmm2,%xmm2
+               mulpd  %xmm6,%xmm2
+             _ZN45_$LT$f64$u20$as$u20$core..ops..arith..Add$GT$3add17hc97f37a33d9f3bdcE():
+               addpd  %xmm5,%xmm2
+             _ZN94_$LT$core..slice..iter..Windows$LT$T$GT$$u20$as$u20$core..iter..traits..iterator..Iterator$GT$4next17h9d7ae68615430372E():
+  8.33         cmp    $0x2,%rax
+             ↑ jb     96
+ 33.33         add    $0x10,%rcx
+               add    $0xffffffffffffffff,%rax
+
+[ ...SNIP... ]

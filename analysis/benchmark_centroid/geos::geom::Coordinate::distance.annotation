@@ -1,0 +1,25 @@
+geos::geom::Coordinate::distance()
+Event: cpu-clock
+
+Percent
+
+[ ...SNIP... ]
+
+  9.64        movsd  %xmm0,-0x8(%rbp)
+                double dy = y - p.y;
+  3.61        mov    -0x18(%rbp),%rax
+              movsd  0x8(%rax),%xmm0
+              mov    -0x20(%rbp),%rax
+  4.82        movsd  0x8(%rax),%xmm1
+              subsd  %xmm1,%xmm0
+  1.20        movsd  %xmm0,-0x10(%rbp)
+                return std::sqrt(dx * dx + dy * dy);
+  3.61        movsd  -0x8(%rbp),%xmm0
+  4.82        movapd %xmm0,%xmm1
+              mulsd  -0x8(%rbp),%xmm1
+ 19.28        movsd  -0x10(%rbp),%xmm0
+              mulsd  -0x10(%rbp),%xmm0
+ 10.84        addsd  %xmm1,%xmm0
+ 10.84      → callq  sqrt@plt
+
+[ ...SNIP... ]

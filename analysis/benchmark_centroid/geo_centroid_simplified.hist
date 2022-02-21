@@ -1,0 +1,14 @@
+
+- geo::algorithm::centroid::CentroidOperation<T>::add_ring
+   - 54.68% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::fold (inlined)
+      - 31.77% core::iter::adapters::map::map_fold::_$u7b$$u7b$closure$u7d$$u7d$::h852ff4143359a141 (inlined)
+         - 22.91% geo::algorithm::centroid::CentroidOperation$LT$T$GT$::add_ring::_$u7b$$u7b$closure$u7d$$u7d$::hba507e9435c4b508 (inlined)
+            - 8.85% <geo_types::coordinate::Coordinate<T> as core::ops::arith::Mul<T>>::mul (inlined)
+            - 8.85% <geo_types::coordinate::Coordinate<T> as core::ops::arith::Add>::add (inlined)
+            8.85% geo_types::line_string::LineString$LT$T$GT$::lines::_$u7b$$u7b$closure$u7d$$u7d$::ha94da3e3994f7f24 (inlined)
+         22.91% <core::slice::iter::Windows<T> as core::iter::traits::iterator::Iterator>::next (inlined)
+   - 45.31% geo::algorithm::area::get_linestring_area
+      - 31.77% <core::iter::adapters::map::Map<I,F> as core::iter::traits::iterator::Iterator>::next (inlined)
+         - 18.23% core::option::Option<T>::map (inlined)
+      - 8.85% <geo_types::line::Line<T> as geo::algorithm::map_coords::MapCoords<T,NT>>::map_coords (inlined)
+            <f64 as core::ops::arith::Sub>::sub (inlined)
